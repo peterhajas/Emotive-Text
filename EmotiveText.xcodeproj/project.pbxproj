@@ -1,0 +1,2185 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F06093B151B85E6004C2C80 /* __init__.py in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5C14151B7BB000A61F54 /* __init__.py */; };
+		4F06093C151B85E6004C2C80 /* __init__.pyc in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5C15151B7BB000A61F54 /* __init__.pyc */; };
+		4F06093D151B85E6004C2C80 /* _en-test.py in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5C16151B7BB000A61F54 /* _en-test.py */; };
+		4F06093E151B85E6004C2C80 /* article.py in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5C17151B7BB000A61F54 /* article.py */; };
+		4F06093F151B85E6004C2C80 /* article.pyc in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5C18151B7BB000A61F54 /* article.pyc */; };
+		4F060940151B85E6004C2C80 /* commonsense.py in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5C19151B7BB000A61F54 /* commonsense.py */; };
+		4F060941151B85E6004C2C80 /* commonsense.pyc in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5C1A151B7BB000A61F54 /* commonsense.pyc */; };
+		4F060942151B85E6004C2C80 /* LICENSE.txt in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5C1B151B7BB000A61F54 /* LICENSE.txt */; };
+		4F060943151B85E6004C2C80 /* numeral.py in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5C1C151B7BB000A61F54 /* numeral.py */; };
+		4F060944151B85E6004C2C80 /* numeral.pyc in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5C1D151B7BB000A61F54 /* numeral.pyc */; };
+		4F060945151B85E6004C2C80 /* ordinal.py in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5C22151B7BB000A61F54 /* ordinal.py */; };
+		4F060946151B85E6004C2C80 /* ordinal.pyc in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5C23151B7BB000A61F54 /* ordinal.pyc */; };
+		4F060947151B85E6004C2C80 /* plural.py in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5CB7151B7BB000A61F54 /* plural.py */; };
+		4F060948151B85E6004C2C80 /* plural.pyc in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5CB8151B7BB000A61F54 /* plural.pyc */; };
+		4F060949151B85E6004C2C80 /* quantify.py in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5CB9151B7BB000A61F54 /* quantify.py */; };
+		4F06094A151B85E6004C2C80 /* quantify.pyc in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5CBA151B7BB000A61F54 /* quantify.pyc */; };
+		4F06094B151B85E6004C2C80 /* rid.py in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5CBB151B7BB000A61F54 /* rid.py */; };
+		4F06094C151B85E6004C2C80 /* rid.pyc in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5CBC151B7BB000A61F54 /* rid.pyc */; };
+		4F06094D151B85E6004C2C80 /* singular.py in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5CBD151B7BB000A61F54 /* singular.py */; };
+		4F06094E151B85E6004C2C80 /* singular.pyc in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5CBE151B7BB000A61F54 /* singular.pyc */; };
+		4F06094F151B85E6004C2C80 /* tags.py in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5CC3151B7BB000A61F54 /* tags.py */; };
+		4F060950151B85E6004C2C80 /* tags.pyc in Copy Files into en root */ = {isa = PBXBuildFile; fileRef = 4F5B5CC4151B7BB000A61F54 /* tags.pyc */; };
+		4F060952151B8622004C2C80 /* __init__.py in Copy Files into en/ogden */ = {isa = PBXBuildFile; fileRef = 4F5B5C1F151B7BB000A61F54 /* __init__.py */; };
+		4F060953151B8622004C2C80 /* __init__.pyc in Copy Files into en/ogden */ = {isa = PBXBuildFile; fileRef = 4F5B5C20151B7BB000A61F54 /* __init__.pyc */; };
+		4F060954151B8622004C2C80 /* ogden_2000.txt in Copy Files into en/ogden */ = {isa = PBXBuildFile; fileRef = 4F5B5C21151B7BB000A61F54 /* ogden_2000.txt */; };
+		4F060956151B8643004C2C80 /* __init__.py in Copy Files into en/parser */ = {isa = PBXBuildFile; fileRef = 4F5B5C25151B7BB000A61F54 /* __init__.py */; };
+		4F060957151B8643004C2C80 /* __init__.pyc in Copy Files into en/parser */ = {isa = PBXBuildFile; fileRef = 4F5B5C26151B7BB000A61F54 /* __init__.pyc */; };
+		4F060958151B8643004C2C80 /* Brill_lexicon in Copy Files into en/parser */ = {isa = PBXBuildFile; fileRef = 4F5B5C27151B7BB000A61F54 /* Brill_lexicon */; };
+		4F060959151B8643004C2C80 /* Brill_license.txt in Copy Files into en/parser */ = {isa = PBXBuildFile; fileRef = 4F5B5C28151B7BB000A61F54 /* Brill_license.txt */; };
+		4F06095B151B869C004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite */ = {isa = PBXBuildFile; fileRef = 4F5B5C2A151B7BB000A61F54 /* __init__.py */; };
+		4F06095C151B869C004C2C80 /* __init__.pyc in Copy Files into en/parser/nltk_lite */ = {isa = PBXBuildFile; fileRef = 4F5B5C2B151B7BB000A61F54 /* __init__.pyc */; };
+		4F06095D151B869C004C2C80 /* evaluate.py in Copy Files into en/parser/nltk_lite */ = {isa = PBXBuildFile; fileRef = 4F5B5C6F151B7BB000A61F54 /* evaluate.py */; };
+		4F06095E151B869C004C2C80 /* INSTALL.TXT in Copy Files into en/parser/nltk_lite */ = {isa = PBXBuildFile; fileRef = 4F5B5C70151B7BB000A61F54 /* INSTALL.TXT */; };
+		4F06095F151B869C004C2C80 /* LICENSE.TXT in Copy Files into en/parser/nltk_lite */ = {isa = PBXBuildFile; fileRef = 4F5B5C71151B7BB000A61F54 /* LICENSE.TXT */; };
+		4F060960151B869C004C2C80 /* PKG-INFO in Copy Files into en/parser/nltk_lite */ = {isa = PBXBuildFile; fileRef = 4F5B5C93151B7BB000A61F54 /* PKG-INFO */; };
+		4F060961151B869C004C2C80 /* probability.py in Copy Files into en/parser/nltk_lite */ = {isa = PBXBuildFile; fileRef = 4F5B5C94151B7BB000A61F54 /* probability.py */; };
+		4F060962151B869C004C2C80 /* probability.pyc in Copy Files into en/parser/nltk_lite */ = {isa = PBXBuildFile; fileRef = 4F5B5C95151B7BB000A61F54 /* probability.pyc */; };
+		4F060963151B869C004C2C80 /* README.txt in Copy Files into en/parser/nltk_lite */ = {isa = PBXBuildFile; fileRef = 4F5B5C96151B7BB000A61F54 /* README.txt */; };
+		4F060964151B869C004C2C80 /* setup.py in Copy Files into en/parser/nltk_lite */ = {isa = PBXBuildFile; fileRef = 4F5B5C9C151B7BB000A61F54 /* setup.py */; };
+		4F060965151B869C004C2C80 /* utilities.py in Copy Files into en/parser/nltk_lite */ = {isa = PBXBuildFile; fileRef = 4F5B5CB1151B7BB000A61F54 /* utilities.py */; };
+		4F06096A151B876C004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/chat */ = {isa = PBXBuildFile; fileRef = 4F5B5C2D151B7BB000A61F54 /* __init__.py */; };
+		4F06096B151B876C004C2C80 /* eliza.py in Copy Files into en/parser/nltk_lite/chat */ = {isa = PBXBuildFile; fileRef = 4F5B5C2E151B7BB000A61F54 /* eliza.py */; };
+		4F06096C151B876C004C2C80 /* iesha.py in Copy Files into en/parser/nltk_lite/chat */ = {isa = PBXBuildFile; fileRef = 4F5B5C2F151B7BB000A61F54 /* iesha.py */; };
+		4F06096D151B876C004C2C80 /* rude.py in Copy Files into en/parser/nltk_lite/chat */ = {isa = PBXBuildFile; fileRef = 4F5B5C30151B7BB000A61F54 /* rude.py */; };
+		4F06096E151B876C004C2C80 /* zen.py in Copy Files into en/parser/nltk_lite/chat */ = {isa = PBXBuildFile; fileRef = 4F5B5C31151B7BB000A61F54 /* zen.py */; };
+		4F06096F151B8775004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/cluster */ = {isa = PBXBuildFile; fileRef = 4F5B5C33151B7BB000A61F54 /* __init__.py */; };
+		4F060970151B8775004C2C80 /* em.py in Copy Files into en/parser/nltk_lite/cluster */ = {isa = PBXBuildFile; fileRef = 4F5B5C34151B7BB000A61F54 /* em.py */; };
+		4F060971151B8775004C2C80 /* gaac.py in Copy Files into en/parser/nltk_lite/cluster */ = {isa = PBXBuildFile; fileRef = 4F5B5C35151B7BB000A61F54 /* gaac.py */; };
+		4F060972151B8775004C2C80 /* kmeans.py in Copy Files into en/parser/nltk_lite/cluster */ = {isa = PBXBuildFile; fileRef = 4F5B5C36151B7BB000A61F54 /* kmeans.py */; };
+		4F060973151B8785004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/contrib */ = {isa = PBXBuildFile; fileRef = 4F5B5C38151B7BB000A61F54 /* __init__.py */; };
+		4F060974151B8785004C2C80 /* combined.py in Copy Files into en/parser/nltk_lite/contrib */ = {isa = PBXBuildFile; fileRef = 4F5B5C39151B7BB000A61F54 /* combined.py */; };
+		4F060975151B8785004C2C80 /* concord.py in Copy Files into en/parser/nltk_lite/contrib */ = {isa = PBXBuildFile; fileRef = 4F5B5C3A151B7BB000A61F54 /* concord.py */; };
+		4F060976151B8785004C2C80 /* featuredemo.py in Copy Files into en/parser/nltk_lite/contrib */ = {isa = PBXBuildFile; fileRef = 4F5B5C3B151B7BB000A61F54 /* featuredemo.py */; };
+		4F060977151B8785004C2C80 /* featurelite.py in Copy Files into en/parser/nltk_lite/contrib */ = {isa = PBXBuildFile; fileRef = 4F5B5C3C151B7BB000A61F54 /* featurelite.py */; };
+		4F060978151B8785004C2C80 /* fsa.py in Copy Files into en/parser/nltk_lite/contrib */ = {isa = PBXBuildFile; fileRef = 4F5B5C3D151B7BB000A61F54 /* fsa.py */; };
+		4F060979151B8785004C2C80 /* hole.py in Copy Files into en/parser/nltk_lite/contrib */ = {isa = PBXBuildFile; fileRef = 4F5B5C3E151B7BB000A61F54 /* hole.py */; };
+		4F06097A151B8785004C2C80 /* kimmo.py in Copy Files into en/parser/nltk_lite/contrib */ = {isa = PBXBuildFile; fileRef = 4F5B5C3F151B7BB000A61F54 /* kimmo.py */; };
+		4F06097B151B8785004C2C80 /* lambda.py in Copy Files into en/parser/nltk_lite/contrib */ = {isa = PBXBuildFile; fileRef = 4F5B5C40151B7BB000A61F54 /* lambda.py */; };
+		4F06097C151B8785004C2C80 /* marshal.py in Copy Files into en/parser/nltk_lite/contrib */ = {isa = PBXBuildFile; fileRef = 4F5B5C41151B7BB000A61F54 /* marshal.py */; };
+		4F06097D151B8785004C2C80 /* marshalbrill.py in Copy Files into en/parser/nltk_lite/contrib */ = {isa = PBXBuildFile; fileRef = 4F5B5C42151B7BB000A61F54 /* marshalbrill.py */; };
+		4F06097E151B8785004C2C80 /* paradigm.py in Copy Files into en/parser/nltk_lite/contrib */ = {isa = PBXBuildFile; fileRef = 4F5B5C43151B7BB000A61F54 /* paradigm.py */; };
+		4F06097F151B8785004C2C80 /* paradigmquery.py in Copy Files into en/parser/nltk_lite/contrib */ = {isa = PBXBuildFile; fileRef = 4F5B5C44151B7BB000A61F54 /* paradigmquery.py */; };
+		4F060981151B87AE004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/contrib/toolbox */ = {isa = PBXBuildFile; fileRef = 4F5B5C46151B7BB000A61F54 /* __init__.py */; };
+		4F060982151B87AE004C2C80 /* data.py in Copy Files into en/parser/nltk_lite/contrib/toolbox */ = {isa = PBXBuildFile; fileRef = 4F5B5C47151B7BB000A61F54 /* data.py */; };
+		4F060983151B87AE004C2C80 /* errors.py in Copy Files into en/parser/nltk_lite/contrib/toolbox */ = {isa = PBXBuildFile; fileRef = 4F5B5C48151B7BB000A61F54 /* errors.py */; };
+		4F060984151B87AE004C2C80 /* lexicon.py in Copy Files into en/parser/nltk_lite/contrib/toolbox */ = {isa = PBXBuildFile; fileRef = 4F5B5C49151B7BB000A61F54 /* lexicon.py */; };
+		4F060985151B87AE004C2C80 /* settings.py in Copy Files into en/parser/nltk_lite/contrib/toolbox */ = {isa = PBXBuildFile; fileRef = 4F5B5C4A151B7BB000A61F54 /* settings.py */; };
+		4F060986151B87AE004C2C80 /* text.py in Copy Files into en/parser/nltk_lite/contrib/toolbox */ = {isa = PBXBuildFile; fileRef = 4F5B5C4B151B7BB000A61F54 /* text.py */; };
+		4F060987151B87AE004C2C80 /* utilities.py in Copy Files into en/parser/nltk_lite/contrib/toolbox */ = {isa = PBXBuildFile; fileRef = 4F5B5C4C151B7BB000A61F54 /* utilities.py */; };
+		4F060988151B87C3004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/corpora */ = {isa = PBXBuildFile; fileRef = 4F5B5C4E151B7BB000A61F54 /* __init__.py */; };
+		4F060989151B87C3004C2C80 /* brown.py in Copy Files into en/parser/nltk_lite/corpora */ = {isa = PBXBuildFile; fileRef = 4F5B5C4F151B7BB000A61F54 /* brown.py */; };
+		4F06098A151B87C3004C2C80 /* cmudict.py in Copy Files into en/parser/nltk_lite/corpora */ = {isa = PBXBuildFile; fileRef = 4F5B5C50151B7BB000A61F54 /* cmudict.py */; };
+		4F06098B151B87C3004C2C80 /* conll2000.py in Copy Files into en/parser/nltk_lite/corpora */ = {isa = PBXBuildFile; fileRef = 4F5B5C51151B7BB000A61F54 /* conll2000.py */; };
+		4F06098C151B87C3004C2C80 /* genesis.py in Copy Files into en/parser/nltk_lite/corpora */ = {isa = PBXBuildFile; fileRef = 4F5B5C52151B7BB000A61F54 /* genesis.py */; };
+		4F06098D151B87C3004C2C80 /* gutenberg.py in Copy Files into en/parser/nltk_lite/corpora */ = {isa = PBXBuildFile; fileRef = 4F5B5C53151B7BB000A61F54 /* gutenberg.py */; };
+		4F06098E151B87C3004C2C80 /* ieer.py in Copy Files into en/parser/nltk_lite/corpora */ = {isa = PBXBuildFile; fileRef = 4F5B5C54151B7BB000A61F54 /* ieer.py */; };
+		4F06098F151B87C3004C2C80 /* inaugural.py in Copy Files into en/parser/nltk_lite/corpora */ = {isa = PBXBuildFile; fileRef = 4F5B5C55151B7BB000A61F54 /* inaugural.py */; };
+		4F060990151B87C3004C2C80 /* names.py in Copy Files into en/parser/nltk_lite/corpora */ = {isa = PBXBuildFile; fileRef = 4F5B5C56151B7BB000A61F54 /* names.py */; };
+		4F060991151B87C3004C2C80 /* ppattach.py in Copy Files into en/parser/nltk_lite/corpora */ = {isa = PBXBuildFile; fileRef = 4F5B5C57151B7BB000A61F54 /* ppattach.py */; };
+		4F060992151B87C3004C2C80 /* senseval.py in Copy Files into en/parser/nltk_lite/corpora */ = {isa = PBXBuildFile; fileRef = 4F5B5C58151B7BB000A61F54 /* senseval.py */; };
+		4F060993151B87C3004C2C80 /* sinica_treebank.py in Copy Files into en/parser/nltk_lite/corpora */ = {isa = PBXBuildFile; fileRef = 4F5B5C59151B7BB000A61F54 /* sinica_treebank.py */; };
+		4F060994151B87C3004C2C80 /* state_union.py in Copy Files into en/parser/nltk_lite/corpora */ = {isa = PBXBuildFile; fileRef = 4F5B5C5A151B7BB000A61F54 /* state_union.py */; };
+		4F060995151B87C3004C2C80 /* stopwords.py in Copy Files into en/parser/nltk_lite/corpora */ = {isa = PBXBuildFile; fileRef = 4F5B5C5B151B7BB000A61F54 /* stopwords.py */; };
+		4F060996151B87C3004C2C80 /* timit.py in Copy Files into en/parser/nltk_lite/corpora */ = {isa = PBXBuildFile; fileRef = 4F5B5C5C151B7BB000A61F54 /* timit.py */; };
+		4F060997151B87C3004C2C80 /* toolbox.py in Copy Files into en/parser/nltk_lite/corpora */ = {isa = PBXBuildFile; fileRef = 4F5B5C5D151B7BB000A61F54 /* toolbox.py */; };
+		4F060998151B87C3004C2C80 /* treebank.py in Copy Files into en/parser/nltk_lite/corpora */ = {isa = PBXBuildFile; fileRef = 4F5B5C5E151B7BB000A61F54 /* treebank.py */; };
+		4F060999151B87C3004C2C80 /* words.py in Copy Files into en/parser/nltk_lite/corpora */ = {isa = PBXBuildFile; fileRef = 4F5B5C5F151B7BB000A61F54 /* words.py */; };
+		4F06099A151B87C3004C2C80 /* ycoe.py in Copy Files into en/parser/nltk_lite/corpora */ = {isa = PBXBuildFile; fileRef = 4F5B5C60151B7BB000A61F54 /* ycoe.py */; };
+		4F06099C151B87FB004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/draw */ = {isa = PBXBuildFile; fileRef = 4F5B5C62151B7BB000A61F54 /* __init__.py */; };
+		4F06099D151B87FB004C2C80 /* cfg.py in Copy Files into en/parser/nltk_lite/draw */ = {isa = PBXBuildFile; fileRef = 4F5B5C63151B7BB000A61F54 /* cfg.py */; };
+		4F06099E151B87FB004C2C80 /* chart.py in Copy Files into en/parser/nltk_lite/draw */ = {isa = PBXBuildFile; fileRef = 4F5B5C64151B7BB000A61F54 /* chart.py */; };
+		4F06099F151B87FB004C2C80 /* dispersion.py in Copy Files into en/parser/nltk_lite/draw */ = {isa = PBXBuildFile; fileRef = 4F5B5C65151B7BB000A61F54 /* dispersion.py */; };
+		4F0609A0151B87FB004C2C80 /* plot.py in Copy Files into en/parser/nltk_lite/draw */ = {isa = PBXBuildFile; fileRef = 4F5B5C66151B7BB000A61F54 /* plot.py */; };
+		4F0609A1151B87FB004C2C80 /* rdparser.py in Copy Files into en/parser/nltk_lite/draw */ = {isa = PBXBuildFile; fileRef = 4F5B5C67151B7BB000A61F54 /* rdparser.py */; };
+		4F0609A2151B87FB004C2C80 /* srparser.py in Copy Files into en/parser/nltk_lite/draw */ = {isa = PBXBuildFile; fileRef = 4F5B5C68151B7BB000A61F54 /* srparser.py */; };
+		4F0609A3151B87FB004C2C80 /* tree.py in Copy Files into en/parser/nltk_lite/draw */ = {isa = PBXBuildFile; fileRef = 4F5B5C69151B7BB000A61F54 /* tree.py */; };
+		4F0609A5151B8829004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/etree */ = {isa = PBXBuildFile; fileRef = 4F5B5C6B151B7BB000A61F54 /* __init__.py */; };
+		4F0609A6151B8829004C2C80 /* ElementInclude.py in Copy Files into en/parser/nltk_lite/etree */ = {isa = PBXBuildFile; fileRef = 4F5B5C6C151B7BB000A61F54 /* ElementInclude.py */; };
+		4F0609A7151B8829004C2C80 /* ElementPath.py in Copy Files into en/parser/nltk_lite/etree */ = {isa = PBXBuildFile; fileRef = 4F5B5C6D151B7BB000A61F54 /* ElementPath.py */; };
+		4F0609A8151B8829004C2C80 /* ElementTree.py in Copy Files into en/parser/nltk_lite/etree */ = {isa = PBXBuildFile; fileRef = 4F5B5C6E151B7BB000A61F54 /* ElementTree.py */; };
+		4F0609AA151B8841004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/misc */ = {isa = PBXBuildFile; fileRef = 4F5B5C73151B7BB000A61F54 /* __init__.py */; };
+		4F0609AB151B8841004C2C80 /* sort.py in Copy Files into en/parser/nltk_lite/misc */ = {isa = PBXBuildFile; fileRef = 4F5B5C74151B7BB000A61F54 /* sort.py */; };
+		4F0609AC151B8841004C2C80 /* wordfinder.py in Copy Files into en/parser/nltk_lite/misc */ = {isa = PBXBuildFile; fileRef = 4F5B5C75151B7BB000A61F54 /* wordfinder.py */; };
+		4F0609AE151B8861004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/model */ = {isa = PBXBuildFile; fileRef = 4F5B5C77151B7BB000A61F54 /* __init__.py */; };
+		4F0609B0151B8891004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C79151B7BB000A61F54 /* __init__.py */; };
+		4F0609B1151B8891004C2C80 /* __init__.pyc in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C7A151B7BB000A61F54 /* __init__.pyc */; };
+		4F0609B2151B8891004C2C80 /* category.py in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C7B151B7BB000A61F54 /* category.py */; };
+		4F0609B3151B8891004C2C80 /* cfg.py in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C7C151B7BB000A61F54 /* cfg.py */; };
+		4F0609B4151B8891004C2C80 /* cfg.pyc in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C7D151B7BB000A61F54 /* cfg.pyc */; };
+		4F0609B5151B8891004C2C80 /* chart.py in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C7E151B7BB000A61F54 /* chart.py */; };
+		4F0609B6151B8891004C2C80 /* chart.pyc in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C7F151B7BB000A61F54 /* chart.pyc */; };
+		4F0609B7151B8891004C2C80 /* chunk.py in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C80151B7BB000A61F54 /* chunk.py */; };
+		4F0609B8151B8891004C2C80 /* chunk.pyc in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C81151B7BB000A61F54 /* chunk.pyc */; };
+		4F0609B9151B8891004C2C80 /* featurechart.py in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C82151B7BB000A61F54 /* featurechart.py */; };
+		4F0609BA151B8891004C2C80 /* featurestructure.py in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C83151B7BB000A61F54 /* featurestructure.py */; };
+		4F0609BB151B8891004C2C80 /* featurestructure.pyc in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C84151B7BB000A61F54 /* featurestructure.pyc */; };
+		4F0609BC151B8891004C2C80 /* generate.py in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C85151B7BB000A61F54 /* generate.py */; };
+		4F0609BD151B8891004C2C80 /* grammarfile.py in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C86151B7BB000A61F54 /* grammarfile.py */; };
+		4F0609BE151B8891004C2C80 /* pcfg.py in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C87151B7BB000A61F54 /* pcfg.py */; };
+		4F0609BF151B8891004C2C80 /* pcfg.pyc in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C88151B7BB000A61F54 /* pcfg.pyc */; };
+		4F0609C0151B8891004C2C80 /* pchart.py in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C89151B7BB000A61F54 /* pchart.py */; };
+		4F0609C1151B8891004C2C80 /* rd.py in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C8A151B7BB000A61F54 /* rd.py */; };
+		4F0609C2151B8891004C2C80 /* rd.pyc in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C8B151B7BB000A61F54 /* rd.pyc */; };
+		4F0609C3151B8891004C2C80 /* sr.py in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C8C151B7BB000A61F54 /* sr.py */; };
+		4F0609C4151B8891004C2C80 /* sr.pyc in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C8D151B7BB000A61F54 /* sr.pyc */; };
+		4F0609C5151B8891004C2C80 /* tree.py in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C8E151B7BB000A61F54 /* tree.py */; };
+		4F0609C6151B8891004C2C80 /* tree.pyc in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C8F151B7BB000A61F54 /* tree.pyc */; };
+		4F0609C7151B8891004C2C80 /* treetransforms.py in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C90151B7BB000A61F54 /* treetransforms.py */; };
+		4F0609C8151B8891004C2C80 /* viterbi.py in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C91151B7BB000A61F54 /* viterbi.py */; };
+		4F0609C9151B8891004C2C80 /* viterbi.pyc in Copy Files into en/parser/nltk_lite/parse */ = {isa = PBXBuildFile; fileRef = 4F5B5C92151B7BB000A61F54 /* viterbi.pyc */; };
+		4F0609CB151B88AE004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/semantics */ = {isa = PBXBuildFile; fileRef = 4F5B5C98151B7BB000A61F54 /* __init__.py */; };
+		4F0609CC151B88AE004C2C80 /* evaluate.py in Copy Files into en/parser/nltk_lite/semantics */ = {isa = PBXBuildFile; fileRef = 4F5B5C99151B7BB000A61F54 /* evaluate.py */; };
+		4F0609CD151B88AE004C2C80 /* logic.py in Copy Files into en/parser/nltk_lite/semantics */ = {isa = PBXBuildFile; fileRef = 4F5B5C9A151B7BB000A61F54 /* logic.py */; };
+		4F0609CE151B88AE004C2C80 /* utilities.py in Copy Files into en/parser/nltk_lite/semantics */ = {isa = PBXBuildFile; fileRef = 4F5B5C9B151B7BB000A61F54 /* utilities.py */; };
+		4F0609D0151B88CE004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/stem */ = {isa = PBXBuildFile; fileRef = 4F5B5C9E151B7BB000A61F54 /* __init__.py */; };
+		4F0609D1151B88CE004C2C80 /* porter.py in Copy Files into en/parser/nltk_lite/stem */ = {isa = PBXBuildFile; fileRef = 4F5B5C9F151B7BB000A61F54 /* porter.py */; };
+		4F0609D2151B88CE004C2C80 /* regexp.py in Copy Files into en/parser/nltk_lite/stem */ = {isa = PBXBuildFile; fileRef = 4F5B5CA0151B7BB000A61F54 /* regexp.py */; };
+		4F0609D4151B88F2004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/tag */ = {isa = PBXBuildFile; fileRef = 4F5B5CA2151B7BB000A61F54 /* __init__.py */; };
+		4F0609D5151B88F2004C2C80 /* brill.py in Copy Files into en/parser/nltk_lite/tag */ = {isa = PBXBuildFile; fileRef = 4F5B5CA3151B7BB000A61F54 /* brill.py */; };
+		4F0609D6151B88F2004C2C80 /* hmm.py in Copy Files into en/parser/nltk_lite/tag */ = {isa = PBXBuildFile; fileRef = 4F5B5CA4151B7BB000A61F54 /* hmm.py */; };
+		4F0609D7151B88F2004C2C80 /* ngram.py in Copy Files into en/parser/nltk_lite/tag */ = {isa = PBXBuildFile; fileRef = 4F5B5CA5151B7BB000A61F54 /* ngram.py */; };
+		4F0609D8151B88F2004C2C80 /* unigram.py in Copy Files into en/parser/nltk_lite/tag */ = {isa = PBXBuildFile; fileRef = 4F5B5CA6151B7BB000A61F54 /* unigram.py */; };
+		4F0609DA151B891D004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/test */ = {isa = PBXBuildFile; fileRef = 4F5B5CA8151B7BB000A61F54 /* __init__.py */; };
+		4F0609DB151B891D004C2C80 /* doctest_driver.py in Copy Files into en/parser/nltk_lite/test */ = {isa = PBXBuildFile; fileRef = 4F5B5CA9151B7BB000A61F54 /* doctest_driver.py */; };
+		4F0609DD151B893A004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/tokenize */ = {isa = PBXBuildFile; fileRef = 4F5B5CAB151B7BB000A61F54 /* __init__.py */; };
+		4F0609DE151B893A004C2C80 /* __init__.pyc in Copy Files into en/parser/nltk_lite/tokenize */ = {isa = PBXBuildFile; fileRef = 4F5B5CAC151B7BB000A61F54 /* __init__.pyc */; };
+		4F0609DF151B893A004C2C80 /* regexp.py in Copy Files into en/parser/nltk_lite/tokenize */ = {isa = PBXBuildFile; fileRef = 4F5B5CAD151B7BB000A61F54 /* regexp.py */; };
+		4F0609E0151B893A004C2C80 /* regexp.pyc in Copy Files into en/parser/nltk_lite/tokenize */ = {isa = PBXBuildFile; fileRef = 4F5B5CAE151B7BB000A61F54 /* regexp.pyc */; };
+		4F0609E1151B893A004C2C80 /* simple.py in Copy Files into en/parser/nltk_lite/tokenize */ = {isa = PBXBuildFile; fileRef = 4F5B5CAF151B7BB000A61F54 /* simple.py */; };
+		4F0609E2151B893A004C2C80 /* simple.pyc in Copy Files into en/parser/nltk_lite/tokenize */ = {isa = PBXBuildFile; fileRef = 4F5B5CB0151B7BB000A61F54 /* simple.pyc */; };
+		4F0609E4151B8951004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/wordnet */ = {isa = PBXBuildFile; fileRef = 4F5B5CB3151B7BB000A61F54 /* __init__.py */; };
+		4F0609E5151B8951004C2C80 /* concordance.py in Copy Files into en/parser/nltk_lite/wordnet */ = {isa = PBXBuildFile; fileRef = 4F5B5CB4151B7BB000A61F54 /* concordance.py */; };
+		4F0609E6151B8951004C2C80 /* wntools.py in Copy Files into en/parser/nltk_lite/wordnet */ = {isa = PBXBuildFile; fileRef = 4F5B5CB5151B7BB000A61F54 /* wntools.py */; };
+		4F0609E7151B8951004C2C80 /* wordnet.py in Copy Files into en/parser/nltk_lite/wordnet */ = {isa = PBXBuildFile; fileRef = 4F5B5CB6151B7BB000A61F54 /* wordnet.py */; };
+		4F0609E9151B89A7004C2C80 /* __init__.py in Copy Files into en/spelling */ = {isa = PBXBuildFile; fileRef = 4F5B5CC0151B7BB000A61F54 /* __init__.py */; };
+		4F0609EA151B89A7004C2C80 /* __init__.pyc in Copy Files into en/spelling */ = {isa = PBXBuildFile; fileRef = 4F5B5CC1151B7BB000A61F54 /* __init__.pyc */; };
+		4F0609EB151B89A7004C2C80 /* spelling.txt in Copy Files into en/spelling */ = {isa = PBXBuildFile; fileRef = 4F5B5CC2151B7BB000A61F54 /* spelling.txt */; };
+		4F0609ED151B89CE004C2C80 /* __init__.py in Copy Files into en/verb */ = {isa = PBXBuildFile; fileRef = 4F5B5CC6151B7BB000A61F54 /* __init__.py */; };
+		4F0609EE151B89CE004C2C80 /* __init__.pyc in Copy Files into en/verb */ = {isa = PBXBuildFile; fileRef = 4F5B5CC7151B7BB000A61F54 /* __init__.pyc */; };
+		4F0609EF151B89CE004C2C80 /* verb.txt in Copy Files into en/verb */ = {isa = PBXBuildFile; fileRef = 4F5B5CC8151B7BB000A61F54 /* verb.txt */; };
+		4F0609F1151B8A0E004C2C80 /* __init__.py in Copy Files into en/wordnet */ = {isa = PBXBuildFile; fileRef = 4F5B5CCA151B7BB000A61F54 /* __init__.py */; };
+		4F0609F2151B8A0E004C2C80 /* __init__.pyc in Copy Files into en/wordnet */ = {isa = PBXBuildFile; fileRef = 4F5B5CCB151B7BB000A61F54 /* __init__.pyc */; };
+		4F0609F3151B8A0E004C2C80 /* concordance.py in Copy Files into en/wordnet */ = {isa = PBXBuildFile; fileRef = 4F5B5CCC151B7BB000A61F54 /* concordance.py */; };
+		4F0609F4151B8A0E004C2C80 /* LICENSE.txt in Copy Files into en/wordnet */ = {isa = PBXBuildFile; fileRef = 4F5B5CEA151B7BB000A61F54 /* LICENSE.txt */; };
+		4F0609F5151B8A0E004C2C80 /* PKG-INFO in Copy Files into en/wordnet */ = {isa = PBXBuildFile; fileRef = 4F5B5CEB151B7BB000A61F54 /* PKG-INFO */; };
+		4F0609F6151B8A0E004C2C80 /* README.txt in Copy Files into en/wordnet */ = {isa = PBXBuildFile; fileRef = 4F5B5CEC151B7BB000A61F54 /* README.txt */; };
+		4F0609F7151B8A0E004C2C80 /* setup.py in Copy Files into en/wordnet */ = {isa = PBXBuildFile; fileRef = 4F5B5CED151B7BB000A61F54 /* setup.py */; };
+		4F0609F8151B8A0E004C2C80 /* wntools.py in Copy Files into en/wordnet */ = {isa = PBXBuildFile; fileRef = 4F5B5CEE151B7BB000A61F54 /* wntools.py */; };
+		4F0609F9151B8A0E004C2C80 /* wntools.pyc in Copy Files into en/wordnet */ = {isa = PBXBuildFile; fileRef = 4F5B5CEF151B7BB000A61F54 /* wntools.pyc */; };
+		4F0609FA151B8A0E004C2C80 /* wordnet.py in Copy Files into en/wordnet */ = {isa = PBXBuildFile; fileRef = 4F5B5CF0151B7BB000A61F54 /* wordnet.py */; };
+		4F0609FB151B8A0E004C2C80 /* wordnet.pyc in Copy Files into en/wordnet */ = {isa = PBXBuildFile; fileRef = 4F5B5CF1151B7BB000A61F54 /* wordnet.pyc */; };
+		4F0609FD151B8A4C004C2C80 /* acinclude.m4 in Copy Files into en/wordnet/wordnet2 */ = {isa = PBXBuildFile; fileRef = 4F5B5CF3151B7BB000A61F54 /* acinclude.m4 */; };
+		4F0609FE151B8A4C004C2C80 /* aclocal.m4 in Copy Files into en/wordnet/wordnet2 */ = {isa = PBXBuildFile; fileRef = 4F5B5CF4151B7BB000A61F54 /* aclocal.m4 */; };
+		4F0609FF151B8A4C004C2C80 /* AUTHORS in Copy Files into en/wordnet/wordnet2 */ = {isa = PBXBuildFile; fileRef = 4F5B5CF5151B7BB000A61F54 /* AUTHORS */; };
+		4F060A00151B8A4C004C2C80 /* ChangeLog in Copy Files into en/wordnet/wordnet2 */ = {isa = PBXBuildFile; fileRef = 4F5B5CF6151B7BB000A61F54 /* ChangeLog */; };
+		4F060A01151B8A4C004C2C80 /* compile in Copy Files into en/wordnet/wordnet2 */ = {isa = PBXBuildFile; fileRef = 4F5B5CF7151B7BB000A61F54 /* compile */; };
+		4F060A02151B8A4C004C2C80 /* config.h.in in Copy Files into en/wordnet/wordnet2 */ = {isa = PBXBuildFile; fileRef = 4F5B5CF8151B7BB000A61F54 /* config.h.in */; };
+		4F060A03151B8A4C004C2C80 /* configure in Copy Files into en/wordnet/wordnet2 */ = {isa = PBXBuildFile; fileRef = 4F5B5CF9151B7BB000A61F54 /* configure */; };
+		4F060A04151B8A4C004C2C80 /* configure.ac in Copy Files into en/wordnet/wordnet2 */ = {isa = PBXBuildFile; fileRef = 4F5B5CFA151B7BB000A61F54 /* configure.ac */; };
+		4F060A05151B8A4C004C2C80 /* COPYING in Copy Files into en/wordnet/wordnet2 */ = {isa = PBXBuildFile; fileRef = 4F5B5CFB151B7BB000A61F54 /* COPYING */; };
+		4F060A06151B8A4C004C2C80 /* depcomp in Copy Files into en/wordnet/wordnet2 */ = {isa = PBXBuildFile; fileRef = 4F5B5CFC151B7BB000A61F54 /* depcomp */; };
+		4F060A07151B8A4C004C2C80 /* INSTALL in Copy Files into en/wordnet/wordnet2 */ = {isa = PBXBuildFile; fileRef = 4F5B5D8C151B7BB000A61F54 /* INSTALL */; };
+		4F060A08151B8A4C004C2C80 /* install-sh in Copy Files into en/wordnet/wordnet2 */ = {isa = PBXBuildFile; fileRef = 4F5B5D8D151B7BB000A61F54 /* install-sh */; };
+		4F060A09151B8A4C004C2C80 /* Makefile.am in Copy Files into en/wordnet/wordnet2 */ = {isa = PBXBuildFile; fileRef = 4F5B5D9F151B7BB000A61F54 /* Makefile.am */; };
+		4F060A0A151B8A4C004C2C80 /* Makefile.in in Copy Files into en/wordnet/wordnet2 */ = {isa = PBXBuildFile; fileRef = 4F5B5DA0151B7BB000A61F54 /* Makefile.in */; };
+		4F060A0B151B8A4C004C2C80 /* missing in Copy Files into en/wordnet/wordnet2 */ = {isa = PBXBuildFile; fileRef = 4F5B5DA1151B7BB000A61F54 /* missing */; };
+		4F060A0C151B8A4C004C2C80 /* NEWS in Copy Files into en/wordnet/wordnet2 */ = {isa = PBXBuildFile; fileRef = 4F5B5DA2151B7BB000A61F54 /* NEWS */; };
+		4F060A0D151B8A4C004C2C80 /* README in Copy Files into en/wordnet/wordnet2 */ = {isa = PBXBuildFile; fileRef = 4F5B5DA3151B7BB000A61F54 /* README */; };
+		4F060A0F151B8A6D004C2C80 /* adj.exc in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5CFE151B7BB000A61F54 /* adj.exc */; };
+		4F060A10151B8A6D004C2C80 /* adv.exc in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5CFF151B7BB000A61F54 /* adv.exc */; };
+		4F060A11151B8A6D004C2C80 /* cntlist in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D00151B7BB000A61F54 /* cntlist */; };
+		4F060A12151B8A6D004C2C80 /* cntlist.rev in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D01151B7BB000A61F54 /* cntlist.rev */; };
+		4F060A13151B8A6D004C2C80 /* data.adj in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D02151B7BB000A61F54 /* data.adj */; };
+		4F060A14151B8A6D004C2C80 /* data.adv in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D03151B7BB000A61F54 /* data.adv */; };
+		4F060A15151B8A6D004C2C80 /* data.noun in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D04151B7BB000A61F54 /* data.noun */; };
+		4F060A16151B8A6D004C2C80 /* data.verb in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D05151B7BB000A61F54 /* data.verb */; };
+		4F060A17151B8A6D004C2C80 /* frames.vrb in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D06151B7BB000A61F54 /* frames.vrb */; };
+		4F060A18151B8A6D004C2C80 /* index.adj in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D07151B7BB000A61F54 /* index.adj */; };
+		4F060A19151B8A6D004C2C80 /* index.adv in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D08151B7BB000A61F54 /* index.adv */; };
+		4F060A1A151B8A6D004C2C80 /* index.noun in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D09151B7BB000A61F54 /* index.noun */; };
+		4F060A1B151B8A6D004C2C80 /* index.sense in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D0A151B7BB000A61F54 /* index.sense */; };
+		4F060A1C151B8A6D004C2C80 /* index.verb in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D0B151B7BB000A61F54 /* index.verb */; };
+		4F060A1D151B8A6D004C2C80 /* lexnames in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D0C151B7BB000A61F54 /* lexnames */; };
+		4F060A1E151B8A6D004C2C80 /* log.grind.2.1 in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D0D151B7BB000A61F54 /* log.grind.2.1 */; };
+		4F060A1F151B8A6D004C2C80 /* Makefile in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D0E151B7BB000A61F54 /* Makefile */; };
+		4F060A20151B8A6D004C2C80 /* Makefile.am in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D0F151B7BB000A61F54 /* Makefile.am */; };
+		4F060A21151B8A6D004C2C80 /* Makefile.in in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D10151B7BB000A61F54 /* Makefile.in */; };
+		4F060A22151B8A6D004C2C80 /* noun.exc in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D11151B7BB000A61F54 /* noun.exc */; };
+		4F060A23151B8A6D004C2C80 /* sentidx.vrb in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D12151B7BB000A61F54 /* sentidx.vrb */; };
+		4F060A24151B8A6D004C2C80 /* sents.vrb in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D13151B7BB000A61F54 /* sents.vrb */; };
+		4F060A25151B8A6D004C2C80 /* verb.exc in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D14151B7BB000A61F54 /* verb.exc */; };
+		4F060A26151B8A6D004C2C80 /* verb.Framestext in Copy Files into en/wordnet/wordnet2/dict */ = {isa = PBXBuildFile; fileRef = 4F5B5D15151B7BB000A61F54 /* verb.Framestext */; };
+		4F060A28151B8A96004C2C80 /* Makefile in Copy Files into en/wordnet/wordnet2/include */ = {isa = PBXBuildFile; fileRef = 4F5B5D87151B7BB000A61F54 /* Makefile */; };
+		4F060A29151B8A96004C2C80 /* Makefile.am in Copy Files into en/wordnet/wordnet2/include */ = {isa = PBXBuildFile; fileRef = 4F5B5D88151B7BB000A61F54 /* Makefile.am */; };
+		4F060A2A151B8A96004C2C80 /* Makefile.in in Copy Files into en/wordnet/wordnet2/include */ = {isa = PBXBuildFile; fileRef = 4F5B5D89151B7BB000A61F54 /* Makefile.in */; };
+		4F060A2B151B8A96004C2C80 /* wn.h in Copy Files into en/wordnet/wordnet2/include */ = {isa = PBXBuildFile; fileRef = 4F5B5D8A151B7BB000A61F54 /* wn.h */; };
+		4F060A2C151B8A96004C2C80 /* wngrind.h in Copy Files into en/wordnet/wordnet2/include */ = {isa = PBXBuildFile; fileRef = 4F5B5D8B151B7BB000A61F54 /* wngrind.h */; };
+		4F060A2E151B8ADE004C2C80 /* binsrch.c in Copy Files into en/wordnet/wordnet2/lib */ = {isa = PBXBuildFile; fileRef = 4F5B5D8F151B7BB000A61F54 /* binsrch.c */; };
+		4F060A2F151B8ADE004C2C80 /* Makefile.am in Copy Files into en/wordnet/wordnet2/lib */ = {isa = PBXBuildFile; fileRef = 4F5B5D90151B7BB000A61F54 /* Makefile.am */; };
+		4F060A30151B8ADE004C2C80 /* Makefile.in in Copy Files into en/wordnet/wordnet2/lib */ = {isa = PBXBuildFile; fileRef = 4F5B5D91151B7BB000A61F54 /* Makefile.in */; };
+		4F060A31151B8ADE004C2C80 /* morph.c in Copy Files into en/wordnet/wordnet2/lib */ = {isa = PBXBuildFile; fileRef = 4F5B5D92151B7BB000A61F54 /* morph.c */; };
+		4F060A32151B8ADE004C2C80 /* search.c in Copy Files into en/wordnet/wordnet2/lib */ = {isa = PBXBuildFile; fileRef = 4F5B5D93151B7BB000A61F54 /* search.c */; };
+		4F060A33151B8ADE004C2C80 /* wnglobal.c in Copy Files into en/wordnet/wordnet2/lib */ = {isa = PBXBuildFile; fileRef = 4F5B5D94151B7BB000A61F54 /* wnglobal.c */; };
+		4F060A34151B8ADE004C2C80 /* wnhelp.c in Copy Files into en/wordnet/wordnet2/lib */ = {isa = PBXBuildFile; fileRef = 4F5B5D95151B7BB000A61F54 /* wnhelp.c */; };
+		4F060A35151B8ADE004C2C80 /* wnrtl.c in Copy Files into en/wordnet/wordnet2/lib */ = {isa = PBXBuildFile; fileRef = 4F5B5D9D151B7BB000A61F54 /* wnrtl.c */; };
+		4F060A36151B8ADE004C2C80 /* wnutil.c in Copy Files into en/wordnet/wordnet2/lib */ = {isa = PBXBuildFile; fileRef = 4F5B5D9E151B7BB000A61F54 /* wnutil.c */; };
+		4F060A38151B8B0B004C2C80 /* license.txt in Copy Files into en/wordnet/wordnet2/lib/wnres */ = {isa = PBXBuildFile; fileRef = 4F5B5D97151B7BB000A61F54 /* license.txt */; };
+		4F060A39151B8B0B004C2C80 /* Makefile.am in Copy Files into en/wordnet/wordnet2/lib/wnres */ = {isa = PBXBuildFile; fileRef = 4F5B5D98151B7BB000A61F54 /* Makefile.am */; };
+		4F060A3A151B8B0B004C2C80 /* Makefile.in in Copy Files into en/wordnet/wordnet2/lib/wnres */ = {isa = PBXBuildFile; fileRef = 4F5B5D99151B7BB000A61F54 /* Makefile.in */; };
+		4F060A3B151B8B0B004C2C80 /* wn.xbm in Copy Files into en/wordnet/wordnet2/lib/wnres */ = {isa = PBXBuildFile; fileRef = 4F5B5D9A151B7BB000A61F54 /* wn.xbm */; };
+		4F060A3C151B8B0B004C2C80 /* wnb.man in Copy Files into en/wordnet/wordnet2/lib/wnres */ = {isa = PBXBuildFile; fileRef = 4F5B5D9B151B7BB000A61F54 /* wnb.man */; };
+		4F060A3D151B8B0B004C2C80 /* wngloss.man in Copy Files into en/wordnet/wordnet2/lib/wnres */ = {isa = PBXBuildFile; fileRef = 4F5B5D9C151B7BB000A61F54 /* wngloss.man */; };
+		4F060A3F151B8B33004C2C80 /* Makefile.am in Copy Files into en/wordnet/wordnet2/src */ = {isa = PBXBuildFile; fileRef = 4F5B5DA5151B7BB000A61F54 /* Makefile.am */; };
+		4F060A40151B8B33004C2C80 /* Makefile.in in Copy Files into en/wordnet/wordnet2/src */ = {isa = PBXBuildFile; fileRef = 4F5B5DA6151B7BB000A61F54 /* Makefile.in */; };
+		4F060A41151B8B33004C2C80 /* stubs.c in Copy Files into en/wordnet/wordnet2/src */ = {isa = PBXBuildFile; fileRef = 4F5B5DA7151B7BB000A61F54 /* stubs.c */; };
+		4F060A42151B8B33004C2C80 /* tkAppInit.c in Copy Files into en/wordnet/wordnet2/src */ = {isa = PBXBuildFile; fileRef = 4F5B5DA8151B7BB000A61F54 /* tkAppInit.c */; };
+		4F060A43151B8B33004C2C80 /* wn.c in Copy Files into en/wordnet/wordnet2/src */ = {isa = PBXBuildFile; fileRef = 4F5B5DA9151B7BB000A61F54 /* wn.c */; };
+		4F060A44151B8B33004C2C80 /* wnb in Copy Files into en/wordnet/wordnet2/src */ = {isa = PBXBuildFile; fileRef = 4F5B5DAA151B7BB000A61F54 /* wnb */; };
+		4F5B5DAB151B7BB000A61F54 /* emotion.py in Resources */ = {isa = PBXBuildFile; fileRef = 4F5B5C11151B7BB000A61F54 /* emotion.py */; };
+		4F5B5DAC151B7BB000A61F54 /* emotion.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 4F5B5C12151B7BB000A61F54 /* emotion.pyc */; };
+		4F768EA61519DB0D001B1D52 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F768EA51519DB0D001B1D52 /* Cocoa.framework */; };
+		4F768EB01519DB0D001B1D52 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F768EAE1519DB0D001B1D52 /* InfoPlist.strings */; };
+		4F768EB21519DB0D001B1D52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F768EB11519DB0D001B1D52 /* main.m */; };
+		4F768EB61519DB0D001B1D52 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4F768EB41519DB0D001B1D52 /* Credits.rtf */; };
+		4F768EB91519DB0D001B1D52 /* ETAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F768EB81519DB0D001B1D52 /* ETAppDelegate.m */; };
+		4F768EBC1519DB0D001B1D52 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F768EBA1519DB0D001B1D52 /* MainMenu.xib */; };
+		4F768EC71519DB81001B1D52 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F768EC61519DB81001B1D52 /* Python.framework */; };
+		4F768ECA1519DC71001B1D52 /* ETTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F768EC91519DC71001B1D52 /* ETTextView.m */; };
+		4F768ECD1519DE71001B1D52 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F768ECC1519DE71001B1D52 /* ApplicationServices.framework */; };
+		4F80BDC5151B7A87004DF0AC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F768EC41519DB2B001B1D52 /* QuartzCore.framework */; };
+		4FC1BD391519F7BA008C80FF /* ETEmotionTextAttributer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC1BD381519F7BA008C80FF /* ETEmotionTextAttributer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4F06093A151B8598004C2C80 /* Copy Files into en root */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en;
+			dstSubfolderSpec = 7;
+			files = (
+				4F06093B151B85E6004C2C80 /* __init__.py in Copy Files into en root */,
+				4F06093C151B85E6004C2C80 /* __init__.pyc in Copy Files into en root */,
+				4F06093D151B85E6004C2C80 /* _en-test.py in Copy Files into en root */,
+				4F06093E151B85E6004C2C80 /* article.py in Copy Files into en root */,
+				4F06093F151B85E6004C2C80 /* article.pyc in Copy Files into en root */,
+				4F060940151B85E6004C2C80 /* commonsense.py in Copy Files into en root */,
+				4F060941151B85E6004C2C80 /* commonsense.pyc in Copy Files into en root */,
+				4F060942151B85E6004C2C80 /* LICENSE.txt in Copy Files into en root */,
+				4F060943151B85E6004C2C80 /* numeral.py in Copy Files into en root */,
+				4F060944151B85E6004C2C80 /* numeral.pyc in Copy Files into en root */,
+				4F060945151B85E6004C2C80 /* ordinal.py in Copy Files into en root */,
+				4F060946151B85E6004C2C80 /* ordinal.pyc in Copy Files into en root */,
+				4F060947151B85E6004C2C80 /* plural.py in Copy Files into en root */,
+				4F060948151B85E6004C2C80 /* plural.pyc in Copy Files into en root */,
+				4F060949151B85E6004C2C80 /* quantify.py in Copy Files into en root */,
+				4F06094A151B85E6004C2C80 /* quantify.pyc in Copy Files into en root */,
+				4F06094B151B85E6004C2C80 /* rid.py in Copy Files into en root */,
+				4F06094C151B85E6004C2C80 /* rid.pyc in Copy Files into en root */,
+				4F06094D151B85E6004C2C80 /* singular.py in Copy Files into en root */,
+				4F06094E151B85E6004C2C80 /* singular.pyc in Copy Files into en root */,
+				4F06094F151B85E6004C2C80 /* tags.py in Copy Files into en root */,
+				4F060950151B85E6004C2C80 /* tags.pyc in Copy Files into en root */,
+			);
+			name = "Copy Files into en root";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F060951151B85FC004C2C80 /* Copy Files into en/ogden */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/ogden;
+			dstSubfolderSpec = 7;
+			files = (
+				4F060952151B8622004C2C80 /* __init__.py in Copy Files into en/ogden */,
+				4F060953151B8622004C2C80 /* __init__.pyc in Copy Files into en/ogden */,
+				4F060954151B8622004C2C80 /* ogden_2000.txt in Copy Files into en/ogden */,
+			);
+			name = "Copy Files into en/ogden";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F060955151B8629004C2C80 /* Copy Files into en/parser */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/parser;
+			dstSubfolderSpec = 7;
+			files = (
+				4F060956151B8643004C2C80 /* __init__.py in Copy Files into en/parser */,
+				4F060957151B8643004C2C80 /* __init__.pyc in Copy Files into en/parser */,
+				4F060958151B8643004C2C80 /* Brill_lexicon in Copy Files into en/parser */,
+				4F060959151B8643004C2C80 /* Brill_license.txt in Copy Files into en/parser */,
+			);
+			name = "Copy Files into en/parser";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F06095A151B8657004C2C80 /* Copy Files into en/parser/nltk_lite */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/parser/nltk_lite;
+			dstSubfolderSpec = 7;
+			files = (
+				4F06095B151B869C004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite */,
+				4F06095C151B869C004C2C80 /* __init__.pyc in Copy Files into en/parser/nltk_lite */,
+				4F06095D151B869C004C2C80 /* evaluate.py in Copy Files into en/parser/nltk_lite */,
+				4F06095E151B869C004C2C80 /* INSTALL.TXT in Copy Files into en/parser/nltk_lite */,
+				4F06095F151B869C004C2C80 /* LICENSE.TXT in Copy Files into en/parser/nltk_lite */,
+				4F060960151B869C004C2C80 /* PKG-INFO in Copy Files into en/parser/nltk_lite */,
+				4F060961151B869C004C2C80 /* probability.py in Copy Files into en/parser/nltk_lite */,
+				4F060962151B869C004C2C80 /* probability.pyc in Copy Files into en/parser/nltk_lite */,
+				4F060963151B869C004C2C80 /* README.txt in Copy Files into en/parser/nltk_lite */,
+				4F060964151B869C004C2C80 /* setup.py in Copy Files into en/parser/nltk_lite */,
+				4F060965151B869C004C2C80 /* utilities.py in Copy Files into en/parser/nltk_lite */,
+			);
+			name = "Copy Files into en/parser/nltk_lite";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F060966151B86AB004C2C80 /* Copy Files into en/parser/nltk_lite/chat */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/parser/nltk_lite/chat;
+			dstSubfolderSpec = 7;
+			files = (
+				4F06096A151B876C004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/chat */,
+				4F06096B151B876C004C2C80 /* eliza.py in Copy Files into en/parser/nltk_lite/chat */,
+				4F06096C151B876C004C2C80 /* iesha.py in Copy Files into en/parser/nltk_lite/chat */,
+				4F06096D151B876C004C2C80 /* rude.py in Copy Files into en/parser/nltk_lite/chat */,
+				4F06096E151B876C004C2C80 /* zen.py in Copy Files into en/parser/nltk_lite/chat */,
+			);
+			name = "Copy Files into en/parser/nltk_lite/chat";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F060967151B86D3004C2C80 /* Copy Files into en/parser/nltk_lite/cluster */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/parser/nltk_lite/cluster;
+			dstSubfolderSpec = 7;
+			files = (
+				4F06096F151B8775004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/cluster */,
+				4F060970151B8775004C2C80 /* em.py in Copy Files into en/parser/nltk_lite/cluster */,
+				4F060971151B8775004C2C80 /* gaac.py in Copy Files into en/parser/nltk_lite/cluster */,
+				4F060972151B8775004C2C80 /* kmeans.py in Copy Files into en/parser/nltk_lite/cluster */,
+			);
+			name = "Copy Files into en/parser/nltk_lite/cluster";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F060968151B86F8004C2C80 /* Copy Files into en/parser/nltk_lite/contrib */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/parser/nltk_lite/contrib;
+			dstSubfolderSpec = 7;
+			files = (
+				4F060973151B8785004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/contrib */,
+				4F060974151B8785004C2C80 /* combined.py in Copy Files into en/parser/nltk_lite/contrib */,
+				4F060975151B8785004C2C80 /* concord.py in Copy Files into en/parser/nltk_lite/contrib */,
+				4F060976151B8785004C2C80 /* featuredemo.py in Copy Files into en/parser/nltk_lite/contrib */,
+				4F060977151B8785004C2C80 /* featurelite.py in Copy Files into en/parser/nltk_lite/contrib */,
+				4F060978151B8785004C2C80 /* fsa.py in Copy Files into en/parser/nltk_lite/contrib */,
+				4F060979151B8785004C2C80 /* hole.py in Copy Files into en/parser/nltk_lite/contrib */,
+				4F06097A151B8785004C2C80 /* kimmo.py in Copy Files into en/parser/nltk_lite/contrib */,
+				4F06097B151B8785004C2C80 /* lambda.py in Copy Files into en/parser/nltk_lite/contrib */,
+				4F06097C151B8785004C2C80 /* marshal.py in Copy Files into en/parser/nltk_lite/contrib */,
+				4F06097D151B8785004C2C80 /* marshalbrill.py in Copy Files into en/parser/nltk_lite/contrib */,
+				4F06097E151B8785004C2C80 /* paradigm.py in Copy Files into en/parser/nltk_lite/contrib */,
+				4F06097F151B8785004C2C80 /* paradigmquery.py in Copy Files into en/parser/nltk_lite/contrib */,
+			);
+			name = "Copy Files into en/parser/nltk_lite/contrib";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F060969151B8717004C2C80 /* Copy Files into en/parser/nltk_lite/corpora */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/parser/nltk_lite/corpora;
+			dstSubfolderSpec = 7;
+			files = (
+				4F060988151B87C3004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/corpora */,
+				4F060989151B87C3004C2C80 /* brown.py in Copy Files into en/parser/nltk_lite/corpora */,
+				4F06098A151B87C3004C2C80 /* cmudict.py in Copy Files into en/parser/nltk_lite/corpora */,
+				4F06098B151B87C3004C2C80 /* conll2000.py in Copy Files into en/parser/nltk_lite/corpora */,
+				4F06098C151B87C3004C2C80 /* genesis.py in Copy Files into en/parser/nltk_lite/corpora */,
+				4F06098D151B87C3004C2C80 /* gutenberg.py in Copy Files into en/parser/nltk_lite/corpora */,
+				4F06098E151B87C3004C2C80 /* ieer.py in Copy Files into en/parser/nltk_lite/corpora */,
+				4F06098F151B87C3004C2C80 /* inaugural.py in Copy Files into en/parser/nltk_lite/corpora */,
+				4F060990151B87C3004C2C80 /* names.py in Copy Files into en/parser/nltk_lite/corpora */,
+				4F060991151B87C3004C2C80 /* ppattach.py in Copy Files into en/parser/nltk_lite/corpora */,
+				4F060992151B87C3004C2C80 /* senseval.py in Copy Files into en/parser/nltk_lite/corpora */,
+				4F060993151B87C3004C2C80 /* sinica_treebank.py in Copy Files into en/parser/nltk_lite/corpora */,
+				4F060994151B87C3004C2C80 /* state_union.py in Copy Files into en/parser/nltk_lite/corpora */,
+				4F060995151B87C3004C2C80 /* stopwords.py in Copy Files into en/parser/nltk_lite/corpora */,
+				4F060996151B87C3004C2C80 /* timit.py in Copy Files into en/parser/nltk_lite/corpora */,
+				4F060997151B87C3004C2C80 /* toolbox.py in Copy Files into en/parser/nltk_lite/corpora */,
+				4F060998151B87C3004C2C80 /* treebank.py in Copy Files into en/parser/nltk_lite/corpora */,
+				4F060999151B87C3004C2C80 /* words.py in Copy Files into en/parser/nltk_lite/corpora */,
+				4F06099A151B87C3004C2C80 /* ycoe.py in Copy Files into en/parser/nltk_lite/corpora */,
+			);
+			name = "Copy Files into en/parser/nltk_lite/corpora";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F060980151B8797004C2C80 /* Copy Files into en/parser/nltk_lite/contrib/toolbox */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/parser/nltk_lite/contrib/toolbox;
+			dstSubfolderSpec = 7;
+			files = (
+				4F060981151B87AE004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/contrib/toolbox */,
+				4F060982151B87AE004C2C80 /* data.py in Copy Files into en/parser/nltk_lite/contrib/toolbox */,
+				4F060983151B87AE004C2C80 /* errors.py in Copy Files into en/parser/nltk_lite/contrib/toolbox */,
+				4F060984151B87AE004C2C80 /* lexicon.py in Copy Files into en/parser/nltk_lite/contrib/toolbox */,
+				4F060985151B87AE004C2C80 /* settings.py in Copy Files into en/parser/nltk_lite/contrib/toolbox */,
+				4F060986151B87AE004C2C80 /* text.py in Copy Files into en/parser/nltk_lite/contrib/toolbox */,
+				4F060987151B87AE004C2C80 /* utilities.py in Copy Files into en/parser/nltk_lite/contrib/toolbox */,
+			);
+			name = "Copy Files into en/parser/nltk_lite/contrib/toolbox";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F06099B151B87E1004C2C80 /* Copy Files into en/parser/nltk_lite/draw */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/parser/nltk_lite/draw;
+			dstSubfolderSpec = 7;
+			files = (
+				4F06099C151B87FB004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/draw */,
+				4F06099D151B87FB004C2C80 /* cfg.py in Copy Files into en/parser/nltk_lite/draw */,
+				4F06099E151B87FB004C2C80 /* chart.py in Copy Files into en/parser/nltk_lite/draw */,
+				4F06099F151B87FB004C2C80 /* dispersion.py in Copy Files into en/parser/nltk_lite/draw */,
+				4F0609A0151B87FB004C2C80 /* plot.py in Copy Files into en/parser/nltk_lite/draw */,
+				4F0609A1151B87FB004C2C80 /* rdparser.py in Copy Files into en/parser/nltk_lite/draw */,
+				4F0609A2151B87FB004C2C80 /* srparser.py in Copy Files into en/parser/nltk_lite/draw */,
+				4F0609A3151B87FB004C2C80 /* tree.py in Copy Files into en/parser/nltk_lite/draw */,
+			);
+			name = "Copy Files into en/parser/nltk_lite/draw";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F0609A4151B8803004C2C80 /* Copy Files into en/parser/nltk_lite/etree */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/parser/nltk_lite/etree;
+			dstSubfolderSpec = 7;
+			files = (
+				4F0609A5151B8829004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/etree */,
+				4F0609A6151B8829004C2C80 /* ElementInclude.py in Copy Files into en/parser/nltk_lite/etree */,
+				4F0609A7151B8829004C2C80 /* ElementPath.py in Copy Files into en/parser/nltk_lite/etree */,
+				4F0609A8151B8829004C2C80 /* ElementTree.py in Copy Files into en/parser/nltk_lite/etree */,
+			);
+			name = "Copy Files into en/parser/nltk_lite/etree";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F0609A9151B8833004C2C80 /* Copy Files into en/parser/nltk_lite/misc */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/parser/nltk_lite/misc;
+			dstSubfolderSpec = 7;
+			files = (
+				4F0609AA151B8841004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/misc */,
+				4F0609AB151B8841004C2C80 /* sort.py in Copy Files into en/parser/nltk_lite/misc */,
+				4F0609AC151B8841004C2C80 /* wordfinder.py in Copy Files into en/parser/nltk_lite/misc */,
+			);
+			name = "Copy Files into en/parser/nltk_lite/misc";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F0609AD151B884A004C2C80 /* Copy Files into en/parser/nltk_lite/model */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/parser/nltk_lite/model;
+			dstSubfolderSpec = 7;
+			files = (
+				4F0609AE151B8861004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/model */,
+			);
+			name = "Copy Files into en/parser/nltk_lite/model";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F0609AF151B886C004C2C80 /* Copy Files into en/parser/nltk_lite/parse */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/parser/nltk_lite/parse;
+			dstSubfolderSpec = 7;
+			files = (
+				4F0609B0151B8891004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609B1151B8891004C2C80 /* __init__.pyc in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609B2151B8891004C2C80 /* category.py in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609B3151B8891004C2C80 /* cfg.py in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609B4151B8891004C2C80 /* cfg.pyc in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609B5151B8891004C2C80 /* chart.py in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609B6151B8891004C2C80 /* chart.pyc in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609B7151B8891004C2C80 /* chunk.py in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609B8151B8891004C2C80 /* chunk.pyc in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609B9151B8891004C2C80 /* featurechart.py in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609BA151B8891004C2C80 /* featurestructure.py in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609BB151B8891004C2C80 /* featurestructure.pyc in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609BC151B8891004C2C80 /* generate.py in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609BD151B8891004C2C80 /* grammarfile.py in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609BE151B8891004C2C80 /* pcfg.py in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609BF151B8891004C2C80 /* pcfg.pyc in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609C0151B8891004C2C80 /* pchart.py in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609C1151B8891004C2C80 /* rd.py in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609C2151B8891004C2C80 /* rd.pyc in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609C3151B8891004C2C80 /* sr.py in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609C4151B8891004C2C80 /* sr.pyc in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609C5151B8891004C2C80 /* tree.py in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609C6151B8891004C2C80 /* tree.pyc in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609C7151B8891004C2C80 /* treetransforms.py in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609C8151B8891004C2C80 /* viterbi.py in Copy Files into en/parser/nltk_lite/parse */,
+				4F0609C9151B8891004C2C80 /* viterbi.pyc in Copy Files into en/parser/nltk_lite/parse */,
+			);
+			name = "Copy Files into en/parser/nltk_lite/parse";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F0609CA151B8895004C2C80 /* Copy Files into en/parser/nltk_lite/semantics */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/parser/nltk_lite/semantics;
+			dstSubfolderSpec = 7;
+			files = (
+				4F0609CB151B88AE004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/semantics */,
+				4F0609CC151B88AE004C2C80 /* evaluate.py in Copy Files into en/parser/nltk_lite/semantics */,
+				4F0609CD151B88AE004C2C80 /* logic.py in Copy Files into en/parser/nltk_lite/semantics */,
+				4F0609CE151B88AE004C2C80 /* utilities.py in Copy Files into en/parser/nltk_lite/semantics */,
+			);
+			name = "Copy Files into en/parser/nltk_lite/semantics";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F0609CF151B88B8004C2C80 /* Copy Files into en/parser/nltk_lite/stem */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/parser/nltk_lite/stem;
+			dstSubfolderSpec = 7;
+			files = (
+				4F0609D0151B88CE004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/stem */,
+				4F0609D1151B88CE004C2C80 /* porter.py in Copy Files into en/parser/nltk_lite/stem */,
+				4F0609D2151B88CE004C2C80 /* regexp.py in Copy Files into en/parser/nltk_lite/stem */,
+			);
+			name = "Copy Files into en/parser/nltk_lite/stem";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F0609D3151B88D5004C2C80 /* Copy Files into en/parser/nltk_lite/tag */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/parser/nltk_lite/tag;
+			dstSubfolderSpec = 7;
+			files = (
+				4F0609D4151B88F2004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/tag */,
+				4F0609D5151B88F2004C2C80 /* brill.py in Copy Files into en/parser/nltk_lite/tag */,
+				4F0609D6151B88F2004C2C80 /* hmm.py in Copy Files into en/parser/nltk_lite/tag */,
+				4F0609D7151B88F2004C2C80 /* ngram.py in Copy Files into en/parser/nltk_lite/tag */,
+				4F0609D8151B88F2004C2C80 /* unigram.py in Copy Files into en/parser/nltk_lite/tag */,
+			);
+			name = "Copy Files into en/parser/nltk_lite/tag";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F0609D9151B88F9004C2C80 /* Copy Files into en/parser/nltk_lite/test */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/parser/nltk_lite/test;
+			dstSubfolderSpec = 7;
+			files = (
+				4F0609DA151B891D004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/test */,
+				4F0609DB151B891D004C2C80 /* doctest_driver.py in Copy Files into en/parser/nltk_lite/test */,
+			);
+			name = "Copy Files into en/parser/nltk_lite/test";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F0609DC151B8923004C2C80 /* Copy Files into en/parser/nltk_lite/tokenize */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/parser/nltk_lite/tokenize;
+			dstSubfolderSpec = 7;
+			files = (
+				4F0609DD151B893A004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/tokenize */,
+				4F0609DE151B893A004C2C80 /* __init__.pyc in Copy Files into en/parser/nltk_lite/tokenize */,
+				4F0609DF151B893A004C2C80 /* regexp.py in Copy Files into en/parser/nltk_lite/tokenize */,
+				4F0609E0151B893A004C2C80 /* regexp.pyc in Copy Files into en/parser/nltk_lite/tokenize */,
+				4F0609E1151B893A004C2C80 /* simple.py in Copy Files into en/parser/nltk_lite/tokenize */,
+				4F0609E2151B893A004C2C80 /* simple.pyc in Copy Files into en/parser/nltk_lite/tokenize */,
+			);
+			name = "Copy Files into en/parser/nltk_lite/tokenize";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F0609E3151B893F004C2C80 /* Copy Files into en/parser/nltk_lite/wordnet */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/parser/nltk_lite/wordnet;
+			dstSubfolderSpec = 7;
+			files = (
+				4F0609E4151B8951004C2C80 /* __init__.py in Copy Files into en/parser/nltk_lite/wordnet */,
+				4F0609E5151B8951004C2C80 /* concordance.py in Copy Files into en/parser/nltk_lite/wordnet */,
+				4F0609E6151B8951004C2C80 /* wntools.py in Copy Files into en/parser/nltk_lite/wordnet */,
+				4F0609E7151B8951004C2C80 /* wordnet.py in Copy Files into en/parser/nltk_lite/wordnet */,
+			);
+			name = "Copy Files into en/parser/nltk_lite/wordnet";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F0609E8151B8986004C2C80 /* Copy Files into en/spelling */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = en/spelling;
+			dstSubfolderSpec = 7;
+			files = (
+				4F0609E9151B89A7004C2C80 /* __init__.py in Copy Files into en/spelling */,
+				4F0609EA151B89A7004C2C80 /* __init__.pyc in Copy Files into en/spelling */,
+				4F0609EB151B89A7004C2C80 /* spelling.txt in Copy Files into en/spelling */,
+			);
+			name = "Copy Files into en/spelling";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F0609EC151B89B2004C2C80 /* Copy Files into en/verb */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/verb;
+			dstSubfolderSpec = 7;
+			files = (
+				4F0609ED151B89CE004C2C80 /* __init__.py in Copy Files into en/verb */,
+				4F0609EE151B89CE004C2C80 /* __init__.pyc in Copy Files into en/verb */,
+				4F0609EF151B89CE004C2C80 /* verb.txt in Copy Files into en/verb */,
+			);
+			name = "Copy Files into en/verb";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F0609F0151B89D3004C2C80 /* Copy Files into en/wordnet */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/wordnet;
+			dstSubfolderSpec = 7;
+			files = (
+				4F0609F1151B8A0E004C2C80 /* __init__.py in Copy Files into en/wordnet */,
+				4F0609F2151B8A0E004C2C80 /* __init__.pyc in Copy Files into en/wordnet */,
+				4F0609F3151B8A0E004C2C80 /* concordance.py in Copy Files into en/wordnet */,
+				4F0609F4151B8A0E004C2C80 /* LICENSE.txt in Copy Files into en/wordnet */,
+				4F0609F5151B8A0E004C2C80 /* PKG-INFO in Copy Files into en/wordnet */,
+				4F0609F6151B8A0E004C2C80 /* README.txt in Copy Files into en/wordnet */,
+				4F0609F7151B8A0E004C2C80 /* setup.py in Copy Files into en/wordnet */,
+				4F0609F8151B8A0E004C2C80 /* wntools.py in Copy Files into en/wordnet */,
+				4F0609F9151B8A0E004C2C80 /* wntools.pyc in Copy Files into en/wordnet */,
+				4F0609FA151B8A0E004C2C80 /* wordnet.py in Copy Files into en/wordnet */,
+				4F0609FB151B8A0E004C2C80 /* wordnet.pyc in Copy Files into en/wordnet */,
+			);
+			name = "Copy Files into en/wordnet";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F0609FC151B8A12004C2C80 /* Copy Files into en/wordnet/wordnet2 */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/wordnet/wordnet2;
+			dstSubfolderSpec = 7;
+			files = (
+				4F0609FD151B8A4C004C2C80 /* acinclude.m4 in Copy Files into en/wordnet/wordnet2 */,
+				4F0609FE151B8A4C004C2C80 /* aclocal.m4 in Copy Files into en/wordnet/wordnet2 */,
+				4F0609FF151B8A4C004C2C80 /* AUTHORS in Copy Files into en/wordnet/wordnet2 */,
+				4F060A00151B8A4C004C2C80 /* ChangeLog in Copy Files into en/wordnet/wordnet2 */,
+				4F060A01151B8A4C004C2C80 /* compile in Copy Files into en/wordnet/wordnet2 */,
+				4F060A02151B8A4C004C2C80 /* config.h.in in Copy Files into en/wordnet/wordnet2 */,
+				4F060A03151B8A4C004C2C80 /* configure in Copy Files into en/wordnet/wordnet2 */,
+				4F060A04151B8A4C004C2C80 /* configure.ac in Copy Files into en/wordnet/wordnet2 */,
+				4F060A05151B8A4C004C2C80 /* COPYING in Copy Files into en/wordnet/wordnet2 */,
+				4F060A06151B8A4C004C2C80 /* depcomp in Copy Files into en/wordnet/wordnet2 */,
+				4F060A07151B8A4C004C2C80 /* INSTALL in Copy Files into en/wordnet/wordnet2 */,
+				4F060A08151B8A4C004C2C80 /* install-sh in Copy Files into en/wordnet/wordnet2 */,
+				4F060A09151B8A4C004C2C80 /* Makefile.am in Copy Files into en/wordnet/wordnet2 */,
+				4F060A0A151B8A4C004C2C80 /* Makefile.in in Copy Files into en/wordnet/wordnet2 */,
+				4F060A0B151B8A4C004C2C80 /* missing in Copy Files into en/wordnet/wordnet2 */,
+				4F060A0C151B8A4C004C2C80 /* NEWS in Copy Files into en/wordnet/wordnet2 */,
+				4F060A0D151B8A4C004C2C80 /* README in Copy Files into en/wordnet/wordnet2 */,
+			);
+			name = "Copy Files into en/wordnet/wordnet2";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F060A0E151B8A55004C2C80 /* Copy Files into en/wordnet/wordnet2/dict */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/wordnet/wordnet2/dict;
+			dstSubfolderSpec = 7;
+			files = (
+				4F060A0F151B8A6D004C2C80 /* adj.exc in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A10151B8A6D004C2C80 /* adv.exc in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A11151B8A6D004C2C80 /* cntlist in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A12151B8A6D004C2C80 /* cntlist.rev in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A13151B8A6D004C2C80 /* data.adj in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A14151B8A6D004C2C80 /* data.adv in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A15151B8A6D004C2C80 /* data.noun in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A16151B8A6D004C2C80 /* data.verb in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A17151B8A6D004C2C80 /* frames.vrb in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A18151B8A6D004C2C80 /* index.adj in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A19151B8A6D004C2C80 /* index.adv in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A1A151B8A6D004C2C80 /* index.noun in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A1B151B8A6D004C2C80 /* index.sense in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A1C151B8A6D004C2C80 /* index.verb in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A1D151B8A6D004C2C80 /* lexnames in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A1E151B8A6D004C2C80 /* log.grind.2.1 in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A1F151B8A6D004C2C80 /* Makefile in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A20151B8A6D004C2C80 /* Makefile.am in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A21151B8A6D004C2C80 /* Makefile.in in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A22151B8A6D004C2C80 /* noun.exc in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A23151B8A6D004C2C80 /* sentidx.vrb in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A24151B8A6D004C2C80 /* sents.vrb in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A25151B8A6D004C2C80 /* verb.exc in Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A26151B8A6D004C2C80 /* verb.Framestext in Copy Files into en/wordnet/wordnet2/dict */,
+			);
+			name = "Copy Files into en/wordnet/wordnet2/dict";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F060A27151B8A7A004C2C80 /* Copy Files into en/wordnet/wordnet2/include */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/wordnet/wordnet2/include;
+			dstSubfolderSpec = 7;
+			files = (
+				4F060A28151B8A96004C2C80 /* Makefile in Copy Files into en/wordnet/wordnet2/include */,
+				4F060A29151B8A96004C2C80 /* Makefile.am in Copy Files into en/wordnet/wordnet2/include */,
+				4F060A2A151B8A96004C2C80 /* Makefile.in in Copy Files into en/wordnet/wordnet2/include */,
+				4F060A2B151B8A96004C2C80 /* wn.h in Copy Files into en/wordnet/wordnet2/include */,
+				4F060A2C151B8A96004C2C80 /* wngrind.h in Copy Files into en/wordnet/wordnet2/include */,
+			);
+			name = "Copy Files into en/wordnet/wordnet2/include";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F060A2D151B8AAC004C2C80 /* Copy Files into en/wordnet/wordnet2/lib */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/wordnet/wordnet2/lib;
+			dstSubfolderSpec = 7;
+			files = (
+				4F060A2E151B8ADE004C2C80 /* binsrch.c in Copy Files into en/wordnet/wordnet2/lib */,
+				4F060A2F151B8ADE004C2C80 /* Makefile.am in Copy Files into en/wordnet/wordnet2/lib */,
+				4F060A30151B8ADE004C2C80 /* Makefile.in in Copy Files into en/wordnet/wordnet2/lib */,
+				4F060A31151B8ADE004C2C80 /* morph.c in Copy Files into en/wordnet/wordnet2/lib */,
+				4F060A32151B8ADE004C2C80 /* search.c in Copy Files into en/wordnet/wordnet2/lib */,
+				4F060A33151B8ADE004C2C80 /* wnglobal.c in Copy Files into en/wordnet/wordnet2/lib */,
+				4F060A34151B8ADE004C2C80 /* wnhelp.c in Copy Files into en/wordnet/wordnet2/lib */,
+				4F060A35151B8ADE004C2C80 /* wnrtl.c in Copy Files into en/wordnet/wordnet2/lib */,
+				4F060A36151B8ADE004C2C80 /* wnutil.c in Copy Files into en/wordnet/wordnet2/lib */,
+			);
+			name = "Copy Files into en/wordnet/wordnet2/lib";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F060A37151B8AE2004C2C80 /* Copy Files into en/wordnet/wordnet2/lib/wnres */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/wordnet/wordnet2/lib/wnres;
+			dstSubfolderSpec = 7;
+			files = (
+				4F060A38151B8B0B004C2C80 /* license.txt in Copy Files into en/wordnet/wordnet2/lib/wnres */,
+				4F060A39151B8B0B004C2C80 /* Makefile.am in Copy Files into en/wordnet/wordnet2/lib/wnres */,
+				4F060A3A151B8B0B004C2C80 /* Makefile.in in Copy Files into en/wordnet/wordnet2/lib/wnres */,
+				4F060A3B151B8B0B004C2C80 /* wn.xbm in Copy Files into en/wordnet/wordnet2/lib/wnres */,
+				4F060A3C151B8B0B004C2C80 /* wnb.man in Copy Files into en/wordnet/wordnet2/lib/wnres */,
+				4F060A3D151B8B0B004C2C80 /* wngloss.man in Copy Files into en/wordnet/wordnet2/lib/wnres */,
+			);
+			name = "Copy Files into en/wordnet/wordnet2/lib/wnres";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F060A3E151B8B18004C2C80 /* Copy Files into en/wordnet/wordnet2/src */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = en/wordnet/wordnet2/src;
+			dstSubfolderSpec = 7;
+			files = (
+				4F060A3F151B8B33004C2C80 /* Makefile.am in Copy Files into en/wordnet/wordnet2/src */,
+				4F060A40151B8B33004C2C80 /* Makefile.in in Copy Files into en/wordnet/wordnet2/src */,
+				4F060A41151B8B33004C2C80 /* stubs.c in Copy Files into en/wordnet/wordnet2/src */,
+				4F060A42151B8B33004C2C80 /* tkAppInit.c in Copy Files into en/wordnet/wordnet2/src */,
+				4F060A43151B8B33004C2C80 /* wn.c in Copy Files into en/wordnet/wordnet2/src */,
+				4F060A44151B8B33004C2C80 /* wnb in Copy Files into en/wordnet/wordnet2/src */,
+			);
+			name = "Copy Files into en/wordnet/wordnet2/src";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4F5B5C11151B7BB000A61F54 /* emotion.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = emotion.py; sourceTree = "<group>"; };
+		4F5B5C12151B7BB000A61F54 /* emotion.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = emotion.pyc; sourceTree = "<group>"; };
+		4F5B5C14151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5C15151B7BB000A61F54 /* __init__.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = __init__.pyc; sourceTree = "<group>"; };
+		4F5B5C16151B7BB000A61F54 /* _en-test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "_en-test.py"; sourceTree = "<group>"; };
+		4F5B5C17151B7BB000A61F54 /* article.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = article.py; sourceTree = "<group>"; };
+		4F5B5C18151B7BB000A61F54 /* article.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = article.pyc; sourceTree = "<group>"; };
+		4F5B5C19151B7BB000A61F54 /* commonsense.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = commonsense.py; sourceTree = "<group>"; };
+		4F5B5C1A151B7BB000A61F54 /* commonsense.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = commonsense.pyc; sourceTree = "<group>"; };
+		4F5B5C1B151B7BB000A61F54 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		4F5B5C1C151B7BB000A61F54 /* numeral.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = numeral.py; sourceTree = "<group>"; };
+		4F5B5C1D151B7BB000A61F54 /* numeral.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = numeral.pyc; sourceTree = "<group>"; };
+		4F5B5C1F151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5C20151B7BB000A61F54 /* __init__.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = __init__.pyc; sourceTree = "<group>"; };
+		4F5B5C21151B7BB000A61F54 /* ogden_2000.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ogden_2000.txt; sourceTree = "<group>"; };
+		4F5B5C22151B7BB000A61F54 /* ordinal.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ordinal.py; sourceTree = "<group>"; };
+		4F5B5C23151B7BB000A61F54 /* ordinal.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = ordinal.pyc; sourceTree = "<group>"; };
+		4F5B5C25151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5C26151B7BB000A61F54 /* __init__.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = __init__.pyc; sourceTree = "<group>"; };
+		4F5B5C27151B7BB000A61F54 /* Brill_lexicon */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Brill_lexicon; sourceTree = "<group>"; };
+		4F5B5C28151B7BB000A61F54 /* Brill_license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Brill_license.txt; sourceTree = "<group>"; };
+		4F5B5C2A151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5C2B151B7BB000A61F54 /* __init__.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = __init__.pyc; sourceTree = "<group>"; };
+		4F5B5C2D151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5C2E151B7BB000A61F54 /* eliza.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = eliza.py; sourceTree = "<group>"; };
+		4F5B5C2F151B7BB000A61F54 /* iesha.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = iesha.py; sourceTree = "<group>"; };
+		4F5B5C30151B7BB000A61F54 /* rude.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = rude.py; sourceTree = "<group>"; };
+		4F5B5C31151B7BB000A61F54 /* zen.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = zen.py; sourceTree = "<group>"; };
+		4F5B5C33151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5C34151B7BB000A61F54 /* em.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = em.py; sourceTree = "<group>"; };
+		4F5B5C35151B7BB000A61F54 /* gaac.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gaac.py; sourceTree = "<group>"; };
+		4F5B5C36151B7BB000A61F54 /* kmeans.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = kmeans.py; sourceTree = "<group>"; };
+		4F5B5C38151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5C39151B7BB000A61F54 /* combined.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = combined.py; sourceTree = "<group>"; };
+		4F5B5C3A151B7BB000A61F54 /* concord.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = concord.py; sourceTree = "<group>"; };
+		4F5B5C3B151B7BB000A61F54 /* featuredemo.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = featuredemo.py; sourceTree = "<group>"; };
+		4F5B5C3C151B7BB000A61F54 /* featurelite.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = featurelite.py; sourceTree = "<group>"; };
+		4F5B5C3D151B7BB000A61F54 /* fsa.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = fsa.py; sourceTree = "<group>"; };
+		4F5B5C3E151B7BB000A61F54 /* hole.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = hole.py; sourceTree = "<group>"; };
+		4F5B5C3F151B7BB000A61F54 /* kimmo.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = kimmo.py; sourceTree = "<group>"; };
+		4F5B5C40151B7BB000A61F54 /* lambda.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = lambda.py; sourceTree = "<group>"; };
+		4F5B5C41151B7BB000A61F54 /* marshal.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = marshal.py; sourceTree = "<group>"; };
+		4F5B5C42151B7BB000A61F54 /* marshalbrill.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = marshalbrill.py; sourceTree = "<group>"; };
+		4F5B5C43151B7BB000A61F54 /* paradigm.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = paradigm.py; sourceTree = "<group>"; };
+		4F5B5C44151B7BB000A61F54 /* paradigmquery.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = paradigmquery.py; sourceTree = "<group>"; };
+		4F5B5C46151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5C47151B7BB000A61F54 /* data.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = data.py; sourceTree = "<group>"; };
+		4F5B5C48151B7BB000A61F54 /* errors.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = errors.py; sourceTree = "<group>"; };
+		4F5B5C49151B7BB000A61F54 /* lexicon.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = lexicon.py; sourceTree = "<group>"; };
+		4F5B5C4A151B7BB000A61F54 /* settings.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = settings.py; sourceTree = "<group>"; };
+		4F5B5C4B151B7BB000A61F54 /* text.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = text.py; sourceTree = "<group>"; };
+		4F5B5C4C151B7BB000A61F54 /* utilities.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = utilities.py; sourceTree = "<group>"; };
+		4F5B5C4E151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5C4F151B7BB000A61F54 /* brown.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = brown.py; sourceTree = "<group>"; };
+		4F5B5C50151B7BB000A61F54 /* cmudict.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = cmudict.py; sourceTree = "<group>"; };
+		4F5B5C51151B7BB000A61F54 /* conll2000.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = conll2000.py; sourceTree = "<group>"; };
+		4F5B5C52151B7BB000A61F54 /* genesis.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = genesis.py; sourceTree = "<group>"; };
+		4F5B5C53151B7BB000A61F54 /* gutenberg.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gutenberg.py; sourceTree = "<group>"; };
+		4F5B5C54151B7BB000A61F54 /* ieer.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ieer.py; sourceTree = "<group>"; };
+		4F5B5C55151B7BB000A61F54 /* inaugural.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = inaugural.py; sourceTree = "<group>"; };
+		4F5B5C56151B7BB000A61F54 /* names.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = names.py; sourceTree = "<group>"; };
+		4F5B5C57151B7BB000A61F54 /* ppattach.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ppattach.py; sourceTree = "<group>"; };
+		4F5B5C58151B7BB000A61F54 /* senseval.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = senseval.py; sourceTree = "<group>"; };
+		4F5B5C59151B7BB000A61F54 /* sinica_treebank.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = sinica_treebank.py; sourceTree = "<group>"; };
+		4F5B5C5A151B7BB000A61F54 /* state_union.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = state_union.py; sourceTree = "<group>"; };
+		4F5B5C5B151B7BB000A61F54 /* stopwords.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = stopwords.py; sourceTree = "<group>"; };
+		4F5B5C5C151B7BB000A61F54 /* timit.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = timit.py; sourceTree = "<group>"; };
+		4F5B5C5D151B7BB000A61F54 /* toolbox.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = toolbox.py; sourceTree = "<group>"; };
+		4F5B5C5E151B7BB000A61F54 /* treebank.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = treebank.py; sourceTree = "<group>"; };
+		4F5B5C5F151B7BB000A61F54 /* words.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = words.py; sourceTree = "<group>"; };
+		4F5B5C60151B7BB000A61F54 /* ycoe.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ycoe.py; sourceTree = "<group>"; };
+		4F5B5C62151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5C63151B7BB000A61F54 /* cfg.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = cfg.py; sourceTree = "<group>"; };
+		4F5B5C64151B7BB000A61F54 /* chart.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = chart.py; sourceTree = "<group>"; };
+		4F5B5C65151B7BB000A61F54 /* dispersion.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = dispersion.py; sourceTree = "<group>"; };
+		4F5B5C66151B7BB000A61F54 /* plot.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = plot.py; sourceTree = "<group>"; };
+		4F5B5C67151B7BB000A61F54 /* rdparser.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = rdparser.py; sourceTree = "<group>"; };
+		4F5B5C68151B7BB000A61F54 /* srparser.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = srparser.py; sourceTree = "<group>"; };
+		4F5B5C69151B7BB000A61F54 /* tree.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = tree.py; sourceTree = "<group>"; };
+		4F5B5C6B151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5C6C151B7BB000A61F54 /* ElementInclude.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ElementInclude.py; sourceTree = "<group>"; };
+		4F5B5C6D151B7BB000A61F54 /* ElementPath.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ElementPath.py; sourceTree = "<group>"; };
+		4F5B5C6E151B7BB000A61F54 /* ElementTree.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ElementTree.py; sourceTree = "<group>"; };
+		4F5B5C6F151B7BB000A61F54 /* evaluate.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = evaluate.py; sourceTree = "<group>"; };
+		4F5B5C70151B7BB000A61F54 /* INSTALL.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INSTALL.TXT; sourceTree = "<group>"; };
+		4F5B5C71151B7BB000A61F54 /* LICENSE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = "<group>"; };
+		4F5B5C73151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5C74151B7BB000A61F54 /* sort.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = sort.py; sourceTree = "<group>"; };
+		4F5B5C75151B7BB000A61F54 /* wordfinder.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = wordfinder.py; sourceTree = "<group>"; };
+		4F5B5C77151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5C79151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5C7A151B7BB000A61F54 /* __init__.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = __init__.pyc; sourceTree = "<group>"; };
+		4F5B5C7B151B7BB000A61F54 /* category.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = category.py; sourceTree = "<group>"; };
+		4F5B5C7C151B7BB000A61F54 /* cfg.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = cfg.py; sourceTree = "<group>"; };
+		4F5B5C7D151B7BB000A61F54 /* cfg.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = cfg.pyc; sourceTree = "<group>"; };
+		4F5B5C7E151B7BB000A61F54 /* chart.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = chart.py; sourceTree = "<group>"; };
+		4F5B5C7F151B7BB000A61F54 /* chart.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = chart.pyc; sourceTree = "<group>"; };
+		4F5B5C80151B7BB000A61F54 /* chunk.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = chunk.py; sourceTree = "<group>"; };
+		4F5B5C81151B7BB000A61F54 /* chunk.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = chunk.pyc; sourceTree = "<group>"; };
+		4F5B5C82151B7BB000A61F54 /* featurechart.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = featurechart.py; sourceTree = "<group>"; };
+		4F5B5C83151B7BB000A61F54 /* featurestructure.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = featurestructure.py; sourceTree = "<group>"; };
+		4F5B5C84151B7BB000A61F54 /* featurestructure.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = featurestructure.pyc; sourceTree = "<group>"; };
+		4F5B5C85151B7BB000A61F54 /* generate.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = generate.py; sourceTree = "<group>"; };
+		4F5B5C86151B7BB000A61F54 /* grammarfile.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = grammarfile.py; sourceTree = "<group>"; };
+		4F5B5C87151B7BB000A61F54 /* pcfg.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = pcfg.py; sourceTree = "<group>"; };
+		4F5B5C88151B7BB000A61F54 /* pcfg.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = pcfg.pyc; sourceTree = "<group>"; };
+		4F5B5C89151B7BB000A61F54 /* pchart.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = pchart.py; sourceTree = "<group>"; };
+		4F5B5C8A151B7BB000A61F54 /* rd.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = rd.py; sourceTree = "<group>"; };
+		4F5B5C8B151B7BB000A61F54 /* rd.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = rd.pyc; sourceTree = "<group>"; };
+		4F5B5C8C151B7BB000A61F54 /* sr.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = sr.py; sourceTree = "<group>"; };
+		4F5B5C8D151B7BB000A61F54 /* sr.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = sr.pyc; sourceTree = "<group>"; };
+		4F5B5C8E151B7BB000A61F54 /* tree.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = tree.py; sourceTree = "<group>"; };
+		4F5B5C8F151B7BB000A61F54 /* tree.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = tree.pyc; sourceTree = "<group>"; };
+		4F5B5C90151B7BB000A61F54 /* treetransforms.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = treetransforms.py; sourceTree = "<group>"; };
+		4F5B5C91151B7BB000A61F54 /* viterbi.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = viterbi.py; sourceTree = "<group>"; };
+		4F5B5C92151B7BB000A61F54 /* viterbi.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = viterbi.pyc; sourceTree = "<group>"; };
+		4F5B5C93151B7BB000A61F54 /* PKG-INFO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "PKG-INFO"; sourceTree = "<group>"; };
+		4F5B5C94151B7BB000A61F54 /* probability.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = probability.py; sourceTree = "<group>"; };
+		4F5B5C95151B7BB000A61F54 /* probability.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = probability.pyc; sourceTree = "<group>"; };
+		4F5B5C96151B7BB000A61F54 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		4F5B5C98151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5C99151B7BB000A61F54 /* evaluate.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = evaluate.py; sourceTree = "<group>"; };
+		4F5B5C9A151B7BB000A61F54 /* logic.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = logic.py; sourceTree = "<group>"; };
+		4F5B5C9B151B7BB000A61F54 /* utilities.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = utilities.py; sourceTree = "<group>"; };
+		4F5B5C9C151B7BB000A61F54 /* setup.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = setup.py; sourceTree = "<group>"; };
+		4F5B5C9E151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5C9F151B7BB000A61F54 /* porter.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = porter.py; sourceTree = "<group>"; };
+		4F5B5CA0151B7BB000A61F54 /* regexp.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = regexp.py; sourceTree = "<group>"; };
+		4F5B5CA2151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5CA3151B7BB000A61F54 /* brill.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = brill.py; sourceTree = "<group>"; };
+		4F5B5CA4151B7BB000A61F54 /* hmm.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = hmm.py; sourceTree = "<group>"; };
+		4F5B5CA5151B7BB000A61F54 /* ngram.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ngram.py; sourceTree = "<group>"; };
+		4F5B5CA6151B7BB000A61F54 /* unigram.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = unigram.py; sourceTree = "<group>"; };
+		4F5B5CA8151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5CA9151B7BB000A61F54 /* doctest_driver.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = doctest_driver.py; sourceTree = "<group>"; };
+		4F5B5CAB151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5CAC151B7BB000A61F54 /* __init__.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = __init__.pyc; sourceTree = "<group>"; };
+		4F5B5CAD151B7BB000A61F54 /* regexp.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = regexp.py; sourceTree = "<group>"; };
+		4F5B5CAE151B7BB000A61F54 /* regexp.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = regexp.pyc; sourceTree = "<group>"; };
+		4F5B5CAF151B7BB000A61F54 /* simple.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = simple.py; sourceTree = "<group>"; };
+		4F5B5CB0151B7BB000A61F54 /* simple.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = simple.pyc; sourceTree = "<group>"; };
+		4F5B5CB1151B7BB000A61F54 /* utilities.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = utilities.py; sourceTree = "<group>"; };
+		4F5B5CB3151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5CB4151B7BB000A61F54 /* concordance.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = concordance.py; sourceTree = "<group>"; };
+		4F5B5CB5151B7BB000A61F54 /* wntools.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = wntools.py; sourceTree = "<group>"; };
+		4F5B5CB6151B7BB000A61F54 /* wordnet.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = wordnet.py; sourceTree = "<group>"; };
+		4F5B5CB7151B7BB000A61F54 /* plural.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = plural.py; sourceTree = "<group>"; };
+		4F5B5CB8151B7BB000A61F54 /* plural.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = plural.pyc; sourceTree = "<group>"; };
+		4F5B5CB9151B7BB000A61F54 /* quantify.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = quantify.py; sourceTree = "<group>"; };
+		4F5B5CBA151B7BB000A61F54 /* quantify.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = quantify.pyc; sourceTree = "<group>"; };
+		4F5B5CBB151B7BB000A61F54 /* rid.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = rid.py; sourceTree = "<group>"; };
+		4F5B5CBC151B7BB000A61F54 /* rid.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = rid.pyc; sourceTree = "<group>"; };
+		4F5B5CBD151B7BB000A61F54 /* singular.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = singular.py; sourceTree = "<group>"; };
+		4F5B5CBE151B7BB000A61F54 /* singular.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = singular.pyc; sourceTree = "<group>"; };
+		4F5B5CC0151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5CC1151B7BB000A61F54 /* __init__.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = __init__.pyc; sourceTree = "<group>"; };
+		4F5B5CC2151B7BB000A61F54 /* spelling.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spelling.txt; sourceTree = "<group>"; };
+		4F5B5CC3151B7BB000A61F54 /* tags.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = tags.py; sourceTree = "<group>"; };
+		4F5B5CC4151B7BB000A61F54 /* tags.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = tags.pyc; sourceTree = "<group>"; };
+		4F5B5CC6151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5CC7151B7BB000A61F54 /* __init__.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = __init__.pyc; sourceTree = "<group>"; };
+		4F5B5CC8151B7BB000A61F54 /* verb.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = verb.txt; sourceTree = "<group>"; };
+		4F5B5CCA151B7BB000A61F54 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		4F5B5CCB151B7BB000A61F54 /* __init__.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = __init__.pyc; sourceTree = "<group>"; };
+		4F5B5CCC151B7BB000A61F54 /* concordance.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = concordance.py; sourceTree = "<group>"; };
+		4F5B5CCE151B7BB000A61F54 /* contents.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = contents.html; sourceTree = "<group>"; };
+		4F5B5CCF151B7BB000A61F54 /* contributors.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = contributors.html; sourceTree = "<group>"; };
+		4F5B5CD0151B7BB000A61F54 /* download.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = download.html; sourceTree = "<group>"; };
+		4F5B5CD1151B7BB000A61F54 /* examples.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = examples.html; sourceTree = "<group>"; };
+		4F5B5CD2151B7BB000A61F54 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		4F5B5CD3151B7BB000A61F54 /* installation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = installation.html; sourceTree = "<group>"; };
+		4F5B5CD4151B7BB000A61F54 /* license.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = license.html; sourceTree = "<group>"; };
+		4F5B5CD5151B7BB000A61F54 /* nav.html.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = nav.html.inc; sourceTree = "<group>"; };
+		4F5B5CD6151B7BB000A61F54 /* release-notes.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "release-notes.html"; sourceTree = "<group>"; };
+		4F5B5CD7151B7BB000A61F54 /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		4F5B5CD8151B7BB000A61F54 /* styles.css.prefix */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = styles.css.prefix; sourceTree = "<group>"; };
+		4F5B5CDA151B7BB000A61F54 /* build.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = build.xml; sourceTree = "<group>"; };
+		4F5B5CDB151B7BB000A61F54 /* contributors-src.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "contributors-src.xml"; sourceTree = "<group>"; };
+		4F5B5CDC151B7BB000A61F54 /* contributors.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = contributors.xml; sourceTree = "<group>"; };
+		4F5B5CDD151B7BB000A61F54 /* download.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = download.xml; sourceTree = "<group>"; };
+		4F5B5CDE151B7BB000A61F54 /* examples.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = examples.xml; sourceTree = "<group>"; };
+		4F5B5CDF151B7BB000A61F54 /* format-contributors.xsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "format-contributors.xsl"; sourceTree = "<group>"; };
+		4F5B5CE0151B7BB000A61F54 /* index.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = index.xml; sourceTree = "<group>"; };
+		4F5B5CE1151B7BB000A61F54 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
+		4F5B5CE2151B7BB000A61F54 /* license.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = license.xml; sourceTree = "<group>"; };
+		4F5B5CE3151B7BB000A61F54 /* make-css-prefix.xsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "make-css-prefix.xsl"; sourceTree = "<group>"; };
+		4F5B5CE4151B7BB000A61F54 /* make-navigation.xsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "make-navigation.xsl"; sourceTree = "<group>"; };
+		4F5B5CE5151B7BB000A61F54 /* publish.xsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = publish.xsl; sourceTree = "<group>"; };
+		4F5B5CE6151B7BB000A61F54 /* release-notes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "release-notes.xml"; sourceTree = "<group>"; };
+		4F5B5CE7151B7BB000A61F54 /* requirements.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = requirements.xml; sourceTree = "<group>"; };
+		4F5B5CE8151B7BB000A61F54 /* schemas.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = schemas.xml; sourceTree = "<group>"; };
+		4F5B5CE9151B7BB000A61F54 /* styles.in.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.in.css; sourceTree = "<group>"; };
+		4F5B5CEA151B7BB000A61F54 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		4F5B5CEB151B7BB000A61F54 /* PKG-INFO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "PKG-INFO"; sourceTree = "<group>"; };
+		4F5B5CEC151B7BB000A61F54 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		4F5B5CED151B7BB000A61F54 /* setup.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = setup.py; sourceTree = "<group>"; };
+		4F5B5CEE151B7BB000A61F54 /* wntools.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = wntools.py; sourceTree = "<group>"; };
+		4F5B5CEF151B7BB000A61F54 /* wntools.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = wntools.pyc; sourceTree = "<group>"; };
+		4F5B5CF0151B7BB000A61F54 /* wordnet.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = wordnet.py; sourceTree = "<group>"; };
+		4F5B5CF1151B7BB000A61F54 /* wordnet.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = wordnet.pyc; sourceTree = "<group>"; };
+		4F5B5CF3151B7BB000A61F54 /* acinclude.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acinclude.m4; sourceTree = "<group>"; };
+		4F5B5CF4151B7BB000A61F54 /* aclocal.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aclocal.m4; sourceTree = "<group>"; };
+		4F5B5CF5151B7BB000A61F54 /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
+		4F5B5CF6151B7BB000A61F54 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		4F5B5CF7151B7BB000A61F54 /* compile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = compile; sourceTree = "<group>"; };
+		4F5B5CF8151B7BB000A61F54 /* config.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.h.in; sourceTree = "<group>"; };
+		4F5B5CF9151B7BB000A61F54 /* configure */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
+		4F5B5CFA151B7BB000A61F54 /* configure.ac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = configure.ac; sourceTree = "<group>"; };
+		4F5B5CFB151B7BB000A61F54 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		4F5B5CFC151B7BB000A61F54 /* depcomp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = depcomp; sourceTree = "<group>"; };
+		4F5B5CFE151B7BB000A61F54 /* adj.exc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = adj.exc; sourceTree = "<group>"; };
+		4F5B5CFF151B7BB000A61F54 /* adv.exc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = adv.exc; sourceTree = "<group>"; };
+		4F5B5D00151B7BB000A61F54 /* cntlist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cntlist; sourceTree = "<group>"; };
+		4F5B5D01151B7BB000A61F54 /* cntlist.rev */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cntlist.rev; sourceTree = "<group>"; };
+		4F5B5D02151B7BB000A61F54 /* data.adj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.adj; sourceTree = "<group>"; };
+		4F5B5D03151B7BB000A61F54 /* data.adv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.adv; sourceTree = "<group>"; };
+		4F5B5D04151B7BB000A61F54 /* data.noun */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.noun; sourceTree = "<group>"; };
+		4F5B5D05151B7BB000A61F54 /* data.verb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.verb; sourceTree = "<group>"; };
+		4F5B5D06151B7BB000A61F54 /* frames.vrb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frames.vrb; sourceTree = "<group>"; };
+		4F5B5D07151B7BB000A61F54 /* index.adj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.adj; sourceTree = "<group>"; };
+		4F5B5D08151B7BB000A61F54 /* index.adv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.adv; sourceTree = "<group>"; };
+		4F5B5D09151B7BB000A61F54 /* index.noun */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.noun; sourceTree = "<group>"; };
+		4F5B5D0A151B7BB000A61F54 /* index.sense */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.sense; sourceTree = "<group>"; };
+		4F5B5D0B151B7BB000A61F54 /* index.verb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.verb; sourceTree = "<group>"; };
+		4F5B5D0C151B7BB000A61F54 /* lexnames */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lexnames; sourceTree = "<group>"; };
+		4F5B5D0D151B7BB000A61F54 /* log.grind.2.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = log.grind.2.1; sourceTree = "<group>"; };
+		4F5B5D0E151B7BB000A61F54 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		4F5B5D0F151B7BB000A61F54 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		4F5B5D10151B7BB000A61F54 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		4F5B5D11151B7BB000A61F54 /* noun.exc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = noun.exc; sourceTree = "<group>"; };
+		4F5B5D12151B7BB000A61F54 /* sentidx.vrb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sentidx.vrb; sourceTree = "<group>"; };
+		4F5B5D13151B7BB000A61F54 /* sents.vrb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sents.vrb; sourceTree = "<group>"; };
+		4F5B5D14151B7BB000A61F54 /* verb.exc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = verb.exc; sourceTree = "<group>"; };
+		4F5B5D15151B7BB000A61F54 /* verb.Framestext */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = verb.Framestext; sourceTree = "<group>"; };
+		4F5B5D18151B7BB000A61F54 /* binsrch.3WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = binsrch.3WN.html; sourceTree = "<group>"; };
+		4F5B5D19151B7BB000A61F54 /* cntlist.5WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = cntlist.5WN.html; sourceTree = "<group>"; };
+		4F5B5D1A151B7BB000A61F54 /* grind.1WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = grind.1WN.html; sourceTree = "<group>"; };
+		4F5B5D1B151B7BB000A61F54 /* lexnames.5WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = lexnames.5WN.html; sourceTree = "<group>"; };
+		4F5B5D1C151B7BB000A61F54 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		4F5B5D1D151B7BB000A61F54 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		4F5B5D1E151B7BB000A61F54 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		4F5B5D1F151B7BB000A61F54 /* morph.3WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = morph.3WN.html; sourceTree = "<group>"; };
+		4F5B5D20151B7BB000A61F54 /* morphy.7WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = morphy.7WN.html; sourceTree = "<group>"; };
+		4F5B5D21151B7BB000A61F54 /* senseidx.5WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = senseidx.5WN.html; sourceTree = "<group>"; };
+		4F5B5D22151B7BB000A61F54 /* uniqbeg.7WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = uniqbeg.7WN.html; sourceTree = "<group>"; };
+		4F5B5D23151B7BB000A61F54 /* wn.1WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wn.1WN.html; sourceTree = "<group>"; };
+		4F5B5D24151B7BB000A61F54 /* wnb.1WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wnb.1WN.html; sourceTree = "<group>"; };
+		4F5B5D25151B7BB000A61F54 /* wndb.5WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wndb.5WN.html; sourceTree = "<group>"; };
+		4F5B5D26151B7BB000A61F54 /* wngloss.7WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wngloss.7WN.html; sourceTree = "<group>"; };
+		4F5B5D27151B7BB000A61F54 /* wngroups.7WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wngroups.7WN.html; sourceTree = "<group>"; };
+		4F5B5D28151B7BB000A61F54 /* wninput.5WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wninput.5WN.html; sourceTree = "<group>"; };
+		4F5B5D29151B7BB000A61F54 /* wnintro.1WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wnintro.1WN.html; sourceTree = "<group>"; };
+		4F5B5D2A151B7BB000A61F54 /* wnintro.3WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wnintro.3WN.html; sourceTree = "<group>"; };
+		4F5B5D2B151B7BB000A61F54 /* wnintro.5WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wnintro.5WN.html; sourceTree = "<group>"; };
+		4F5B5D2C151B7BB000A61F54 /* wnintro.7WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wnintro.7WN.html; sourceTree = "<group>"; };
+		4F5B5D2D151B7BB000A61F54 /* wnlicens.7WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wnlicens.7WN.html; sourceTree = "<group>"; };
+		4F5B5D2E151B7BB000A61F54 /* wnpkgs.7WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wnpkgs.7WN.html; sourceTree = "<group>"; };
+		4F5B5D2F151B7BB000A61F54 /* wnsearch.3WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wnsearch.3WN.html; sourceTree = "<group>"; };
+		4F5B5D30151B7BB000A61F54 /* wnstats.7WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wnstats.7WN.html; sourceTree = "<group>"; };
+		4F5B5D31151B7BB000A61F54 /* wnutil.3WN.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wnutil.3WN.html; sourceTree = "<group>"; };
+		4F5B5D32151B7BB000A61F54 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		4F5B5D33151B7BB000A61F54 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		4F5B5D34151B7BB000A61F54 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		4F5B5D36151B7BB000A61F54 /* binsrch.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = binsrch.3; sourceTree = "<group>"; };
+		4F5B5D37151B7BB000A61F54 /* cntlist.5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cntlist.5; sourceTree = "<group>"; };
+		4F5B5D38151B7BB000A61F54 /* grind.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = grind.1; sourceTree = "<group>"; };
+		4F5B5D39151B7BB000A61F54 /* lexnames.5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lexnames.5; sourceTree = "<group>"; };
+		4F5B5D3A151B7BB000A61F54 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		4F5B5D3B151B7BB000A61F54 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		4F5B5D3C151B7BB000A61F54 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		4F5B5D3D151B7BB000A61F54 /* morph.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = morph.3; sourceTree = "<group>"; };
+		4F5B5D3E151B7BB000A61F54 /* morphy.7 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = morphy.7; sourceTree = "<group>"; };
+		4F5B5D3F151B7BB000A61F54 /* senseidx.5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = senseidx.5; sourceTree = "<group>"; };
+		4F5B5D40151B7BB000A61F54 /* uniqbeg.7 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = uniqbeg.7; sourceTree = "<group>"; };
+		4F5B5D41151B7BB000A61F54 /* wn.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = wn.1; sourceTree = "<group>"; };
+		4F5B5D42151B7BB000A61F54 /* wnb.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = wnb.1; sourceTree = "<group>"; };
+		4F5B5D43151B7BB000A61F54 /* wndb.5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wndb.5; sourceTree = "<group>"; };
+		4F5B5D44151B7BB000A61F54 /* wngloss.7 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wngloss.7; sourceTree = "<group>"; };
+		4F5B5D45151B7BB000A61F54 /* wngroups.7 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wngroups.7; sourceTree = "<group>"; };
+		4F5B5D46151B7BB000A61F54 /* wninput.5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wninput.5; sourceTree = "<group>"; };
+		4F5B5D47151B7BB000A61F54 /* wnintro.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = wnintro.1; sourceTree = "<group>"; };
+		4F5B5D48151B7BB000A61F54 /* wnintro.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wnintro.3; sourceTree = "<group>"; };
+		4F5B5D49151B7BB000A61F54 /* wnintro.5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wnintro.5; sourceTree = "<group>"; };
+		4F5B5D4A151B7BB000A61F54 /* wnintro.7 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wnintro.7; sourceTree = "<group>"; };
+		4F5B5D4B151B7BB000A61F54 /* wnlicens.7 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wnlicens.7; sourceTree = "<group>"; };
+		4F5B5D4C151B7BB000A61F54 /* wnpkgs.7 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wnpkgs.7; sourceTree = "<group>"; };
+		4F5B5D4D151B7BB000A61F54 /* wnsearch.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wnsearch.3; sourceTree = "<group>"; };
+		4F5B5D4E151B7BB000A61F54 /* wnstats.7 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wnstats.7; sourceTree = "<group>"; };
+		4F5B5D4F151B7BB000A61F54 /* wnutil.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wnutil.3; sourceTree = "<group>"; };
+		4F5B5D51151B7BB000A61F54 /* binsrch.3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = binsrch.3.pdf; sourceTree = "<group>"; };
+		4F5B5D52151B7BB000A61F54 /* cntlist.5.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cntlist.5.pdf; sourceTree = "<group>"; };
+		4F5B5D53151B7BB000A61F54 /* grind.1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = grind.1.pdf; sourceTree = "<group>"; };
+		4F5B5D54151B7BB000A61F54 /* lexnames.5.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lexnames.5.pdf; sourceTree = "<group>"; };
+		4F5B5D55151B7BB000A61F54 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		4F5B5D56151B7BB000A61F54 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		4F5B5D57151B7BB000A61F54 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		4F5B5D58151B7BB000A61F54 /* morph.3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = morph.3.pdf; sourceTree = "<group>"; };
+		4F5B5D59151B7BB000A61F54 /* morphy.7.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = morphy.7.pdf; sourceTree = "<group>"; };
+		4F5B5D5A151B7BB000A61F54 /* senseidx.5.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = senseidx.5.pdf; sourceTree = "<group>"; };
+		4F5B5D5B151B7BB000A61F54 /* uniqbeg.7.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = uniqbeg.7.pdf; sourceTree = "<group>"; };
+		4F5B5D5C151B7BB000A61F54 /* wn.1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wn.1.pdf; sourceTree = "<group>"; };
+		4F5B5D5D151B7BB000A61F54 /* wnb.1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wnb.1.pdf; sourceTree = "<group>"; };
+		4F5B5D5E151B7BB000A61F54 /* wndb.5.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wndb.5.pdf; sourceTree = "<group>"; };
+		4F5B5D5F151B7BB000A61F54 /* wngloss.7.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wngloss.7.pdf; sourceTree = "<group>"; };
+		4F5B5D60151B7BB000A61F54 /* wngroups.7.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wngroups.7.pdf; sourceTree = "<group>"; };
+		4F5B5D61151B7BB000A61F54 /* wninput.5.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wninput.5.pdf; sourceTree = "<group>"; };
+		4F5B5D62151B7BB000A61F54 /* wnintro.1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wnintro.1.pdf; sourceTree = "<group>"; };
+		4F5B5D63151B7BB000A61F54 /* wnintro.3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wnintro.3.pdf; sourceTree = "<group>"; };
+		4F5B5D64151B7BB000A61F54 /* wnintro.5.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wnintro.5.pdf; sourceTree = "<group>"; };
+		4F5B5D65151B7BB000A61F54 /* wnintro.7.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wnintro.7.pdf; sourceTree = "<group>"; };
+		4F5B5D66151B7BB000A61F54 /* wnlicens.7.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wnlicens.7.pdf; sourceTree = "<group>"; };
+		4F5B5D67151B7BB000A61F54 /* wnpkgs.7.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wnpkgs.7.pdf; sourceTree = "<group>"; };
+		4F5B5D68151B7BB000A61F54 /* wnsearch.3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wnsearch.3.pdf; sourceTree = "<group>"; };
+		4F5B5D69151B7BB000A61F54 /* wnstats.7.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wnstats.7.pdf; sourceTree = "<group>"; };
+		4F5B5D6A151B7BB000A61F54 /* wnutil.3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wnutil.3.pdf; sourceTree = "<group>"; };
+		4F5B5D6C151B7BB000A61F54 /* binsrch.3.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = binsrch.3.ps; sourceTree = "<group>"; };
+		4F5B5D6D151B7BB000A61F54 /* cntlist.5.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cntlist.5.ps; sourceTree = "<group>"; };
+		4F5B5D6E151B7BB000A61F54 /* grind.1.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = grind.1.ps; sourceTree = "<group>"; };
+		4F5B5D6F151B7BB000A61F54 /* lexnames.5.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lexnames.5.ps; sourceTree = "<group>"; };
+		4F5B5D70151B7BB000A61F54 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		4F5B5D71151B7BB000A61F54 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		4F5B5D72151B7BB000A61F54 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		4F5B5D73151B7BB000A61F54 /* morph.3.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = morph.3.ps; sourceTree = "<group>"; };
+		4F5B5D74151B7BB000A61F54 /* morphy.7.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = morphy.7.ps; sourceTree = "<group>"; };
+		4F5B5D75151B7BB000A61F54 /* senseidx.5.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = senseidx.5.ps; sourceTree = "<group>"; };
+		4F5B5D76151B7BB000A61F54 /* uniqbeg.7.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = uniqbeg.7.ps; sourceTree = "<group>"; };
+		4F5B5D77151B7BB000A61F54 /* wn.1.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wn.1.ps; sourceTree = "<group>"; };
+		4F5B5D78151B7BB000A61F54 /* wnb.1.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wnb.1.ps; sourceTree = "<group>"; };
+		4F5B5D79151B7BB000A61F54 /* wndb.5.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wndb.5.ps; sourceTree = "<group>"; };
+		4F5B5D7A151B7BB000A61F54 /* wngloss.7.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wngloss.7.ps; sourceTree = "<group>"; };
+		4F5B5D7B151B7BB000A61F54 /* wngroups.7.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wngroups.7.ps; sourceTree = "<group>"; };
+		4F5B5D7C151B7BB000A61F54 /* wninput.5.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wninput.5.ps; sourceTree = "<group>"; };
+		4F5B5D7D151B7BB000A61F54 /* wnintro.1.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wnintro.1.ps; sourceTree = "<group>"; };
+		4F5B5D7E151B7BB000A61F54 /* wnintro.3.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wnintro.3.ps; sourceTree = "<group>"; };
+		4F5B5D7F151B7BB000A61F54 /* wnintro.5.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wnintro.5.ps; sourceTree = "<group>"; };
+		4F5B5D80151B7BB000A61F54 /* wnintro.7.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wnintro.7.ps; sourceTree = "<group>"; };
+		4F5B5D81151B7BB000A61F54 /* wnlicens.7.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wnlicens.7.ps; sourceTree = "<group>"; };
+		4F5B5D82151B7BB000A61F54 /* wnpkgs.7.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wnpkgs.7.ps; sourceTree = "<group>"; };
+		4F5B5D83151B7BB000A61F54 /* wnsearch.3.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wnsearch.3.ps; sourceTree = "<group>"; };
+		4F5B5D84151B7BB000A61F54 /* wnstats.7.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wnstats.7.ps; sourceTree = "<group>"; };
+		4F5B5D85151B7BB000A61F54 /* wnutil.3.ps */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wnutil.3.ps; sourceTree = "<group>"; };
+		4F5B5D87151B7BB000A61F54 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		4F5B5D88151B7BB000A61F54 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		4F5B5D89151B7BB000A61F54 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		4F5B5D8A151B7BB000A61F54 /* wn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wn.h; sourceTree = "<group>"; };
+		4F5B5D8B151B7BB000A61F54 /* wngrind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wngrind.h; sourceTree = "<group>"; };
+		4F5B5D8C151B7BB000A61F54 /* INSTALL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INSTALL; sourceTree = "<group>"; };
+		4F5B5D8D151B7BB000A61F54 /* install-sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "install-sh"; sourceTree = "<group>"; };
+		4F5B5D8F151B7BB000A61F54 /* binsrch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = binsrch.c; sourceTree = "<group>"; };
+		4F5B5D90151B7BB000A61F54 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		4F5B5D91151B7BB000A61F54 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		4F5B5D92151B7BB000A61F54 /* morph.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = morph.c; sourceTree = "<group>"; };
+		4F5B5D93151B7BB000A61F54 /* search.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = search.c; sourceTree = "<group>"; };
+		4F5B5D94151B7BB000A61F54 /* wnglobal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wnglobal.c; sourceTree = "<group>"; };
+		4F5B5D95151B7BB000A61F54 /* wnhelp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wnhelp.c; sourceTree = "<group>"; };
+		4F5B5D97151B7BB000A61F54 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		4F5B5D98151B7BB000A61F54 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		4F5B5D99151B7BB000A61F54 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		4F5B5D9A151B7BB000A61F54 /* wn.xbm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wn.xbm; sourceTree = "<group>"; };
+		4F5B5D9B151B7BB000A61F54 /* wnb.man */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wnb.man; sourceTree = "<group>"; };
+		4F5B5D9C151B7BB000A61F54 /* wngloss.man */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wngloss.man; sourceTree = "<group>"; };
+		4F5B5D9D151B7BB000A61F54 /* wnrtl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wnrtl.c; sourceTree = "<group>"; };
+		4F5B5D9E151B7BB000A61F54 /* wnutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wnutil.c; sourceTree = "<group>"; };
+		4F5B5D9F151B7BB000A61F54 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		4F5B5DA0151B7BB000A61F54 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		4F5B5DA1151B7BB000A61F54 /* missing */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = missing; sourceTree = "<group>"; };
+		4F5B5DA2151B7BB000A61F54 /* NEWS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NEWS; sourceTree = "<group>"; };
+		4F5B5DA3151B7BB000A61F54 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		4F5B5DA5151B7BB000A61F54 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		4F5B5DA6151B7BB000A61F54 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		4F5B5DA7151B7BB000A61F54 /* stubs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stubs.c; sourceTree = "<group>"; };
+		4F5B5DA8151B7BB000A61F54 /* tkAppInit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tkAppInit.c; sourceTree = "<group>"; };
+		4F5B5DA9151B7BB000A61F54 /* wn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wn.c; sourceTree = "<group>"; };
+		4F5B5DAA151B7BB000A61F54 /* wnb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = wnb; sourceTree = "<group>"; };
+		4F768EA11519DB0D001B1D52 /* EmotiveText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotiveText.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F768EA51519DB0D001B1D52 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4F768EA81519DB0D001B1D52 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4F768EA91519DB0D001B1D52 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4F768EAA1519DB0D001B1D52 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4F768EAD1519DB0D001B1D52 /* EmotiveText-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EmotiveText-Info.plist"; sourceTree = "<group>"; };
+		4F768EAF1519DB0D001B1D52 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4F768EB11519DB0D001B1D52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4F768EB31519DB0D001B1D52 /* EmotiveText-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EmotiveText-Prefix.pch"; sourceTree = "<group>"; };
+		4F768EB51519DB0D001B1D52 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4F768EB71519DB0D001B1D52 /* ETAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETAppDelegate.h; sourceTree = "<group>"; };
+		4F768EB81519DB0D001B1D52 /* ETAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ETAppDelegate.m; sourceTree = "<group>"; };
+		4F768EBB1519DB0D001B1D52 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4F768EC21519DB20001B1D52 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		4F768EC41519DB2B001B1D52 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4F768EC61519DB81001B1D52 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = System/Library/Frameworks/Python.framework; sourceTree = SDKROOT; };
+		4F768EC81519DC71001B1D52 /* ETTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETTextView.h; sourceTree = "<group>"; };
+		4F768EC91519DC71001B1D52 /* ETTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETTextView.m; sourceTree = "<group>"; };
+		4F768ECC1519DE71001B1D52 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		4FC1BD371519F7BA008C80FF /* ETEmotionTextAttributer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETEmotionTextAttributer.h; sourceTree = "<group>"; };
+		4FC1BD381519F7BA008C80FF /* ETEmotionTextAttributer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETEmotionTextAttributer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F768E9E1519DB0D001B1D52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F80BDC5151B7A87004DF0AC /* QuartzCore.framework in Frameworks */,
+				4F768EC71519DB81001B1D52 /* Python.framework in Frameworks */,
+				4F768EA61519DB0D001B1D52 /* Cocoa.framework in Frameworks */,
+				4F768ECD1519DE71001B1D52 /* ApplicationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F5B5C10151B7BB000A61F54 /* python_stuff */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5C11151B7BB000A61F54 /* emotion.py */,
+				4F5B5C12151B7BB000A61F54 /* emotion.pyc */,
+				4F5B5C13151B7BB000A61F54 /* en */,
+			);
+			path = python_stuff;
+			sourceTree = SOURCE_ROOT;
+		};
+		4F5B5C13151B7BB000A61F54 /* en */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5C14151B7BB000A61F54 /* __init__.py */,
+				4F5B5C15151B7BB000A61F54 /* __init__.pyc */,
+				4F5B5C16151B7BB000A61F54 /* _en-test.py */,
+				4F5B5C17151B7BB000A61F54 /* article.py */,
+				4F5B5C18151B7BB000A61F54 /* article.pyc */,
+				4F5B5C19151B7BB000A61F54 /* commonsense.py */,
+				4F5B5C1A151B7BB000A61F54 /* commonsense.pyc */,
+				4F5B5C1B151B7BB000A61F54 /* LICENSE.txt */,
+				4F5B5C1C151B7BB000A61F54 /* numeral.py */,
+				4F5B5C1D151B7BB000A61F54 /* numeral.pyc */,
+				4F5B5C1E151B7BB000A61F54 /* ogden */,
+				4F5B5C22151B7BB000A61F54 /* ordinal.py */,
+				4F5B5C23151B7BB000A61F54 /* ordinal.pyc */,
+				4F5B5C24151B7BB000A61F54 /* parser */,
+				4F5B5CB7151B7BB000A61F54 /* plural.py */,
+				4F5B5CB8151B7BB000A61F54 /* plural.pyc */,
+				4F5B5CB9151B7BB000A61F54 /* quantify.py */,
+				4F5B5CBA151B7BB000A61F54 /* quantify.pyc */,
+				4F5B5CBB151B7BB000A61F54 /* rid.py */,
+				4F5B5CBC151B7BB000A61F54 /* rid.pyc */,
+				4F5B5CBD151B7BB000A61F54 /* singular.py */,
+				4F5B5CBE151B7BB000A61F54 /* singular.pyc */,
+				4F5B5CBF151B7BB000A61F54 /* spelling */,
+				4F5B5CC3151B7BB000A61F54 /* tags.py */,
+				4F5B5CC4151B7BB000A61F54 /* tags.pyc */,
+				4F5B5CC5151B7BB000A61F54 /* verb */,
+				4F5B5CC9151B7BB000A61F54 /* wordnet */,
+			);
+			path = en;
+			sourceTree = "<group>";
+		};
+		4F5B5C1E151B7BB000A61F54 /* ogden */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5C1F151B7BB000A61F54 /* __init__.py */,
+				4F5B5C20151B7BB000A61F54 /* __init__.pyc */,
+				4F5B5C21151B7BB000A61F54 /* ogden_2000.txt */,
+			);
+			path = ogden;
+			sourceTree = "<group>";
+		};
+		4F5B5C24151B7BB000A61F54 /* parser */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5C25151B7BB000A61F54 /* __init__.py */,
+				4F5B5C26151B7BB000A61F54 /* __init__.pyc */,
+				4F5B5C27151B7BB000A61F54 /* Brill_lexicon */,
+				4F5B5C28151B7BB000A61F54 /* Brill_license.txt */,
+				4F5B5C29151B7BB000A61F54 /* nltk_lite */,
+			);
+			path = parser;
+			sourceTree = "<group>";
+		};
+		4F5B5C29151B7BB000A61F54 /* nltk_lite */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5C2A151B7BB000A61F54 /* __init__.py */,
+				4F5B5C2B151B7BB000A61F54 /* __init__.pyc */,
+				4F5B5C2C151B7BB000A61F54 /* chat */,
+				4F5B5C32151B7BB000A61F54 /* cluster */,
+				4F5B5C37151B7BB000A61F54 /* contrib */,
+				4F5B5C4D151B7BB000A61F54 /* corpora */,
+				4F5B5C61151B7BB000A61F54 /* draw */,
+				4F5B5C6A151B7BB000A61F54 /* etree */,
+				4F5B5C6F151B7BB000A61F54 /* evaluate.py */,
+				4F5B5C70151B7BB000A61F54 /* INSTALL.TXT */,
+				4F5B5C71151B7BB000A61F54 /* LICENSE.TXT */,
+				4F5B5C72151B7BB000A61F54 /* misc */,
+				4F5B5C76151B7BB000A61F54 /* model */,
+				4F5B5C78151B7BB000A61F54 /* parse */,
+				4F5B5C93151B7BB000A61F54 /* PKG-INFO */,
+				4F5B5C94151B7BB000A61F54 /* probability.py */,
+				4F5B5C95151B7BB000A61F54 /* probability.pyc */,
+				4F5B5C96151B7BB000A61F54 /* README.txt */,
+				4F5B5C97151B7BB000A61F54 /* semantics */,
+				4F5B5C9C151B7BB000A61F54 /* setup.py */,
+				4F5B5C9D151B7BB000A61F54 /* stem */,
+				4F5B5CA1151B7BB000A61F54 /* tag */,
+				4F5B5CA7151B7BB000A61F54 /* test */,
+				4F5B5CAA151B7BB000A61F54 /* tokenize */,
+				4F5B5CB1151B7BB000A61F54 /* utilities.py */,
+				4F5B5CB2151B7BB000A61F54 /* wordnet */,
+			);
+			path = nltk_lite;
+			sourceTree = "<group>";
+		};
+		4F5B5C2C151B7BB000A61F54 /* chat */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5C2D151B7BB000A61F54 /* __init__.py */,
+				4F5B5C2E151B7BB000A61F54 /* eliza.py */,
+				4F5B5C2F151B7BB000A61F54 /* iesha.py */,
+				4F5B5C30151B7BB000A61F54 /* rude.py */,
+				4F5B5C31151B7BB000A61F54 /* zen.py */,
+			);
+			path = chat;
+			sourceTree = "<group>";
+		};
+		4F5B5C32151B7BB000A61F54 /* cluster */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5C33151B7BB000A61F54 /* __init__.py */,
+				4F5B5C34151B7BB000A61F54 /* em.py */,
+				4F5B5C35151B7BB000A61F54 /* gaac.py */,
+				4F5B5C36151B7BB000A61F54 /* kmeans.py */,
+			);
+			path = cluster;
+			sourceTree = "<group>";
+		};
+		4F5B5C37151B7BB000A61F54 /* contrib */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5C38151B7BB000A61F54 /* __init__.py */,
+				4F5B5C39151B7BB000A61F54 /* combined.py */,
+				4F5B5C3A151B7BB000A61F54 /* concord.py */,
+				4F5B5C3B151B7BB000A61F54 /* featuredemo.py */,
+				4F5B5C3C151B7BB000A61F54 /* featurelite.py */,
+				4F5B5C3D151B7BB000A61F54 /* fsa.py */,
+				4F5B5C3E151B7BB000A61F54 /* hole.py */,
+				4F5B5C3F151B7BB000A61F54 /* kimmo.py */,
+				4F5B5C40151B7BB000A61F54 /* lambda.py */,
+				4F5B5C41151B7BB000A61F54 /* marshal.py */,
+				4F5B5C42151B7BB000A61F54 /* marshalbrill.py */,
+				4F5B5C43151B7BB000A61F54 /* paradigm.py */,
+				4F5B5C44151B7BB000A61F54 /* paradigmquery.py */,
+				4F5B5C45151B7BB000A61F54 /* toolbox */,
+			);
+			path = contrib;
+			sourceTree = "<group>";
+		};
+		4F5B5C45151B7BB000A61F54 /* toolbox */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5C46151B7BB000A61F54 /* __init__.py */,
+				4F5B5C47151B7BB000A61F54 /* data.py */,
+				4F5B5C48151B7BB000A61F54 /* errors.py */,
+				4F5B5C49151B7BB000A61F54 /* lexicon.py */,
+				4F5B5C4A151B7BB000A61F54 /* settings.py */,
+				4F5B5C4B151B7BB000A61F54 /* text.py */,
+				4F5B5C4C151B7BB000A61F54 /* utilities.py */,
+			);
+			path = toolbox;
+			sourceTree = "<group>";
+		};
+		4F5B5C4D151B7BB000A61F54 /* corpora */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5C4E151B7BB000A61F54 /* __init__.py */,
+				4F5B5C4F151B7BB000A61F54 /* brown.py */,
+				4F5B5C50151B7BB000A61F54 /* cmudict.py */,
+				4F5B5C51151B7BB000A61F54 /* conll2000.py */,
+				4F5B5C52151B7BB000A61F54 /* genesis.py */,
+				4F5B5C53151B7BB000A61F54 /* gutenberg.py */,
+				4F5B5C54151B7BB000A61F54 /* ieer.py */,
+				4F5B5C55151B7BB000A61F54 /* inaugural.py */,
+				4F5B5C56151B7BB000A61F54 /* names.py */,
+				4F5B5C57151B7BB000A61F54 /* ppattach.py */,
+				4F5B5C58151B7BB000A61F54 /* senseval.py */,
+				4F5B5C59151B7BB000A61F54 /* sinica_treebank.py */,
+				4F5B5C5A151B7BB000A61F54 /* state_union.py */,
+				4F5B5C5B151B7BB000A61F54 /* stopwords.py */,
+				4F5B5C5C151B7BB000A61F54 /* timit.py */,
+				4F5B5C5D151B7BB000A61F54 /* toolbox.py */,
+				4F5B5C5E151B7BB000A61F54 /* treebank.py */,
+				4F5B5C5F151B7BB000A61F54 /* words.py */,
+				4F5B5C60151B7BB000A61F54 /* ycoe.py */,
+			);
+			path = corpora;
+			sourceTree = "<group>";
+		};
+		4F5B5C61151B7BB000A61F54 /* draw */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5C62151B7BB000A61F54 /* __init__.py */,
+				4F5B5C63151B7BB000A61F54 /* cfg.py */,
+				4F5B5C64151B7BB000A61F54 /* chart.py */,
+				4F5B5C65151B7BB000A61F54 /* dispersion.py */,
+				4F5B5C66151B7BB000A61F54 /* plot.py */,
+				4F5B5C67151B7BB000A61F54 /* rdparser.py */,
+				4F5B5C68151B7BB000A61F54 /* srparser.py */,
+				4F5B5C69151B7BB000A61F54 /* tree.py */,
+			);
+			path = draw;
+			sourceTree = "<group>";
+		};
+		4F5B5C6A151B7BB000A61F54 /* etree */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5C6B151B7BB000A61F54 /* __init__.py */,
+				4F5B5C6C151B7BB000A61F54 /* ElementInclude.py */,
+				4F5B5C6D151B7BB000A61F54 /* ElementPath.py */,
+				4F5B5C6E151B7BB000A61F54 /* ElementTree.py */,
+			);
+			path = etree;
+			sourceTree = "<group>";
+		};
+		4F5B5C72151B7BB000A61F54 /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5C73151B7BB000A61F54 /* __init__.py */,
+				4F5B5C74151B7BB000A61F54 /* sort.py */,
+				4F5B5C75151B7BB000A61F54 /* wordfinder.py */,
+			);
+			path = misc;
+			sourceTree = "<group>";
+		};
+		4F5B5C76151B7BB000A61F54 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5C77151B7BB000A61F54 /* __init__.py */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		4F5B5C78151B7BB000A61F54 /* parse */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5C79151B7BB000A61F54 /* __init__.py */,
+				4F5B5C7A151B7BB000A61F54 /* __init__.pyc */,
+				4F5B5C7B151B7BB000A61F54 /* category.py */,
+				4F5B5C7C151B7BB000A61F54 /* cfg.py */,
+				4F5B5C7D151B7BB000A61F54 /* cfg.pyc */,
+				4F5B5C7E151B7BB000A61F54 /* chart.py */,
+				4F5B5C7F151B7BB000A61F54 /* chart.pyc */,
+				4F5B5C80151B7BB000A61F54 /* chunk.py */,
+				4F5B5C81151B7BB000A61F54 /* chunk.pyc */,
+				4F5B5C82151B7BB000A61F54 /* featurechart.py */,
+				4F5B5C83151B7BB000A61F54 /* featurestructure.py */,
+				4F5B5C84151B7BB000A61F54 /* featurestructure.pyc */,
+				4F5B5C85151B7BB000A61F54 /* generate.py */,
+				4F5B5C86151B7BB000A61F54 /* grammarfile.py */,
+				4F5B5C87151B7BB000A61F54 /* pcfg.py */,
+				4F5B5C88151B7BB000A61F54 /* pcfg.pyc */,
+				4F5B5C89151B7BB000A61F54 /* pchart.py */,
+				4F5B5C8A151B7BB000A61F54 /* rd.py */,
+				4F5B5C8B151B7BB000A61F54 /* rd.pyc */,
+				4F5B5C8C151B7BB000A61F54 /* sr.py */,
+				4F5B5C8D151B7BB000A61F54 /* sr.pyc */,
+				4F5B5C8E151B7BB000A61F54 /* tree.py */,
+				4F5B5C8F151B7BB000A61F54 /* tree.pyc */,
+				4F5B5C90151B7BB000A61F54 /* treetransforms.py */,
+				4F5B5C91151B7BB000A61F54 /* viterbi.py */,
+				4F5B5C92151B7BB000A61F54 /* viterbi.pyc */,
+			);
+			path = parse;
+			sourceTree = "<group>";
+		};
+		4F5B5C97151B7BB000A61F54 /* semantics */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5C98151B7BB000A61F54 /* __init__.py */,
+				4F5B5C99151B7BB000A61F54 /* evaluate.py */,
+				4F5B5C9A151B7BB000A61F54 /* logic.py */,
+				4F5B5C9B151B7BB000A61F54 /* utilities.py */,
+			);
+			path = semantics;
+			sourceTree = "<group>";
+		};
+		4F5B5C9D151B7BB000A61F54 /* stem */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5C9E151B7BB000A61F54 /* __init__.py */,
+				4F5B5C9F151B7BB000A61F54 /* porter.py */,
+				4F5B5CA0151B7BB000A61F54 /* regexp.py */,
+			);
+			path = stem;
+			sourceTree = "<group>";
+		};
+		4F5B5CA1151B7BB000A61F54 /* tag */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5CA2151B7BB000A61F54 /* __init__.py */,
+				4F5B5CA3151B7BB000A61F54 /* brill.py */,
+				4F5B5CA4151B7BB000A61F54 /* hmm.py */,
+				4F5B5CA5151B7BB000A61F54 /* ngram.py */,
+				4F5B5CA6151B7BB000A61F54 /* unigram.py */,
+			);
+			path = tag;
+			sourceTree = "<group>";
+		};
+		4F5B5CA7151B7BB000A61F54 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5CA8151B7BB000A61F54 /* __init__.py */,
+				4F5B5CA9151B7BB000A61F54 /* doctest_driver.py */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		4F5B5CAA151B7BB000A61F54 /* tokenize */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5CAB151B7BB000A61F54 /* __init__.py */,
+				4F5B5CAC151B7BB000A61F54 /* __init__.pyc */,
+				4F5B5CAD151B7BB000A61F54 /* regexp.py */,
+				4F5B5CAE151B7BB000A61F54 /* regexp.pyc */,
+				4F5B5CAF151B7BB000A61F54 /* simple.py */,
+				4F5B5CB0151B7BB000A61F54 /* simple.pyc */,
+			);
+			path = tokenize;
+			sourceTree = "<group>";
+		};
+		4F5B5CB2151B7BB000A61F54 /* wordnet */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5CB3151B7BB000A61F54 /* __init__.py */,
+				4F5B5CB4151B7BB000A61F54 /* concordance.py */,
+				4F5B5CB5151B7BB000A61F54 /* wntools.py */,
+				4F5B5CB6151B7BB000A61F54 /* wordnet.py */,
+			);
+			path = wordnet;
+			sourceTree = "<group>";
+		};
+		4F5B5CBF151B7BB000A61F54 /* spelling */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5CC0151B7BB000A61F54 /* __init__.py */,
+				4F5B5CC1151B7BB000A61F54 /* __init__.pyc */,
+				4F5B5CC2151B7BB000A61F54 /* spelling.txt */,
+			);
+			path = spelling;
+			sourceTree = "<group>";
+		};
+		4F5B5CC5151B7BB000A61F54 /* verb */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5CC6151B7BB000A61F54 /* __init__.py */,
+				4F5B5CC7151B7BB000A61F54 /* __init__.pyc */,
+				4F5B5CC8151B7BB000A61F54 /* verb.txt */,
+			);
+			path = verb;
+			sourceTree = "<group>";
+		};
+		4F5B5CC9151B7BB000A61F54 /* wordnet */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5CCA151B7BB000A61F54 /* __init__.py */,
+				4F5B5CCB151B7BB000A61F54 /* __init__.pyc */,
+				4F5B5CCC151B7BB000A61F54 /* concordance.py */,
+				4F5B5CCD151B7BB000A61F54 /* docs */,
+				4F5B5CD9151B7BB000A61F54 /* docsrc */,
+				4F5B5CEA151B7BB000A61F54 /* LICENSE.txt */,
+				4F5B5CEB151B7BB000A61F54 /* PKG-INFO */,
+				4F5B5CEC151B7BB000A61F54 /* README.txt */,
+				4F5B5CED151B7BB000A61F54 /* setup.py */,
+				4F5B5CEE151B7BB000A61F54 /* wntools.py */,
+				4F5B5CEF151B7BB000A61F54 /* wntools.pyc */,
+				4F5B5CF0151B7BB000A61F54 /* wordnet.py */,
+				4F5B5CF1151B7BB000A61F54 /* wordnet.pyc */,
+				4F5B5CF2151B7BB000A61F54 /* wordnet2 */,
+			);
+			path = wordnet;
+			sourceTree = "<group>";
+		};
+		4F5B5CCD151B7BB000A61F54 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5CCE151B7BB000A61F54 /* contents.html */,
+				4F5B5CCF151B7BB000A61F54 /* contributors.html */,
+				4F5B5CD0151B7BB000A61F54 /* download.html */,
+				4F5B5CD1151B7BB000A61F54 /* examples.html */,
+				4F5B5CD2151B7BB000A61F54 /* index.html */,
+				4F5B5CD3151B7BB000A61F54 /* installation.html */,
+				4F5B5CD4151B7BB000A61F54 /* license.html */,
+				4F5B5CD5151B7BB000A61F54 /* nav.html.inc */,
+				4F5B5CD6151B7BB000A61F54 /* release-notes.html */,
+				4F5B5CD7151B7BB000A61F54 /* styles.css */,
+				4F5B5CD8151B7BB000A61F54 /* styles.css.prefix */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
+		4F5B5CD9151B7BB000A61F54 /* docsrc */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5CDA151B7BB000A61F54 /* build.xml */,
+				4F5B5CDB151B7BB000A61F54 /* contributors-src.xml */,
+				4F5B5CDC151B7BB000A61F54 /* contributors.xml */,
+				4F5B5CDD151B7BB000A61F54 /* download.xml */,
+				4F5B5CDE151B7BB000A61F54 /* examples.xml */,
+				4F5B5CDF151B7BB000A61F54 /* format-contributors.xsl */,
+				4F5B5CE0151B7BB000A61F54 /* index.xml */,
+				4F5B5CE1151B7BB000A61F54 /* install.xml */,
+				4F5B5CE2151B7BB000A61F54 /* license.xml */,
+				4F5B5CE3151B7BB000A61F54 /* make-css-prefix.xsl */,
+				4F5B5CE4151B7BB000A61F54 /* make-navigation.xsl */,
+				4F5B5CE5151B7BB000A61F54 /* publish.xsl */,
+				4F5B5CE6151B7BB000A61F54 /* release-notes.xml */,
+				4F5B5CE7151B7BB000A61F54 /* requirements.xml */,
+				4F5B5CE8151B7BB000A61F54 /* schemas.xml */,
+				4F5B5CE9151B7BB000A61F54 /* styles.in.css */,
+			);
+			path = docsrc;
+			sourceTree = "<group>";
+		};
+		4F5B5CF2151B7BB000A61F54 /* wordnet2 */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5CF3151B7BB000A61F54 /* acinclude.m4 */,
+				4F5B5CF4151B7BB000A61F54 /* aclocal.m4 */,
+				4F5B5CF5151B7BB000A61F54 /* AUTHORS */,
+				4F5B5CF6151B7BB000A61F54 /* ChangeLog */,
+				4F5B5CF7151B7BB000A61F54 /* compile */,
+				4F5B5CF8151B7BB000A61F54 /* config.h.in */,
+				4F5B5CF9151B7BB000A61F54 /* configure */,
+				4F5B5CFA151B7BB000A61F54 /* configure.ac */,
+				4F5B5CFB151B7BB000A61F54 /* COPYING */,
+				4F5B5CFC151B7BB000A61F54 /* depcomp */,
+				4F5B5CFD151B7BB000A61F54 /* dict */,
+				4F5B5D16151B7BB000A61F54 /* doc */,
+				4F5B5D86151B7BB000A61F54 /* include */,
+				4F5B5D8C151B7BB000A61F54 /* INSTALL */,
+				4F5B5D8D151B7BB000A61F54 /* install-sh */,
+				4F5B5D8E151B7BB000A61F54 /* lib */,
+				4F5B5D9F151B7BB000A61F54 /* Makefile.am */,
+				4F5B5DA0151B7BB000A61F54 /* Makefile.in */,
+				4F5B5DA1151B7BB000A61F54 /* missing */,
+				4F5B5DA2151B7BB000A61F54 /* NEWS */,
+				4F5B5DA3151B7BB000A61F54 /* README */,
+				4F5B5DA4151B7BB000A61F54 /* src */,
+			);
+			path = wordnet2;
+			sourceTree = "<group>";
+		};
+		4F5B5CFD151B7BB000A61F54 /* dict */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5CFE151B7BB000A61F54 /* adj.exc */,
+				4F5B5CFF151B7BB000A61F54 /* adv.exc */,
+				4F5B5D00151B7BB000A61F54 /* cntlist */,
+				4F5B5D01151B7BB000A61F54 /* cntlist.rev */,
+				4F5B5D02151B7BB000A61F54 /* data.adj */,
+				4F5B5D03151B7BB000A61F54 /* data.adv */,
+				4F5B5D04151B7BB000A61F54 /* data.noun */,
+				4F5B5D05151B7BB000A61F54 /* data.verb */,
+				4F5B5D06151B7BB000A61F54 /* frames.vrb */,
+				4F5B5D07151B7BB000A61F54 /* index.adj */,
+				4F5B5D08151B7BB000A61F54 /* index.adv */,
+				4F5B5D09151B7BB000A61F54 /* index.noun */,
+				4F5B5D0A151B7BB000A61F54 /* index.sense */,
+				4F5B5D0B151B7BB000A61F54 /* index.verb */,
+				4F5B5D0C151B7BB000A61F54 /* lexnames */,
+				4F5B5D0D151B7BB000A61F54 /* log.grind.2.1 */,
+				4F5B5D0E151B7BB000A61F54 /* Makefile */,
+				4F5B5D0F151B7BB000A61F54 /* Makefile.am */,
+				4F5B5D10151B7BB000A61F54 /* Makefile.in */,
+				4F5B5D11151B7BB000A61F54 /* noun.exc */,
+				4F5B5D12151B7BB000A61F54 /* sentidx.vrb */,
+				4F5B5D13151B7BB000A61F54 /* sents.vrb */,
+				4F5B5D14151B7BB000A61F54 /* verb.exc */,
+				4F5B5D15151B7BB000A61F54 /* verb.Framestext */,
+			);
+			path = dict;
+			sourceTree = "<group>";
+		};
+		4F5B5D16151B7BB000A61F54 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5D17151B7BB000A61F54 /* html */,
+				4F5B5D32151B7BB000A61F54 /* Makefile */,
+				4F5B5D33151B7BB000A61F54 /* Makefile.am */,
+				4F5B5D34151B7BB000A61F54 /* Makefile.in */,
+				4F5B5D35151B7BB000A61F54 /* man */,
+				4F5B5D50151B7BB000A61F54 /* pdf */,
+				4F5B5D6B151B7BB000A61F54 /* ps */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		4F5B5D17151B7BB000A61F54 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5D18151B7BB000A61F54 /* binsrch.3WN.html */,
+				4F5B5D19151B7BB000A61F54 /* cntlist.5WN.html */,
+				4F5B5D1A151B7BB000A61F54 /* grind.1WN.html */,
+				4F5B5D1B151B7BB000A61F54 /* lexnames.5WN.html */,
+				4F5B5D1C151B7BB000A61F54 /* Makefile */,
+				4F5B5D1D151B7BB000A61F54 /* Makefile.am */,
+				4F5B5D1E151B7BB000A61F54 /* Makefile.in */,
+				4F5B5D1F151B7BB000A61F54 /* morph.3WN.html */,
+				4F5B5D20151B7BB000A61F54 /* morphy.7WN.html */,
+				4F5B5D21151B7BB000A61F54 /* senseidx.5WN.html */,
+				4F5B5D22151B7BB000A61F54 /* uniqbeg.7WN.html */,
+				4F5B5D23151B7BB000A61F54 /* wn.1WN.html */,
+				4F5B5D24151B7BB000A61F54 /* wnb.1WN.html */,
+				4F5B5D25151B7BB000A61F54 /* wndb.5WN.html */,
+				4F5B5D26151B7BB000A61F54 /* wngloss.7WN.html */,
+				4F5B5D27151B7BB000A61F54 /* wngroups.7WN.html */,
+				4F5B5D28151B7BB000A61F54 /* wninput.5WN.html */,
+				4F5B5D29151B7BB000A61F54 /* wnintro.1WN.html */,
+				4F5B5D2A151B7BB000A61F54 /* wnintro.3WN.html */,
+				4F5B5D2B151B7BB000A61F54 /* wnintro.5WN.html */,
+				4F5B5D2C151B7BB000A61F54 /* wnintro.7WN.html */,
+				4F5B5D2D151B7BB000A61F54 /* wnlicens.7WN.html */,
+				4F5B5D2E151B7BB000A61F54 /* wnpkgs.7WN.html */,
+				4F5B5D2F151B7BB000A61F54 /* wnsearch.3WN.html */,
+				4F5B5D30151B7BB000A61F54 /* wnstats.7WN.html */,
+				4F5B5D31151B7BB000A61F54 /* wnutil.3WN.html */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		4F5B5D35151B7BB000A61F54 /* man */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5D36151B7BB000A61F54 /* binsrch.3 */,
+				4F5B5D37151B7BB000A61F54 /* cntlist.5 */,
+				4F5B5D38151B7BB000A61F54 /* grind.1 */,
+				4F5B5D39151B7BB000A61F54 /* lexnames.5 */,
+				4F5B5D3A151B7BB000A61F54 /* Makefile */,
+				4F5B5D3B151B7BB000A61F54 /* Makefile.am */,
+				4F5B5D3C151B7BB000A61F54 /* Makefile.in */,
+				4F5B5D3D151B7BB000A61F54 /* morph.3 */,
+				4F5B5D3E151B7BB000A61F54 /* morphy.7 */,
+				4F5B5D3F151B7BB000A61F54 /* senseidx.5 */,
+				4F5B5D40151B7BB000A61F54 /* uniqbeg.7 */,
+				4F5B5D41151B7BB000A61F54 /* wn.1 */,
+				4F5B5D42151B7BB000A61F54 /* wnb.1 */,
+				4F5B5D43151B7BB000A61F54 /* wndb.5 */,
+				4F5B5D44151B7BB000A61F54 /* wngloss.7 */,
+				4F5B5D45151B7BB000A61F54 /* wngroups.7 */,
+				4F5B5D46151B7BB000A61F54 /* wninput.5 */,
+				4F5B5D47151B7BB000A61F54 /* wnintro.1 */,
+				4F5B5D48151B7BB000A61F54 /* wnintro.3 */,
+				4F5B5D49151B7BB000A61F54 /* wnintro.5 */,
+				4F5B5D4A151B7BB000A61F54 /* wnintro.7 */,
+				4F5B5D4B151B7BB000A61F54 /* wnlicens.7 */,
+				4F5B5D4C151B7BB000A61F54 /* wnpkgs.7 */,
+				4F5B5D4D151B7BB000A61F54 /* wnsearch.3 */,
+				4F5B5D4E151B7BB000A61F54 /* wnstats.7 */,
+				4F5B5D4F151B7BB000A61F54 /* wnutil.3 */,
+			);
+			path = man;
+			sourceTree = "<group>";
+		};
+		4F5B5D50151B7BB000A61F54 /* pdf */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5D51151B7BB000A61F54 /* binsrch.3.pdf */,
+				4F5B5D52151B7BB000A61F54 /* cntlist.5.pdf */,
+				4F5B5D53151B7BB000A61F54 /* grind.1.pdf */,
+				4F5B5D54151B7BB000A61F54 /* lexnames.5.pdf */,
+				4F5B5D55151B7BB000A61F54 /* Makefile */,
+				4F5B5D56151B7BB000A61F54 /* Makefile.am */,
+				4F5B5D57151B7BB000A61F54 /* Makefile.in */,
+				4F5B5D58151B7BB000A61F54 /* morph.3.pdf */,
+				4F5B5D59151B7BB000A61F54 /* morphy.7.pdf */,
+				4F5B5D5A151B7BB000A61F54 /* senseidx.5.pdf */,
+				4F5B5D5B151B7BB000A61F54 /* uniqbeg.7.pdf */,
+				4F5B5D5C151B7BB000A61F54 /* wn.1.pdf */,
+				4F5B5D5D151B7BB000A61F54 /* wnb.1.pdf */,
+				4F5B5D5E151B7BB000A61F54 /* wndb.5.pdf */,
+				4F5B5D5F151B7BB000A61F54 /* wngloss.7.pdf */,
+				4F5B5D60151B7BB000A61F54 /* wngroups.7.pdf */,
+				4F5B5D61151B7BB000A61F54 /* wninput.5.pdf */,
+				4F5B5D62151B7BB000A61F54 /* wnintro.1.pdf */,
+				4F5B5D63151B7BB000A61F54 /* wnintro.3.pdf */,
+				4F5B5D64151B7BB000A61F54 /* wnintro.5.pdf */,
+				4F5B5D65151B7BB000A61F54 /* wnintro.7.pdf */,
+				4F5B5D66151B7BB000A61F54 /* wnlicens.7.pdf */,
+				4F5B5D67151B7BB000A61F54 /* wnpkgs.7.pdf */,
+				4F5B5D68151B7BB000A61F54 /* wnsearch.3.pdf */,
+				4F5B5D69151B7BB000A61F54 /* wnstats.7.pdf */,
+				4F5B5D6A151B7BB000A61F54 /* wnutil.3.pdf */,
+			);
+			path = pdf;
+			sourceTree = "<group>";
+		};
+		4F5B5D6B151B7BB000A61F54 /* ps */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5D6C151B7BB000A61F54 /* binsrch.3.ps */,
+				4F5B5D6D151B7BB000A61F54 /* cntlist.5.ps */,
+				4F5B5D6E151B7BB000A61F54 /* grind.1.ps */,
+				4F5B5D6F151B7BB000A61F54 /* lexnames.5.ps */,
+				4F5B5D70151B7BB000A61F54 /* Makefile */,
+				4F5B5D71151B7BB000A61F54 /* Makefile.am */,
+				4F5B5D72151B7BB000A61F54 /* Makefile.in */,
+				4F5B5D73151B7BB000A61F54 /* morph.3.ps */,
+				4F5B5D74151B7BB000A61F54 /* morphy.7.ps */,
+				4F5B5D75151B7BB000A61F54 /* senseidx.5.ps */,
+				4F5B5D76151B7BB000A61F54 /* uniqbeg.7.ps */,
+				4F5B5D77151B7BB000A61F54 /* wn.1.ps */,
+				4F5B5D78151B7BB000A61F54 /* wnb.1.ps */,
+				4F5B5D79151B7BB000A61F54 /* wndb.5.ps */,
+				4F5B5D7A151B7BB000A61F54 /* wngloss.7.ps */,
+				4F5B5D7B151B7BB000A61F54 /* wngroups.7.ps */,
+				4F5B5D7C151B7BB000A61F54 /* wninput.5.ps */,
+				4F5B5D7D151B7BB000A61F54 /* wnintro.1.ps */,
+				4F5B5D7E151B7BB000A61F54 /* wnintro.3.ps */,
+				4F5B5D7F151B7BB000A61F54 /* wnintro.5.ps */,
+				4F5B5D80151B7BB000A61F54 /* wnintro.7.ps */,
+				4F5B5D81151B7BB000A61F54 /* wnlicens.7.ps */,
+				4F5B5D82151B7BB000A61F54 /* wnpkgs.7.ps */,
+				4F5B5D83151B7BB000A61F54 /* wnsearch.3.ps */,
+				4F5B5D84151B7BB000A61F54 /* wnstats.7.ps */,
+				4F5B5D85151B7BB000A61F54 /* wnutil.3.ps */,
+			);
+			path = ps;
+			sourceTree = "<group>";
+		};
+		4F5B5D86151B7BB000A61F54 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5D87151B7BB000A61F54 /* Makefile */,
+				4F5B5D88151B7BB000A61F54 /* Makefile.am */,
+				4F5B5D89151B7BB000A61F54 /* Makefile.in */,
+				4F5B5D8A151B7BB000A61F54 /* wn.h */,
+				4F5B5D8B151B7BB000A61F54 /* wngrind.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		4F5B5D8E151B7BB000A61F54 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5D8F151B7BB000A61F54 /* binsrch.c */,
+				4F5B5D90151B7BB000A61F54 /* Makefile.am */,
+				4F5B5D91151B7BB000A61F54 /* Makefile.in */,
+				4F5B5D92151B7BB000A61F54 /* morph.c */,
+				4F5B5D93151B7BB000A61F54 /* search.c */,
+				4F5B5D94151B7BB000A61F54 /* wnglobal.c */,
+				4F5B5D95151B7BB000A61F54 /* wnhelp.c */,
+				4F5B5D96151B7BB000A61F54 /* wnres */,
+				4F5B5D9D151B7BB000A61F54 /* wnrtl.c */,
+				4F5B5D9E151B7BB000A61F54 /* wnutil.c */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		4F5B5D96151B7BB000A61F54 /* wnres */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5D97151B7BB000A61F54 /* license.txt */,
+				4F5B5D98151B7BB000A61F54 /* Makefile.am */,
+				4F5B5D99151B7BB000A61F54 /* Makefile.in */,
+				4F5B5D9A151B7BB000A61F54 /* wn.xbm */,
+				4F5B5D9B151B7BB000A61F54 /* wnb.man */,
+				4F5B5D9C151B7BB000A61F54 /* wngloss.man */,
+			);
+			path = wnres;
+			sourceTree = "<group>";
+		};
+		4F5B5DA4151B7BB000A61F54 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4F5B5DA5151B7BB000A61F54 /* Makefile.am */,
+				4F5B5DA6151B7BB000A61F54 /* Makefile.in */,
+				4F5B5DA7151B7BB000A61F54 /* stubs.c */,
+				4F5B5DA8151B7BB000A61F54 /* tkAppInit.c */,
+				4F5B5DA9151B7BB000A61F54 /* wn.c */,
+				4F5B5DAA151B7BB000A61F54 /* wnb */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		4F768E961519DB0D001B1D52 = {
+			isa = PBXGroup;
+			children = (
+				4F768EAB1519DB0D001B1D52 /* EmotiveText */,
+				4F768EA41519DB0D001B1D52 /* Frameworks */,
+				4F768EA21519DB0D001B1D52 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F768EA21519DB0D001B1D52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F768EA11519DB0D001B1D52 /* EmotiveText.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F768EA41519DB0D001B1D52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F768EA51519DB0D001B1D52 /* Cocoa.framework */,
+				4F768EC21519DB20001B1D52 /* CoreText.framework */,
+				4F768EC41519DB2B001B1D52 /* QuartzCore.framework */,
+				4F768EC61519DB81001B1D52 /* Python.framework */,
+				4F768ECC1519DE71001B1D52 /* ApplicationServices.framework */,
+				4F768EA71519DB0D001B1D52 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F768EA71519DB0D001B1D52 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F768EA81519DB0D001B1D52 /* AppKit.framework */,
+				4F768EA91519DB0D001B1D52 /* CoreData.framework */,
+				4F768EAA1519DB0D001B1D52 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4F768EAB1519DB0D001B1D52 /* EmotiveText */ = {
+			isa = PBXGroup;
+			children = (
+				4F768EB71519DB0D001B1D52 /* ETAppDelegate.h */,
+				4F768EB81519DB0D001B1D52 /* ETAppDelegate.m */,
+				4F768EBA1519DB0D001B1D52 /* MainMenu.xib */,
+				4F768ECB1519DC77001B1D52 /* Text View */,
+				4F768EAC1519DB0D001B1D52 /* Supporting Files */,
+				4FC1BD3B1519F7BD008C80FF /* Text Attributer */,
+			);
+			path = EmotiveText;
+			sourceTree = "<group>";
+		};
+		4F768EAC1519DB0D001B1D52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F768EAD1519DB0D001B1D52 /* EmotiveText-Info.plist */,
+				4F768EAE1519DB0D001B1D52 /* InfoPlist.strings */,
+				4F768EB11519DB0D001B1D52 /* main.m */,
+				4F768EB31519DB0D001B1D52 /* EmotiveText-Prefix.pch */,
+				4F768EB41519DB0D001B1D52 /* Credits.rtf */,
+				4F5B5C10151B7BB000A61F54 /* python_stuff */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F768ECB1519DC77001B1D52 /* Text View */ = {
+			isa = PBXGroup;
+			children = (
+				4F768EC81519DC71001B1D52 /* ETTextView.h */,
+				4F768EC91519DC71001B1D52 /* ETTextView.m */,
+			);
+			name = "Text View";
+			sourceTree = "<group>";
+		};
+		4FC1BD3B1519F7BD008C80FF /* Text Attributer */ = {
+			isa = PBXGroup;
+			children = (
+				4FC1BD371519F7BA008C80FF /* ETEmotionTextAttributer.h */,
+				4FC1BD381519F7BA008C80FF /* ETEmotionTextAttributer.m */,
+			);
+			name = "Text Attributer";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F768EA01519DB0D001B1D52 /* EmotiveText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F768EBF1519DB0D001B1D52 /* Build configuration list for PBXNativeTarget "EmotiveText" */;
+			buildPhases = (
+				4F768E9D1519DB0D001B1D52 /* Sources */,
+				4F768E9E1519DB0D001B1D52 /* Frameworks */,
+				4F768E9F1519DB0D001B1D52 /* Resources */,
+				4F06093A151B8598004C2C80 /* Copy Files into en root */,
+				4F060951151B85FC004C2C80 /* Copy Files into en/ogden */,
+				4F060955151B8629004C2C80 /* Copy Files into en/parser */,
+				4F06095A151B8657004C2C80 /* Copy Files into en/parser/nltk_lite */,
+				4F060966151B86AB004C2C80 /* Copy Files into en/parser/nltk_lite/chat */,
+				4F060967151B86D3004C2C80 /* Copy Files into en/parser/nltk_lite/cluster */,
+				4F060968151B86F8004C2C80 /* Copy Files into en/parser/nltk_lite/contrib */,
+				4F060980151B8797004C2C80 /* Copy Files into en/parser/nltk_lite/contrib/toolbox */,
+				4F060969151B8717004C2C80 /* Copy Files into en/parser/nltk_lite/corpora */,
+				4F06099B151B87E1004C2C80 /* Copy Files into en/parser/nltk_lite/draw */,
+				4F0609A4151B8803004C2C80 /* Copy Files into en/parser/nltk_lite/etree */,
+				4F0609A9151B8833004C2C80 /* Copy Files into en/parser/nltk_lite/misc */,
+				4F0609AD151B884A004C2C80 /* Copy Files into en/parser/nltk_lite/model */,
+				4F0609AF151B886C004C2C80 /* Copy Files into en/parser/nltk_lite/parse */,
+				4F0609CA151B8895004C2C80 /* Copy Files into en/parser/nltk_lite/semantics */,
+				4F0609CF151B88B8004C2C80 /* Copy Files into en/parser/nltk_lite/stem */,
+				4F0609D3151B88D5004C2C80 /* Copy Files into en/parser/nltk_lite/tag */,
+				4F0609D9151B88F9004C2C80 /* Copy Files into en/parser/nltk_lite/test */,
+				4F0609DC151B8923004C2C80 /* Copy Files into en/parser/nltk_lite/tokenize */,
+				4F0609E3151B893F004C2C80 /* Copy Files into en/parser/nltk_lite/wordnet */,
+				4F0609E8151B8986004C2C80 /* Copy Files into en/spelling */,
+				4F0609EC151B89B2004C2C80 /* Copy Files into en/verb */,
+				4F0609F0151B89D3004C2C80 /* Copy Files into en/wordnet */,
+				4F0609FC151B8A12004C2C80 /* Copy Files into en/wordnet/wordnet2 */,
+				4F060A0E151B8A55004C2C80 /* Copy Files into en/wordnet/wordnet2/dict */,
+				4F060A27151B8A7A004C2C80 /* Copy Files into en/wordnet/wordnet2/include */,
+				4F060A2D151B8AAC004C2C80 /* Copy Files into en/wordnet/wordnet2/lib */,
+				4F060A37151B8AE2004C2C80 /* Copy Files into en/wordnet/wordnet2/lib/wnres */,
+				4F060A3E151B8B18004C2C80 /* Copy Files into en/wordnet/wordnet2/src */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmotiveText;
+			productName = EmotiveText;
+			productReference = 4F768EA11519DB0D001B1D52 /* EmotiveText.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F768E981519DB0D001B1D52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ET;
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = 4F768E9B1519DB0D001B1D52 /* Build configuration list for PBXProject "EmotiveText" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4F768E961519DB0D001B1D52;
+			productRefGroup = 4F768EA21519DB0D001B1D52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F768EA01519DB0D001B1D52 /* EmotiveText */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F768E9F1519DB0D001B1D52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F768EB01519DB0D001B1D52 /* InfoPlist.strings in Resources */,
+				4F768EB61519DB0D001B1D52 /* Credits.rtf in Resources */,
+				4F768EBC1519DB0D001B1D52 /* MainMenu.xib in Resources */,
+				4F5B5DAB151B7BB000A61F54 /* emotion.py in Resources */,
+				4F5B5DAC151B7BB000A61F54 /* emotion.pyc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F768E9D1519DB0D001B1D52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F768EB21519DB0D001B1D52 /* main.m in Sources */,
+				4F768EB91519DB0D001B1D52 /* ETAppDelegate.m in Sources */,
+				4F768ECA1519DC71001B1D52 /* ETTextView.m in Sources */,
+				4FC1BD391519F7BA008C80FF /* ETEmotionTextAttributer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4F768EAE1519DB0D001B1D52 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F768EAF1519DB0D001B1D52 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4F768EB41519DB0D001B1D52 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F768EB51519DB0D001B1D52 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4F768EBA1519DB0D001B1D52 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F768EBB1519DB0D001B1D52 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F768EBD1519DB0D001B1D52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4F768EBE1519DB0D001B1D52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4F768EC01519DB0D001B1D52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EmotiveText/EmotiveText-Prefix.pch";
+				INFOPLIST_FILE = "EmotiveText/EmotiveText-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4F768EC11519DB0D001B1D52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EmotiveText/EmotiveText-Prefix.pch";
+				INFOPLIST_FILE = "EmotiveText/EmotiveText-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F768E9B1519DB0D001B1D52 /* Build configuration list for PBXProject "EmotiveText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F768EBD1519DB0D001B1D52 /* Debug */,
+				4F768EBE1519DB0D001B1D52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F768EBF1519DB0D001B1D52 /* Build configuration list for PBXNativeTarget "EmotiveText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F768EC01519DB0D001B1D52 /* Debug */,
+				4F768EC11519DB0D001B1D52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F768E981519DB0D001B1D52 /* Project object */;
+}
