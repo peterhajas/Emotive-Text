@@ -246,7 +246,6 @@
 		4F060A43151B8B33004C2C80 /* wn.c in Copy Files into en/wordnet/wordnet2/src */ = {isa = PBXBuildFile; fileRef = 4F5B5DA9151B7BB000A61F54 /* wn.c */; };
 		4F060A44151B8B33004C2C80 /* wnb in Copy Files into en/wordnet/wordnet2/src */ = {isa = PBXBuildFile; fileRef = 4F5B5DAA151B7BB000A61F54 /* wnb */; };
 		4F5B5DAB151B7BB000A61F54 /* emotion.py in Resources */ = {isa = PBXBuildFile; fileRef = 4F5B5C11151B7BB000A61F54 /* emotion.py */; };
-		4F5B5DAC151B7BB000A61F54 /* emotion.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 4F5B5C12151B7BB000A61F54 /* emotion.pyc */; };
 		4F768EA61519DB0D001B1D52 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F768EA51519DB0D001B1D52 /* Cocoa.framework */; };
 		4F768EB01519DB0D001B1D52 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F768EAE1519DB0D001B1D52 /* InfoPlist.strings */; };
 		4F768EB21519DB0D001B1D52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F768EB11519DB0D001B1D52 /* main.m */; };
@@ -2067,7 +2066,6 @@
 				4F768EB61519DB0D001B1D52 /* Credits.rtf in Resources */,
 				4F768EBC1519DB0D001B1D52 /* MainMenu.xib in Resources */,
 				4F5B5DAB151B7BB000A61F54 /* emotion.py in Resources */,
-				4F5B5DAC151B7BB000A61F54 /* emotion.pyc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
