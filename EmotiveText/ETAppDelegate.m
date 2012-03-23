@@ -24,7 +24,7 @@
 {
     textView = [[ETTextView alloc] initWithFrame:[_view frame]];
     [_view addSubview:textView];
-    [textView becomeFirstResponder];
+
     ETEmotionTextAttributer* attributer = [[ETEmotionTextAttributer alloc] init];
     [attributer attributedStringForText:@"I am happy today."];
 }

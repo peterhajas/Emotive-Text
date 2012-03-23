@@ -258,6 +258,8 @@
 		4F768ECD1519DE71001B1D52 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F768ECC1519DE71001B1D52 /* ApplicationServices.framework */; };
 		4F80BDC5151B7A87004DF0AC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F768EC41519DB2B001B1D52 /* QuartzCore.framework */; };
 		4FC1BD391519F7BA008C80FF /* ETEmotionTextAttributer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC1BD381519F7BA008C80FF /* ETEmotionTextAttributer.m */; };
+		4FF9F634151BF528004A131D /* ETAnimationAssignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9F633151BF528004A131D /* ETAnimationAssignment.m */; };
+		4FF9F639151C34C8004A131D /* ETLayerChopper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9F638151C34C8004A131D /* ETLayerChopper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1187,6 +1189,10 @@
 		4F768ECC1519DE71001B1D52 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		4FC1BD371519F7BA008C80FF /* ETEmotionTextAttributer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETEmotionTextAttributer.h; sourceTree = "<group>"; };
 		4FC1BD381519F7BA008C80FF /* ETEmotionTextAttributer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETEmotionTextAttributer.m; sourceTree = "<group>"; };
+		4FF9F632151BF528004A131D /* ETAnimationAssignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETAnimationAssignment.h; sourceTree = "<group>"; };
+		4FF9F633151BF528004A131D /* ETAnimationAssignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETAnimationAssignment.m; sourceTree = "<group>"; };
+		4FF9F637151C34C8004A131D /* ETLayerChopper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETLayerChopper.h; sourceTree = "<group>"; };
+		4FF9F638151C34C8004A131D /* ETLayerChopper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETLayerChopper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1921,7 +1927,9 @@
 				4F768EBA1519DB0D001B1D52 /* MainMenu.xib */,
 				4F768ECB1519DC77001B1D52 /* Text View */,
 				4F768EAC1519DB0D001B1D52 /* Supporting Files */,
+				4FF9F63A151C34DE004A131D /* Layer Chopper */,
 				4FC1BD3B1519F7BD008C80FF /* Text Attributer */,
+				4FF9F636151BF539004A131D /* Animation Assignment */,
 			);
 			path = EmotiveText;
 			sourceTree = "<group>";
@@ -1955,6 +1963,24 @@
 				4FC1BD381519F7BA008C80FF /* ETEmotionTextAttributer.m */,
 			);
 			name = "Text Attributer";
+			sourceTree = "<group>";
+		};
+		4FF9F636151BF539004A131D /* Animation Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				4FF9F632151BF528004A131D /* ETAnimationAssignment.h */,
+				4FF9F633151BF528004A131D /* ETAnimationAssignment.m */,
+			);
+			name = "Animation Assignment";
+			sourceTree = "<group>";
+		};
+		4FF9F63A151C34DE004A131D /* Layer Chopper */ = {
+			isa = PBXGroup;
+			children = (
+				4FF9F637151C34C8004A131D /* ETLayerChopper.h */,
+				4FF9F638151C34C8004A131D /* ETLayerChopper.m */,
+			);
+			name = "Layer Chopper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2056,6 +2082,8 @@
 				4F768EB91519DB0D001B1D52 /* ETAppDelegate.m in Sources */,
 				4F768ECA1519DC71001B1D52 /* ETTextView.m in Sources */,
 				4FC1BD391519F7BA008C80FF /* ETEmotionTextAttributer.m in Sources */,
+				4FF9F634151BF528004A131D /* ETAnimationAssignment.m in Sources */,
+				4FF9F639151C34C8004A131D /* ETLayerChopper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

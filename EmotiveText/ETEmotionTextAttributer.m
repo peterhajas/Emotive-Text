@@ -65,14 +65,12 @@
                                                                                  nil]
                                                                         forKeys:[NSArray arrayWithObjects:
                                                                                  NSUnderlineStyleAttributeName,
-                                                                                 @"Emotion",
+                                                                                 ETEmotionAttributeKey,
                                                                                  nil]]
                                       range:rangeForWord];
         }
     }
-    
-    NSLog(@"attributedString: %@", attributedString);
-    
+        
     return attributedString;
 }
 

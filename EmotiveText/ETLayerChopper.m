@@ -13,23 +13,33 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#import <Cocoa/Cocoa.h>
-#import "ETEmotionTextAttributer.h"
+#import "ETLayerChopper.h"
+#import "ETTextView.h"
 
-#define ETTextPointSize 120
+@implementation ETLayerChopper
 
-@interface ETTextView : NSView <NSTextInputClient>
++(CALayer*)splitLayer:(CALayer*)layer byLine:(CTLineRef)line
 {
-    NSString* currentText;
-    NSMutableAttributedString* attributedText;
+    // Grab the runs out of the line
+    CFArrayRef runs = CTLineGetGlyphRuns(line);
     
-    CTLineRef line;
-    CGContextRef staleContext;
+    for(NSUInteger i = 0; i < CFArrayGetCount(runs); i++)
+    {
+        CTRunRef run = CFArrayGetValueAtIndex(runs, i);
+        NSUInteger glyphCount = CTRunGetGlyphCount(run);
+        for(NSUInteger j = 0; j < glyphCount; j++)
+        {
+            CGSize advance = CTRunGetAdvancesPtr(run)[j];
+            CGFloat glyphWidth = advance.width;
+            CGFloat glyphHeight = ETTextPointSize;
+            
+            
+            
+            NSLog(@"glyph at %lu in run %lu with advance %f x %f", j, i, advance.width, advance.height);
+        }
+    }
     
-    ETEmotionTextAttributer* emotionTextAttributer;
+    return nil;
 }
-
--(void)animateText:(NSString*)text;
--(void)funkyAnimationTime;
 
 @end

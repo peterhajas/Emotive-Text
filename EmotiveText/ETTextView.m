@@ -14,31 +14,35 @@
  */
 
 #import "ETTextView.h"
+#import "ETAnimationAssignment.h"
+#import "ETLayerChopper.h"
 
 @implementation ETTextView
 
 -(void)animateText:(NSString*)text
 {
     currentText = text;
-    attributedText = [[NSMutableAttributedString alloc] initWithString:currentText];
+    
+    attributedText = [[NSMutableAttributedString alloc]
+                      initWithAttributedString:[emotionTextAttributer attributedStringForText:text]];
+    
     [self setNeedsDisplay:YES];
-    [self funkyAnimationTime];
 }
 
 -(void)funkyAnimationTime
 {
-    NSLog(@"layer: %@", [self layer]);
-    
     CABasicAnimation* animation;
     
-    animation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-    [animation setFromValue:[NSNumber numberWithFloat:1.0]];
+    animation = [CABasicAnimation animationWithKeyPath:@"transform.translation.y"];
+    [animation setFromValue:[NSNumber numberWithFloat:15.0]];
     [animation setToValue:[NSNumber numberWithFloat:0.0]];
     [animation setDuration:0.3];
     [animation setAutoreverses:YES];
     [animation setRepeatCount:CGFLOAT_MAX];
     
     [[self layer] addAnimation:animation forKey:@"blinkAnimation"];
+    
+    NSLog(@"sublayers: %@", [[self layer] sublayers]);
 
 }
 
@@ -119,16 +123,15 @@
     {
         line = nil;
         currentText = @"";
-        [self setWantsLayer:YES];
+        
+        emotionTextAttributer = [[ETEmotionTextAttributer alloc] init];
     }
     
     return self;
 }
 
 -(void)drawRect:(NSRect)dirtyRect
-{
-    [super drawRect:dirtyRect];
-    
+{    
     if([currentText isEqualToString:@""])
     {
         return;
@@ -138,6 +141,12 @@
     
     CFMutableAttributedStringRef attributedString = (__bridge CFMutableAttributedStringRef)attributedText;
     
+    CTFontRef font = CTFontCreateWithName(CFSTR("Helvetica"), ETTextPointSize, NULL);
+    CFAttributedStringSetAttribute(attributedString,
+                                   CFRangeMake(0, CFAttributedStringGetLength(attributedString)),
+                                   kCTFontAttributeName,
+                                   font);
+    
     if(line != nil)
     {
         CFRelease(line);
@@ -145,9 +154,41 @@
     
     line = CTLineCreateWithAttributedString(attributedString);
     
-    CGContextSetTextPosition(staleContext, 0.0, 0.0);
+    CGRect lineImageFrame = CTLineGetImageBounds(line, staleContext);
+    
+    CGFloat textXPosition = ([self frame].size.width - lineImageFrame.size.width)/2;
+    CGFloat textYPosition = ([self frame].size.height - lineImageFrame.size.height)/2;
+    
+    CGContextSetTextPosition(staleContext, textXPosition, textYPosition);
     
     CTLineDraw(line, staleContext);
+    
+    // Find the first emotion mentioned in the attributed string
+    NSString* firstEmotion = @"";
+    for(NSUInteger i = 0; i < [currentText length]; i++)
+    {
+        NSDictionary* attributesAtIndex = [attributedText attributesAtIndex:i effectiveRange:NULL];
+        if([[attributesAtIndex allKeys] containsObject:ETEmotionAttributeKey])
+        {
+            firstEmotion = [attributesAtIndex valueForKey:ETEmotionAttributeKey];
+            break;
+        }
+    }
+    
+    [ETLayerChopper splitLayer:[self layer] byLine:line];
+    
+    // Animate according to the first emotion
+    [ETAnimationAssignment animateLayer:[self layer] forEmotion:firstEmotion];
+}
+
+-(NSUInteger)autoresizingMask
+{
+    return (NSViewWidthSizable | NSViewHeightSizable);
+}
+
+-(void)viewDidEndLiveResize
+{
+    [self setNeedsDisplay:YES];
 }
 
 @end

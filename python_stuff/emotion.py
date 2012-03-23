@@ -46,7 +46,7 @@ def emotions_for_sentence(sentence):
     for verb in verbs:
         emotion = en.verb.is_emotion(verb, boolean=False)
         add_word_and_emotion(verb, emotion)
-        
+    
     return emotion_word_matches
     
 

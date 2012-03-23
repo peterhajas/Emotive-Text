@@ -13,23 +13,10 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#import <Cocoa/Cocoa.h>
-#import "ETEmotionTextAttributer.h"
+#import <Foundation/Foundation.h>
 
-#define ETTextPointSize 120
+@interface ETAnimationAssignment : NSObject
 
-@interface ETTextView : NSView <NSTextInputClient>
-{
-    NSString* currentText;
-    NSMutableAttributedString* attributedText;
-    
-    CTLineRef line;
-    CGContextRef staleContext;
-    
-    ETEmotionTextAttributer* emotionTextAttributer;
-}
-
--(void)animateText:(NSString*)text;
--(void)funkyAnimationTime;
++(void)animateLayer:(CALayer*)layer forEmotion:(NSString*)emotion;
 
 @end
