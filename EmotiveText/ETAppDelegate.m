@@ -19,6 +19,7 @@
 @implementation ETAppDelegate
 
 @synthesize window = _window;
+@synthesize view = _view;
 
 -(void)applicationDidFinishLaunching:(NSNotification*)aNotification
 {
