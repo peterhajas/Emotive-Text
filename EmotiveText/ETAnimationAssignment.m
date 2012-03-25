@@ -96,8 +96,24 @@
 }
 
 +(void)animateLayerDisgust:(CALayer*)layer
-{
+{    
+    float duration = (float)rand()/(float)RAND_MAX + 8;
     
+    CABasicAnimation* runAwayAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    [runAwayAnimation setFromValue:[NSNumber numberWithInt:1.0]];
+    [runAwayAnimation setToValue:[NSNumber numberWithInt:0.1]];
+    [runAwayAnimation setDuration:duration];
+    
+    CABasicAnimation* jumpAnimation = [CABasicAnimation animationWithKeyPath:
+                                       @"transform.translation.y"];
+    [jumpAnimation setFromValue:[NSNumber numberWithFloat:0.0]];
+    [jumpAnimation setToValue:[NSNumber numberWithFloat:10.0]];
+    [jumpAnimation setDuration:0.1];
+    [jumpAnimation setAutoreverses:YES];
+    [jumpAnimation setRepeatCount:30];
+    
+    [layer addAnimation:runAwayAnimation forKey:@"runAwayAnimation"];
+    [layer addAnimation:jumpAnimation forKey:@"jumpingAnimation"];
 }
 
 +(void)animateLayerFear:(CALayer*)layer
