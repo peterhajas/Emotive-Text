@@ -17,6 +17,6 @@
 
 @interface ETLayerChopper : NSObject
 
-+(CALayer*)splitLayer:(CALayer*)layer byLine:(CTLineRef)line;
++(CALayer*)splitLayer:(CALayer*)layer byLine:(CTLineRef)line inContext:(CGContextRef)context;
 
 @end

@@ -14,43 +14,62 @@
  */
 
 #import "ETAnimationAssignment.h"
+#include <stdlib.h>
 
 @implementation ETAnimationAssignment
 
 +(void)animateLayer:(CALayer*)layer forEmotion:(NSString*)emotion
+{    
+    for(int i = 0; i < 2; i++)
+    {
+        float delayAmount = 0;
+        for(CALayer* sublayer in [layer sublayers])
+        {
+            NSArray* argumentsArray = [NSArray arrayWithObjects:sublayer, emotion, nil];
+            
+            [ETAnimationAssignment performSelector:@selector(animateSublayerForEmotion:)
+                                        withObject:argumentsArray
+                                        afterDelay:delayAmount];
+            
+            delayAmount += 0.08;
+        }
+    }
+}
+
++(void)animateSublayerForEmotion:(NSArray*)arguments
 {
-    //[layer setAnchorPoint:CGPointMake(layer.frame.size.width/2,
-      //                                layer.frame.size.height/2)];
+    CALayer* sublayer = [arguments objectAtIndex:0];
+    NSString* emotion = [arguments objectAtIndex:1];
     
-    CGRect oldFrame = [layer frame];
-    [layer setAnchorPoint:CGPointMake(0.5, 0.5)];
-    [layer setFrame:oldFrame];
+    CGRect oldFrame = [sublayer frame];
+    [sublayer setAnchorPoint:CGPointMake(0.5, 0.5)];
+    [sublayer setFrame:oldFrame];
     
-    [layer removeAllAnimations];
+    [sublayer removeAllAnimations];
     
     if([emotion isEqualToString:@"anger"])
     {
-        [ETAnimationAssignment animateLayerAnger:layer];
+        [ETAnimationAssignment animateLayerAnger:sublayer];
     }
     else if([emotion isEqualToString:@"disgust"])
     {
-        [ETAnimationAssignment animateLayerDisgust:layer];
+        [ETAnimationAssignment animateLayerDisgust:sublayer];
     }
     else if([emotion isEqualToString:@"fear"])
     {
-        [ETAnimationAssignment animateLayerFear:layer];
+        [ETAnimationAssignment animateLayerFear:sublayer];
     }
     else if([emotion isEqualToString:@"joy"])
     {
-        [ETAnimationAssignment animateLayerJoy:layer];
+        [ETAnimationAssignment animateLayerJoy:sublayer];
     }
     else if([emotion isEqualToString:@"sadness"])
     {
-        [ETAnimationAssignment animateLayerSadness:layer];
+        [ETAnimationAssignment animateLayerSadness:sublayer];
     }
     else if([emotion isEqualToString:@"surprise"])
     {
-        [ETAnimationAssignment animateLayerSurprise:layer];
+        [ETAnimationAssignment animateLayerSurprise:sublayer];
     }
 }
 
@@ -107,15 +126,17 @@
 
 +(void)animateLayerJoy:(CALayer*)layer
 {
+    int toValue = rand() % 55;
+    
     CABasicAnimation* jumpAnimation = [CABasicAnimation animationWithKeyPath:
                                        @"transform.translation.y"];
-    [jumpAnimation setFromValue:[NSNumber numberWithFloat:0.0]];
-    [jumpAnimation setToValue:[NSNumber numberWithFloat:50.0]];
-    [jumpAnimation setDuration:0.2];
+    [jumpAnimation setFromValue:[NSNumber numberWithFloat:0]];
+    [jumpAnimation setToValue:[NSNumber numberWithFloat:toValue]];
+    [jumpAnimation setDuration:0.1];
     [jumpAnimation setAutoreverses:YES];
-    [jumpAnimation setRepeatCount:CGFLOAT_MAX];
+    [jumpAnimation setRepeatCount:1];
     
-    CATransform3D upperRightSkewTransform = CATransform3DIdentity;
+    /*CATransform3D upperRightSkewTransform = CATransform3DIdentity;
     upperRightSkewTransform.m21 = 0.05;
     upperRightSkewTransform.m12 = 0.05;
     
@@ -140,7 +161,7 @@
     [upperLeftSkewAnimation setRepeatCount:CGFLOAT_MAX];
     
     [layer addAnimation:upperRightSkewAnimation forKey:@"upperRightSkewAnimation"];
-    [layer addAnimation:upperLeftSkewAnimation forKey:@"upperLeftSkewAnimation"];
+    [layer addAnimation:upperLeftSkewAnimation forKey:@"upperLeftSkewAnimation"];*/
     [layer addAnimation:jumpAnimation forKey:@"jumpAnimation"];
 }
 

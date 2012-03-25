@@ -30,6 +30,5 @@
 }
 
 -(void)animateText:(NSString*)text;
--(void)funkyAnimationTime;
 
 @end

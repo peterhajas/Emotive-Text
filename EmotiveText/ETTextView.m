@@ -29,23 +29,6 @@
     [self setNeedsDisplay:YES];
 }
 
--(void)funkyAnimationTime
-{
-    CABasicAnimation* animation;
-    
-    animation = [CABasicAnimation animationWithKeyPath:@"transform.translation.y"];
-    [animation setFromValue:[NSNumber numberWithFloat:15.0]];
-    [animation setToValue:[NSNumber numberWithFloat:0.0]];
-    [animation setDuration:0.3];
-    [animation setAutoreverses:YES];
-    [animation setRepeatCount:CGFLOAT_MAX];
-    
-    [[self layer] addAnimation:animation forKey:@"blinkAnimation"];
-    
-    NSLog(@"sublayers: %@", [[self layer] sublayers]);
-
-}
-
 #pragma mark Handling Marked Text
 // Marked text is not supported in EmotiveText
 
@@ -161,8 +144,10 @@
     
     CGContextSetTextPosition(staleContext, textXPosition, textYPosition);
     
-    CTLineDraw(line, staleContext);
+    // Draw the line into the context
     
+    CTLineDraw(line, staleContext);
+        
     // Find the first emotion mentioned in the attributed string
     NSString* firstEmotion = @"";
     for(NSUInteger i = 0; i < [currentText length]; i++)
@@ -175,7 +160,7 @@
         }
     }
     
-    [ETLayerChopper splitLayer:[self layer] byLine:line];
+    [self setLayer:[ETLayerChopper splitLayer:[self layer] byLine:line inContext:staleContext]];
     
     // Animate according to the first emotion
     [ETAnimationAssignment animateLayer:[self layer] forEmotion:firstEmotion];

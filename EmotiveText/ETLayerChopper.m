@@ -18,10 +18,29 @@
 
 @implementation ETLayerChopper
 
-+(CALayer*)splitLayer:(CALayer*)layer byLine:(CTLineRef)line
++(CALayer*)splitLayer:(CALayer*)layer byLine:(CTLineRef)line inContext:(CGContextRef)context;
 {
+    // Gross gross hack. Doesn't work yet.
+    
+    // Grab the contents out of the layer
+    
+    CGImageRef layerImage = CGBitmapContextCreateImage(context);
+    
+    // Create our new layer
+    CALayer* splitLayer = /*[CALayer layer]*/layer;
+    [splitLayer setFrame:[layer frame]];
+    
     // Grab the runs out of the line
     CFArrayRef runs = CTLineGetGlyphRuns(line);
+    
+    CGFloat lineWidth = CTLineGetImageBounds(line, context).size.width;
+    
+    // Running array of layers we're going to add
+    
+    NSMutableArray* futureSublayers = [[NSMutableArray alloc] init];
+    
+    // Keep track of the running X location of glyphs
+    CGFloat runningXLocation = ([layer bounds].size.width - lineWidth) / 2;
     
     for(NSUInteger i = 0; i < CFArrayGetCount(runs); i++)
     {
@@ -31,15 +50,52 @@
         {
             CGSize advance = CTRunGetAdvancesPtr(run)[j];
             CGFloat glyphWidth = advance.width;
-            CGFloat glyphHeight = ETTextPointSize;
+            CGFloat glyphHeight = [layer bounds].size.height;
+                        
+            // The rect for cropping layerContents
+            CGRect layerContentsRect = CGRectMake(runningXLocation,
+                                                  [layer bounds].origin.y,
+                                                  glyphWidth,
+                                                  glyphHeight);
             
+            CGImageRef glyphImageContents = CGImageCreateWithImageInRect(layerImage,
+                                                                         layerContentsRect);
+                        
+            // Create our new layer, representing just the glyph
+            CALayer* glyphLayer = [CALayer layer];
+            [glyphLayer setFrame:layerContentsRect];
             
+            [glyphLayer setContents:(__bridge id)glyphImageContents];
             
-            NSLog(@"glyph at %lu in run %lu with advance %f x %f", j, i, advance.width, advance.height);
+            // Add glyphLayer to future sublayers
+            [futureSublayers addObject:glyphLayer];
+            
+            // Increment the running X location by glyphWidth
+            runningXLocation += glyphWidth;
         }
+        
+        // Increment the running X location by width of the run
     }
     
-    return nil;
+    // Create a blank NSImage
+    NSRect frame = NSMakeRect(0, 0, [layer frame].size.width, [layer frame].size.height);
+    NSImage* blank = [[NSImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForImageResource:@"alpha"]];
+    
+    
+    CGImageRef blankImageRef = [blank CGImageForProposedRect:&frame
+                                                     context:nil
+                                                       hints:nil];
+    
+    // Set the layer contents to that image
+    [layer setContents:(__bridge id)blankImageRef];
+    
+    // Add all the future sublayers to layer
+    for(CALayer* futureSublayer in futureSublayers)
+    {
+        [layer addSublayer:futureSublayer];
+    }
+    
+    return splitLayer;
 }
 
 @end
