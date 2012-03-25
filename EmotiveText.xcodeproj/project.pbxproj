@@ -225,6 +225,7 @@
 		4F768ECA1519DC71001B1D52 /* ETTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F768EC91519DC71001B1D52 /* ETTextView.m */; };
 		4F768ECD1519DE71001B1D52 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F768ECC1519DE71001B1D52 /* ApplicationServices.framework */; };
 		4F80BDC5151B7A87004DF0AC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F768EC41519DB2B001B1D52 /* QuartzCore.framework */; };
+		4F891E2F151FC6DF007C60BA /* ETGradientBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F891E2E151FC6DF007C60BA /* ETGradientBackgroundView.m */; };
 		4FC1BD391519F7BA008C80FF /* ETEmotionTextAttributer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FC1BD381519F7BA008C80FF /* ETEmotionTextAttributer.m */; };
 		4FF9F634151BF528004A131D /* ETAnimationAssignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9F633151BF528004A131D /* ETAnimationAssignment.m */; };
 		4FF9F639151C34C8004A131D /* ETLayerChopper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF9F638151C34C8004A131D /* ETLayerChopper.m */; };
@@ -1124,6 +1125,8 @@
 		4F768EC81519DC71001B1D52 /* ETTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETTextView.h; sourceTree = "<group>"; };
 		4F768EC91519DC71001B1D52 /* ETTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETTextView.m; sourceTree = "<group>"; };
 		4F768ECC1519DE71001B1D52 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		4F891E2D151FC6DF007C60BA /* ETGradientBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETGradientBackgroundView.h; sourceTree = "<group>"; };
+		4F891E2E151FC6DF007C60BA /* ETGradientBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETGradientBackgroundView.m; sourceTree = "<group>"; };
 		4FC1BD371519F7BA008C80FF /* ETEmotionTextAttributer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETEmotionTextAttributer.h; sourceTree = "<group>"; };
 		4FC1BD381519F7BA008C80FF /* ETEmotionTextAttributer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETEmotionTextAttributer.m; sourceTree = "<group>"; };
 		4FF9F632151BF528004A131D /* ETAnimationAssignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETAnimationAssignment.h; sourceTree = "<group>"; };
@@ -1867,6 +1870,7 @@
 				4FF9F63A151C34DE004A131D /* Layer Chopper */,
 				4FC1BD3B1519F7BD008C80FF /* Text Attributer */,
 				4FF9F636151BF539004A131D /* Animation Assignment */,
+				4F891E31151FC6E6007C60BA /* Gradient Background */,
 			);
 			path = EmotiveText;
 			sourceTree = "<group>";
@@ -1892,6 +1896,15 @@
 				4F768EC91519DC71001B1D52 /* ETTextView.m */,
 			);
 			name = "Text View";
+			sourceTree = "<group>";
+		};
+		4F891E31151FC6E6007C60BA /* Gradient Background */ = {
+			isa = PBXGroup;
+			children = (
+				4F891E2D151FC6DF007C60BA /* ETGradientBackgroundView.h */,
+				4F891E2E151FC6DF007C60BA /* ETGradientBackgroundView.m */,
+			);
+			name = "Gradient Background";
 			sourceTree = "<group>";
 		};
 		4FC1BD3B1519F7BD008C80FF /* Text Attributer */ = {
@@ -2022,6 +2035,7 @@
 				4FC1BD391519F7BA008C80FF /* ETEmotionTextAttributer.m in Sources */,
 				4FF9F634151BF528004A131D /* ETAnimationAssignment.m in Sources */,
 				4FF9F639151C34C8004A131D /* ETLayerChopper.m in Sources */,
+				4F891E2F151FC6DF007C60BA /* ETGradientBackgroundView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

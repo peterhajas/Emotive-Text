@@ -13,31 +13,15 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#import "ETAppDelegate.h"
-#import "ETEmotionTextAttributer.h"
 #import "ETGradientBackgroundView.h"
 
-@implementation ETAppDelegate
+@implementation ETGradientBackgroundView
 
-@synthesize window = _window;
-@synthesize view = _view;
-
--(void)applicationDidFinishLaunching:(NSNotification*)aNotification
+- (void)drawRect:(NSRect)dirtyRect
 {
-    ETGradientBackgroundView* gradientView = [[ETGradientBackgroundView alloc] initWithFrame:[_view frame]];
-    [_view addSubview:gradientView];
-    
-    textView = [[ETTextView alloc] initWithFrame:[_view frame]];
-    [_view addSubview:textView];
-
-    ETEmotionTextAttributer* attributer = [[ETEmotionTextAttributer alloc] init];
-    [attributer attributedStringForText:@"I am happy today."];
-}
-
--(BOOL)control:(NSControl *)control textShouldEndEditing:(NSText *)fieldEditor
-{
-    [textView animateText:[fieldEditor string]];
-    return YES;
+    NSGradient* gradient = [[NSGradient alloc] initWithStartingColor:kETGradientStartingColor
+                                                         endingColor:kETGradientEndingColor];
+    [gradient drawInRect:dirtyRect angle:270];
 }
 
 @end
