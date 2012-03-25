@@ -124,20 +124,9 @@
     [shiverAnimation setToValue:[NSNumber numberWithFloat:5.0]];
     [shiverAnimation setDuration:0.05];
     [shiverAnimation setAutoreverses:YES];
-    [shiverAnimation setRepeatCount:CGFLOAT_MAX];
-    
-    CABasicAnimation* shrinkAnimation = [CABasicAnimation animationWithKeyPath:
-                                         @"transform.scale.y"];
-    [shrinkAnimation setFromValue:[NSNumber numberWithFloat:1.0]];
-    [shrinkAnimation setToValue:[NSNumber numberWithFloat:0.75]];
-    [shrinkAnimation setDuration:2.0];
-    [shrinkAnimation setAutoreverses:NO];
-    [shrinkAnimation setRepeatCount:CGFLOAT_MAX];
-    
-    [shrinkAnimation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
-    
+    [shiverAnimation setRepeatCount:20.0];
+            
     [layer addAnimation:shiverAnimation forKey:@"shiverAnimation"];
-    [layer addAnimation:shrinkAnimation forKey:@"shrinkAnimation"];
 }
 
 +(void)animateLayerJoy:(CALayer*)layer
