@@ -172,7 +172,13 @@
 
 +(void)animateLayerSurprise:(CALayer*)layer
 {
-    
+    float toValue = 1 + (float)rand()/(float)RAND_MAX;
+    NSLog(@"toValue: %f", toValue);
+    CABasicAnimation* shockAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale.y"];
+    [shockAnimation setFromValue:[NSNumber numberWithInt:1.0]];
+    [shockAnimation setToValue:[NSNumber numberWithFloat:2.0]];
+    [shockAnimation setDuration:0.1];
+    [layer addAnimation:shockAnimation forKey:@"shockAnimation"];
 }
 
 @end
