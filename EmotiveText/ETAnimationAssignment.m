@@ -78,21 +78,13 @@
     CABasicAnimation* popOutAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     
     [popOutAnimation setFromValue:[NSNumber numberWithFloat:1.0]];
-    [popOutAnimation setToValue:[NSNumber numberWithFloat:1.2]];
+    [popOutAnimation setToValue:[NSNumber numberWithFloat:1.8]];
     [popOutAnimation setDuration:0.1];
     [popOutAnimation setAutoreverses:YES];
-    [popOutAnimation setRepeatCount:CGFLOAT_MAX];
+    [popOutAnimation setRepeatCount:2];
+    [popOutAnimation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
     
-    CABasicAnimation* rotateAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    
-    [rotateAnimation setFromValue:[NSNumber numberWithFloat:-0.1]];
-    [rotateAnimation setToValue:[NSNumber numberWithFloat:0.1]];
-    [rotateAnimation setDuration:0.3];
-    [rotateAnimation setAutoreverses:YES];
-    [rotateAnimation setRepeatCount:CGFLOAT_MAX];
-    
-    [layer addAnimation:popOutAnimation forKey:@"popOutAnimation"];
-    [layer addAnimation:rotateAnimation forKey:@"rotateAnimation"];
+    [layer addAnimation:popOutAnimation forKey:@"rotateAnimation"];
 }
 
 +(void)animateLayerDisgust:(CALayer*)layer
