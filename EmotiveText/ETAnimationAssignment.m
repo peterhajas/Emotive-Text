@@ -167,7 +167,13 @@
 
 +(void)animateLayerSadness:(CALayer*)layer
 {
+    float duration = (float)rand()/(float)RAND_MAX + 8;
     
+    CABasicAnimation* rainAnimation = [CABasicAnimation animationWithKeyPath:@"transform.translation.y"];
+    [rainAnimation setFromValue:[NSNumber numberWithInt:0.0]];
+    [rainAnimation setToValue:[NSNumber numberWithInt:-1000]];
+    [rainAnimation setDuration:duration];
+    [layer addAnimation:rainAnimation forKey:@"rainAnimation"];
 }
 
 +(void)animateLayerSurprise:(CALayer*)layer
