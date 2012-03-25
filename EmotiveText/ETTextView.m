@@ -160,6 +160,9 @@
         }
     }
     
+    // Remove all sublayers from our layer
+    [[self layer] setSublayers:nil];
+    
     [self setLayer:[ETLayerChopper splitLayer:[self layer] byLine:line inContext:staleContext]];
     
     // Animate according to the first emotion

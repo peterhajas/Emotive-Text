@@ -21,7 +21,7 @@
 +(CALayer*)splitLayer:(CALayer*)layer byLine:(CTLineRef)line inContext:(CGContextRef)context;
 {
     // Gross gross hack. Doesn't work yet.
-    
+        
     // Grab the contents out of the layer
     
     CGImageRef layerImage = CGBitmapContextCreateImage(context);
@@ -81,7 +81,8 @@
     NSRect frame = NSMakeRect(0, 0, [layer frame].size.width, [layer frame].size.height);
     NSImage* blank = [[NSImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForImageResource:@"alpha"]];
     
-    
+    [blank setSize:frame.size];
+        
     CGImageRef blankImageRef = [blank CGImageForProposedRect:&frame
                                                      context:nil
                                                        hints:nil];
