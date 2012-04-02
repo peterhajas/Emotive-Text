@@ -40,7 +40,7 @@
     }
     else if([emotion isEqualToString:@"joy"])
     {
-        return @"Zapfino";
+        return @"Helvetica";
     }
     else if([emotion isEqualToString:@"sadness"])
     {
