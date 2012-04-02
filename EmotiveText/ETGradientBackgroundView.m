@@ -17,11 +17,41 @@
 
 @implementation ETGradientBackgroundView
 
-- (void)drawRect:(NSRect)dirtyRect
+-(NSGradient*)backgroundGradient
 {
     NSGradient* gradient = [[NSGradient alloc] initWithStartingColor:kETGradientStartingColor
                                                          endingColor:kETGradientEndingColor];
-    [gradient drawInRect:dirtyRect angle:270];
+    
+    return gradient;
+}
+
++(CGColorRef)colorRefForColor:(NSColor*)color
+{
+    CGFloat components[4];
+    components[0] = [color redComponent];
+    components[1] = [color greenComponent];
+    components[2] = [color blueComponent];
+    components[3] = [color alphaComponent];
+    
+    return CGColorCreate(CGColorSpaceCreateDeviceRGB(), components);
+}
+
++(CALayer*)gradientLayerForFrame:(CGRect)frame
+{
+    CAGradientLayer* gradientLayer = [CAGradientLayer layer];
+    
+    [gradientLayer setColors:[NSArray arrayWithObjects:(id)[ETGradientBackgroundView colorRefForColor:kETGradientEndingColor],
+                                                       (id)[ETGradientBackgroundView colorRefForColor:kETGradientStartingColor],
+                                                       nil]];
+    
+    [gradientLayer setFrame:frame];
+    
+    return gradientLayer;
+}
+
+-(void)drawRect:(NSRect)dirtyRect
+{
+    [[self backgroundGradient] drawInRect:dirtyRect angle:270];
 }
 
 @end

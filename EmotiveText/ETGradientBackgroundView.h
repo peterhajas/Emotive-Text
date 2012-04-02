@@ -15,8 +15,12 @@
 
 #import <Cocoa/Cocoa.h>
 #define kETGradientStartingColor [NSColor colorWithCalibratedRed:1.0 green:1.0 blue:1.0 alpha:1.0]
-#define kETGradientEndingColor [NSColor colorWithCalibratedRed:0.0 green:0.0 blue:0.0 alpha:0.1]
+#define kETGradientEndingColor [NSColor colorWithCalibratedRed:0.5 green:0.5 blue:0.5 alpha:1.0]
 
 @interface ETGradientBackgroundView : NSView
+
+-(NSGradient*)backgroundGradient;
++(CGColorRef)colorRefForColor:(NSColor*)color;
++(CALayer*)gradientLayerForFrame:(CGRect)frame;
 
 @end

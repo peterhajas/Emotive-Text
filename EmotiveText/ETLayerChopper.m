@@ -15,6 +15,7 @@
 
 #import "ETLayerChopper.h"
 #import "ETTextView.h"
+#import "ETGradientBackgroundView.h"
 
 @implementation ETLayerChopper
 
@@ -76,25 +77,18 @@
         
         // Increment the running X location by width of the run
     }
-    
-    // Create a blank NSImage
-    NSRect frame = NSMakeRect(0, 0, [layer frame].size.width, [layer frame].size.height);
-    NSImage* blank = [[NSImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForImageResource:@"alpha"]];
-    
-    [blank setSize:frame.size];
         
-    CGImageRef blankImageRef = [blank CGImageForProposedRect:&frame
-                                                     context:nil
-                                                       hints:nil];
-    
-    // Set the layer contents to that image
-    [layer setContents:(__bridge id)blankImageRef];
+    // Add a gradient layer as a sublayer
+    CALayer* gradientLayer = [ETGradientBackgroundView gradientLayerForFrame:[layer frame]];
+    [layer addSublayer:gradientLayer];
     
     // Add all the future sublayers to layer
     for(CALayer* futureSublayer in futureSublayers)
     {
         [layer addSublayer:futureSublayer];
     }
+    
+    [layer setNeedsDisplay];
     
     return splitLayer;
 }
