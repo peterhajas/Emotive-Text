@@ -18,5 +18,6 @@
 @interface ETLayerChopper : NSObject
 
 +(CALayer*)splitLayer:(CALayer*)layer byLine:(CTLineRef)line inContext:(CGContextRef)context;
++(CALayer*)setBottomLayerToGradient:(CALayer*)layer;
 
 @end

@@ -27,6 +27,9 @@
     CGContextRef staleContext;
     
     ETEmotionTextAttributer* emotionTextAttributer;
+    
+    BOOL shouldAnimate;
+    NSString* pendingText;
 }
 
 -(void)animateText:(NSString*)text;

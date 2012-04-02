@@ -77,10 +77,8 @@
         
         // Increment the running X location by width of the run
     }
-        
-    // Add a gradient layer as a sublayer
-    CALayer* gradientLayer = [ETGradientBackgroundView gradientLayerForFrame:[layer frame]];
-    [layer addSublayer:gradientLayer];
+    
+    layer = [ETLayerChopper setBottomLayerToGradient:layer];
     
     // Add all the future sublayers to layer
     for(CALayer* futureSublayer in futureSublayers)
@@ -91,6 +89,15 @@
     [layer setNeedsDisplay];
     
     return splitLayer;
+}
+
++(CALayer*)setBottomLayerToGradient:(CALayer*)layer
+{
+    [layer setSublayers:nil];
+    // Add a gradient layer as a sublayer
+    CALayer* gradientLayer = [ETGradientBackgroundView gradientLayerForFrame:[layer frame]];
+    [layer addSublayer:gradientLayer];
+    return layer;
 }
 
 @end

@@ -22,7 +22,7 @@
     PyObject* emotion;
 }
 
--(NSAttributedString*)attributedStringForText:(NSString*)text;
+-(NSAttributedString*)attributedStringForText:(NSString*)text withEmotion:(BOOL)emotion;
 -(NSDictionary*)emotionMappingForText:(NSString*)text;
 
 @end

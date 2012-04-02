@@ -45,7 +45,7 @@
     return self;
 }
 
--(NSAttributedString*)attributedStringForText:(NSString*)text
+-(NSAttributedString*)attributedStringForText:(NSString*)text withEmotion:(BOOL)emotion
 {
     NSMutableAttributedString* attributedString = [[NSMutableAttributedString alloc] initWithString:text];
     
@@ -53,28 +53,31 @@
                                                               forKey:NSFontAttributeName]
                               range:[text rangeOfString:text]];
     
-    NSDictionary* emotionMapping = [self emotionMappingForText:text];
-
-    // For each emotion, set the text for that emotion to an appropriate typeface
-    
-    for(NSString* key in [emotionMapping allKeys])
+    if(emotion)
     {
-        // For each word with this emotion, set the typeface
+        NSDictionary* emotionMapping = [self emotionMappingForText:text];
+
+        // For each emotion, set the text for that emotion to an appropriate typeface
         
-        NSFont* emotionFont = [ETFontAssignment fontForEmotion:key];
-        
-        for(NSString* word in (NSArray*)[emotionMapping valueForKey:key])
+        for(NSString* key in [emotionMapping allKeys])
         {
-            NSRange rangeForWord = [text rangeOfString:word];
-            [attributedString setAttributes:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:
-                                                                                 emotionFont,
-                                                                                 key,
-                                                                                 nil]
-                                                                        forKeys:[NSArray arrayWithObjects:
-                                                                                 NSFontAttributeName,
-                                                                                 ETEmotionAttributeKey,
-                                                                                 nil]]
-                                      range:[text rangeOfString:text]];
+            // For each word with this emotion, set the typeface
+            
+            NSFont* emotionFont = [ETFontAssignment fontForEmotion:key];
+            
+            for(NSString* word in (NSArray*)[emotionMapping valueForKey:key])
+            {
+                NSRange rangeForWord = [text rangeOfString:word];
+                [attributedString setAttributes:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:
+                                                                                     emotionFont,
+                                                                                     key,
+                                                                                     nil]
+                                                                            forKeys:[NSArray arrayWithObjects:
+                                                                                     NSFontAttributeName,
+                                                                                     ETEmotionAttributeKey,
+                                                                                     nil]]
+                                          range:[text rangeOfString:text]];
+            }
         }
     }
         

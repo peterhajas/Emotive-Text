@@ -25,7 +25,8 @@
     currentText = text;
     
     attributedText = [[NSMutableAttributedString alloc]
-                      initWithAttributedString:[emotionTextAttributer attributedStringForText:text]];
+                      initWithAttributedString:[emotionTextAttributer attributedStringForText:text
+                                                                                  withEmotion:YES]];
         
     [self setNeedsDisplay:YES];
 }
@@ -60,23 +61,42 @@
 
 -(NSArray*)validAttributesForMarkedText
 {
-    return [NSArray arrayWithObject:nil];
+    return [NSArray arrayWithObject:NSFontAttributeName];
 }
 
 #pragma mark Storing Text
 
 -(NSAttributedString *)attributedSubstringForProposedRange:(NSRange)aRange actualRange:(NSRangePointer)actualRange
 {
-    NSString* helloString = @"hello";
-    NSAttributedString* attributedHelloString = [[NSAttributedString alloc] initWithString:helloString];
-    return attributedHelloString;
+    return attributedText;
 }
 
 -(void)insertText:(id)aString replacementRange:(NSRange)replacementRange
 {
-    NSLog(@"Asked to insert text: %@ at %lu for length %lu", (NSString*)aString, 
-                                                             replacementRange.location, 
-                                                             replacementRange.length);
+    pendingText = [pendingText stringByAppendingString:aString];
+    currentText = pendingText;
+    attributedText = [[NSMutableAttributedString alloc]
+                      initWithAttributedString:[emotionTextAttributer attributedStringForText:pendingText
+                                                                                  withEmotion:NO]];
+    [self setNeedsDisplay:YES];
+}
+
+-(void)deleteBackward:(id)sender
+{
+    if([pendingText length] > 0)
+    {
+        pendingText = [pendingText substringToIndex:[pendingText length]-1];
+        currentText = pendingText;
+        attributedText = [[NSMutableAttributedString alloc]
+                          initWithAttributedString:[emotionTextAttributer attributedStringForText:pendingText
+                                                                                      withEmotion:NO]];
+    }
+    else
+    {
+        [self setLayer:[ETLayerChopper setBottomLayerToGradient:[self layer]]];
+    }
+         
+    [self setNeedsDisplay:YES];
 }
 
 #pragma mark Getting Character Coordinates
@@ -95,7 +115,7 @@
 
 -(void)doCommandBySelector:(SEL)aSelector
 {
-    NSLog(@"Asked to do command by selector %@", NSStringFromSelector(aSelector));
+    [self performSelector:aSelector];
 }
 
 #pragma mark View Lifecycle Stuff
@@ -107,8 +127,11 @@
     {
         line = nil;
         currentText = @"";
+        pendingText = @"";
         
         emotionTextAttributer = [[ETEmotionTextAttributer alloc] init];
+        
+        shouldAnimate = NO;
     }
     
     return self;
@@ -142,26 +165,28 @@
     // Draw the line into the context
     
     CTLineDraw(line, staleContext);
-        
-    // Find the first emotion mentioned in the attributed string
-    NSString* firstEmotion = @"";
-    for(NSUInteger i = 0; i < [currentText length]; i++)
-    {
-        NSDictionary* attributesAtIndex = [attributedText attributesAtIndex:i effectiveRange:NULL];
-        if([[attributesAtIndex allKeys] containsObject:ETEmotionAttributeKey])
-        {
-            firstEmotion = [attributesAtIndex valueForKey:ETEmotionAttributeKey];
-            break;
-        }
-    }
-    
-    // Remove all sublayers from our layer
-    [[self layer] setSublayers:nil];
     
     [self setLayer:[ETLayerChopper splitLayer:[self layer] byLine:line inContext:staleContext]];
     
-    // Animate according to the first emotion
-    [ETAnimationAssignment animateLayer:[self layer] forEmotion:firstEmotion];
+    if(shouldAnimate)
+    {
+        // Find the first emotion mentioned in the attributed string
+        NSString* firstEmotion = @"";
+        for(NSUInteger i = 0; i < [currentText length]; i++)
+        {
+            NSDictionary* attributesAtIndex = [attributedText attributesAtIndex:i effectiveRange:NULL];
+            if([[attributesAtIndex allKeys] containsObject:ETEmotionAttributeKey])
+            {
+                firstEmotion = [attributesAtIndex valueForKey:ETEmotionAttributeKey];
+                break;
+            }
+        }
+        
+        // Animate according to the first emotion
+        [ETAnimationAssignment animateLayer:[self layer] forEmotion:firstEmotion];
+
+        shouldAnimate = NO;
+    }
 }
 
 -(NSUInteger)autoresizingMask
@@ -172,6 +197,34 @@
 -(void)viewDidEndLiveResize
 {
     [self setNeedsDisplay:YES];
+}
+
+-(BOOL)becomeFirstResponder
+{
+    NSLog(@"become first responder");
+    return YES;
+}
+
+-(BOOL)resignFirstResponder
+{
+    return NO;
+}
+
+-(BOOL)acceptsFirstResponder
+{
+    return YES;
+}
+
+-(void)insertNewline:(id)sender
+{
+    shouldAnimate = YES;
+    [self animateText:pendingText];
+    pendingText = @"";
+}
+
+-(void)keyDown:(NSEvent *)theEvent
+{
+    [[NSTextInputContext currentInputContext] handleEvent:theEvent];
 }
 
 @end
