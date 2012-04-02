@@ -16,6 +16,7 @@
 #import "ETTextView.h"
 #import "ETAnimationAssignment.h"
 #import "ETLayerChopper.h"
+#import "ETFontAssignment.h"
 
 @implementation ETTextView
 
@@ -25,7 +26,7 @@
     
     attributedText = [[NSMutableAttributedString alloc]
                       initWithAttributedString:[emotionTextAttributer attributedStringForText:text]];
-    
+        
     [self setNeedsDisplay:YES];
 }
 
@@ -123,13 +124,7 @@
     staleContext = (CGContextRef)[[NSGraphicsContext currentContext] graphicsPort];
     
     CFMutableAttributedStringRef attributedString = (__bridge CFMutableAttributedStringRef)attributedText;
-    
-    CTFontRef font = CTFontCreateWithName(CFSTR("Helvetica"), ETTextPointSize, NULL);
-    CFAttributedStringSetAttribute(attributedString,
-                                   CFRangeMake(0, CFAttributedStringGetLength(attributedString)),
-                                   kCTFontAttributeName,
-                                   font);
-    
+        
     if(line != nil)
     {
         CFRelease(line);

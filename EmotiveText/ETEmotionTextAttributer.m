@@ -14,6 +14,7 @@
  */
 
 #import "ETEmotionTextAttributer.h"
+#import "ETFontAssignment.h"
 #import <Python/Python.h>
 
 @implementation ETEmotionTextAttributer
@@ -48,6 +49,10 @@
 {
     NSMutableAttributedString* attributedString = [[NSMutableAttributedString alloc] initWithString:text];
     
+    [attributedString setAttributes:[NSDictionary dictionaryWithObject:[ETFontAssignment fontForEmotion:@"None"]
+                                                              forKey:NSFontAttributeName]
+                              range:[text rangeOfString:text]];
+    
     NSDictionary* emotionMapping = [self emotionMappingForText:text];
 
     // For each emotion, set the text for that emotion to an appropriate typeface
@@ -56,18 +61,20 @@
     {
         // For each word with this emotion, set the typeface
         
+        NSFont* emotionFont = [ETFontAssignment fontForEmotion:key];
+        
         for(NSString* word in (NSArray*)[emotionMapping valueForKey:key])
         {
             NSRange rangeForWord = [text rangeOfString:word];
             [attributedString setAttributes:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:
-                                                                                 [NSNumber numberWithInt:1],
+                                                                                 emotionFont,
                                                                                  key,
                                                                                  nil]
                                                                         forKeys:[NSArray arrayWithObjects:
-                                                                                 NSUnderlineStyleAttributeName,
+                                                                                 NSFontAttributeName,
                                                                                  ETEmotionAttributeKey,
                                                                                  nil]]
-                                      range:rangeForWord];
+                                      range:[text rangeOfString:text]];
         }
     }
         
