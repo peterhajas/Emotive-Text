@@ -14,14 +14,14 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <Python/Python.h>
 #define ETEmotionAttributeKey @"emotion"
 
 @interface ETEmotionTextAttributer : NSObject
 {
-    PyObject* emotion;
+    NSDictionary* emotionMapping;
 }
 
+-(BOOL)textHasEmotion:(NSString*)text;
 -(NSAttributedString*)attributedStringForText:(NSString*)text withEmotion:(BOOL)emotion;
 -(NSDictionary*)emotionMappingForText:(NSString*)text;
 

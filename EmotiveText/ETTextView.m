@@ -20,12 +20,16 @@
 
 @implementation ETTextView
 
--(void)animateText:(NSString*)text
+-(void)textChanged
 {
-    currentText = text;
-    
+    hasEmotion = [emotionTextAttributer textHasEmotion:currentText];
+    [self animate];
+}
+
+-(void)animate
+{
     attributedText = [[NSMutableAttributedString alloc]
-                      initWithAttributedString:[emotionTextAttributer attributedStringForText:text
+                      initWithAttributedString:[emotionTextAttributer attributedStringForText:currentText
                                                                                   withEmotion:YES]];
         
     [self setNeedsDisplay:YES];
@@ -73,30 +77,21 @@
 
 -(void)insertText:(id)aString replacementRange:(NSRange)replacementRange
 {
-    pendingText = [pendingText stringByAppendingString:aString];
-    currentText = pendingText;
-    attributedText = [[NSMutableAttributedString alloc]
-                      initWithAttributedString:[emotionTextAttributer attributedStringForText:pendingText
-                                                                                  withEmotion:NO]];
-    [self setNeedsDisplay:YES];
+    currentText = [currentText stringByAppendingString:aString];
+    [self textChanged];
 }
 
 -(void)deleteBackward:(id)sender
 {
-    if([pendingText length] > 0)
+    if([currentText length] > 0)
     {
-        pendingText = [pendingText substringToIndex:[pendingText length]-1];
-        currentText = pendingText;
-        attributedText = [[NSMutableAttributedString alloc]
-                          initWithAttributedString:[emotionTextAttributer attributedStringForText:pendingText
-                                                                                      withEmotion:NO]];
+        currentText = [currentText substringToIndex:[currentText length] - 1];
     }
     else
     {
-        [self setLayer:[ETLayerChopper setBottomLayerToGradient:[self layer]]];
+        currentText = @" ";
     }
-         
-    [self setNeedsDisplay:YES];
+    [self textChanged];
 }
 
 #pragma mark Getting Character Coordinates
@@ -127,11 +122,10 @@
     {
         line = nil;
         currentText = @"";
-        pendingText = @"";
         
         emotionTextAttributer = [[ETEmotionTextAttributer alloc] init];
-        
-        shouldAnimate = NO;
+        animationAssignment = [[ETAnimationAssignment alloc] init];
+        [animationAssignment setDelegate:self];
     }
     
     return self;
@@ -168,7 +162,7 @@
     
     [self setLayer:[ETLayerChopper splitLayer:[self layer] byLine:line inContext:staleContext]];
     
-    if(shouldAnimate)
+    if(hasEmotion)
     {
         // Find the first emotion mentioned in the attributed string
         NSString* firstEmotion = @"";
@@ -183,9 +177,11 @@
         }
         
         // Animate according to the first emotion
-        [ETAnimationAssignment animateLayer:[self layer] forEmotion:firstEmotion];
-
-        shouldAnimate = NO;
+        [animationAssignment animateLayer:[self layer] forEmotion:firstEmotion];
+    }
+    else
+    {
+        [animationAssignment animateLayer:[self layer] forEmotion:@"none"];
     }
 }
 
@@ -215,16 +211,16 @@
     return YES;
 }
 
--(void)insertNewline:(id)sender
-{
-    shouldAnimate = YES;
-    [self animateText:pendingText];
-    pendingText = @"";
-}
-
 -(void)keyDown:(NSEvent *)theEvent
 {
     [[NSTextInputContext currentInputContext] handleEvent:theEvent];
+}
+
+-(void)lastLayerAnimated
+{
+    // Set text to nothing, and animate
+    currentText = @" ";
+    [self animate];
 }
 
 @end

@@ -18,7 +18,9 @@
 
 @implementation ETAnimationAssignment
 
-+(void)animateLayer:(CALayer*)layer forEmotion:(NSString*)emotion
+@synthesize delegate;
+
+-(void)animateLayer:(CALayer*)layer forEmotion:(NSString*)emotion
 {    
     for(int i = 0; i < 2; i++)
     {
@@ -29,21 +31,34 @@
             {
                 continue;
             }
-            NSArray* argumentsArray = [NSArray arrayWithObjects:sublayer, emotion, nil];
             
-            [ETAnimationAssignment performSelector:@selector(animateSublayerForEmotion:)
-                                        withObject:argumentsArray
-                                        afterDelay:delayAmount];
+            BOOL isLastLayer = NO;
+            
+            if([sublayer isEqualTo:[[layer sublayers] lastObject]])
+            {
+                isLastLayer = YES;
+            }
+            
+            NSArray* argumentsArray = [NSArray arrayWithObjects:sublayer,
+                                                                emotion,
+                                                                [NSNumber numberWithBool:isLastLayer],
+                                                                nil];
+            
+            [self performSelector:@selector(animateSublayerForEmotion:)
+                       withObject:argumentsArray
+                       afterDelay:delayAmount];
             
             delayAmount += 0.08;
         }
     }
 }
 
-+(void)animateSublayerForEmotion:(NSArray*)arguments
+-(void)animateSublayerForEmotion:(NSArray*)arguments
 {
     CALayer* sublayer = [arguments objectAtIndex:0];
     NSString* emotion = [arguments objectAtIndex:1];
+    BOOL isLastLayer = [[arguments objectAtIndex:2] boolValue];
+    BOOL shouldTellDelegate = YES;
     
     CGRect oldFrame = [sublayer frame];
     [sublayer setAnchorPoint:CGPointMake(0.5, 0.5)];
@@ -51,33 +66,53 @@
     
     [sublayer removeAllAnimations];
     
+    CAAnimation* emotionAnimation = nil;
+    
     if([emotion isEqualToString:@"anger"])
     {
-        [ETAnimationAssignment animateLayerAnger:sublayer];
+        emotionAnimation = [self animationAnger];
     }
     else if([emotion isEqualToString:@"disgust"])
     {
-        [ETAnimationAssignment animateLayerDisgust:sublayer];
+        emotionAnimation = [self animationDisgust];
     }
     else if([emotion isEqualToString:@"fear"])
     {
-        [ETAnimationAssignment animateLayerFear:sublayer];
+        emotionAnimation = [self animationFear];
     }
     else if([emotion isEqualToString:@"joy"])
     {
-        [ETAnimationAssignment animateLayerJoy:sublayer];
+        emotionAnimation = [self animationJoy];
     }
     else if([emotion isEqualToString:@"sadness"])
     {
-        [ETAnimationAssignment animateLayerSadness:sublayer];
+        emotionAnimation = [self animationSadness];
     }
     else if([emotion isEqualToString:@"surprise"])
     {
-        [ETAnimationAssignment animateLayerSurprise:sublayer];
+        emotionAnimation = [self animationSurprise];
+    }
+    else if([emotion isEqualToString:@"none"])
+    {
+        emotionAnimation = [self animationNone];
+        shouldTellDelegate = NO;
+    }
+    else
+    {
+        NSLog(@"Unknown animation for emotion %@", emotion);
+    }
+    
+    if(emotionAnimation != nil)
+    {
+        if(isLastLayer && shouldTellDelegate)
+        {
+            [emotionAnimation setDelegate:self];
+        }
+        [sublayer addAnimation:emotionAnimation forKey:@"EmotionAnimation"];
     }
 }
 
-+(void)animateLayerAnger:(CALayer*)layer
+-(CAAnimation*)animationAnger
 {
     CABasicAnimation* popOutAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     
@@ -88,10 +123,10 @@
     [popOutAnimation setRepeatCount:2];
     [popOutAnimation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
     
-    [layer addAnimation:popOutAnimation forKey:@"rotateAnimation"];
+    return popOutAnimation;
 }
 
-+(void)animateLayerDisgust:(CALayer*)layer
+-(CAAnimation*)animationDisgust
 {    
     float duration = (float)rand()/(float)RAND_MAX + 8;
     
@@ -108,11 +143,15 @@
     [jumpAnimation setAutoreverses:YES];
     [jumpAnimation setRepeatCount:30];
     
-    [layer addAnimation:runAwayAnimation forKey:@"runAwayAnimation"];
-    [layer addAnimation:jumpAnimation forKey:@"jumpingAnimation"];
+    CAAnimationGroup* animationGroup = [[CAAnimationGroup alloc] init];
+    [animationGroup setAnimations:[NSArray arrayWithObjects:runAwayAnimation,
+                                                            jumpAnimation,
+                                                            nil]];
+    
+    return animationGroup;
 }
 
-+(void)animateLayerFear:(CALayer*)layer
+-(CAAnimation*)animationFear
 {
     CABasicAnimation* shiverAnimation = [CABasicAnimation animationWithKeyPath:
                                          @"transform.translation.x"];
@@ -122,10 +161,10 @@
     [shiverAnimation setAutoreverses:YES];
     [shiverAnimation setRepeatCount:20.0];
             
-    [layer addAnimation:shiverAnimation forKey:@"shiverAnimation"];
+    return shiverAnimation;
 }
 
-+(void)animateLayerJoy:(CALayer*)layer
+-(CAAnimation*)animationJoy
 {
     int toValue = rand() % 55;
     
@@ -137,36 +176,10 @@
     [jumpAnimation setAutoreverses:YES];
     [jumpAnimation setRepeatCount:1];
     
-    /*CATransform3D upperRightSkewTransform = CATransform3DIdentity;
-    upperRightSkewTransform.m21 = 0.05;
-    upperRightSkewTransform.m12 = 0.05;
-    
-    CABasicAnimation* upperRightSkewAnimation = [CABasicAnimation animationWithKeyPath:
-                                                 @"transform"];
-    [upperRightSkewAnimation setFromValue:[NSValue valueWithCATransform3D:CATransform3DIdentity]];
-    [upperRightSkewAnimation setToValue:[NSValue valueWithCATransform3D:upperRightSkewTransform]];
-    [upperRightSkewAnimation setDuration:0.3];
-    [upperRightSkewAnimation setAutoreverses:YES];
-    [upperRightSkewAnimation setRepeatCount:CGFLOAT_MAX];
-    
-    CATransform3D upperLeftSkewTransform = CATransform3DIdentity;
-    upperLeftSkewTransform.m21 = -0.05;
-    upperLeftSkewTransform.m12 = -0.05;
-    
-    CABasicAnimation* upperLeftSkewAnimation = [CABasicAnimation animationWithKeyPath:
-                                                @"transform"];
-    [upperLeftSkewAnimation setFromValue:[NSValue valueWithCATransform3D:upperLeftSkewTransform]];
-    [upperLeftSkewAnimation setToValue:[NSValue valueWithCATransform3D:CATransform3DIdentity]];
-    [upperLeftSkewAnimation setDuration:0.4];
-    [upperLeftSkewAnimation setAutoreverses:YES];
-    [upperLeftSkewAnimation setRepeatCount:CGFLOAT_MAX];
-    
-    [layer addAnimation:upperRightSkewAnimation forKey:@"upperRightSkewAnimation"];
-    [layer addAnimation:upperLeftSkewAnimation forKey:@"upperLeftSkewAnimation"];*/
-    [layer addAnimation:jumpAnimation forKey:@"jumpAnimation"];
+    return jumpAnimation;
 }
 
-+(void)animateLayerSadness:(CALayer*)layer
+-(CAAnimation*)animationSadness
 {
     float duration = (float)rand()/(float)RAND_MAX + 8;
     
@@ -174,10 +187,11 @@
     [rainAnimation setFromValue:[NSNumber numberWithInt:0.0]];
     [rainAnimation setToValue:[NSNumber numberWithInt:-1000]];
     [rainAnimation setDuration:duration];
-    [layer addAnimation:rainAnimation forKey:@"rainAnimation"];
+    
+    return rainAnimation;
 }
 
-+(void)animateLayerSurprise:(CALayer*)layer
+-(CAAnimation*)animationSurprise;
 {
     float toValue = 1 + (float)rand()/(float)RAND_MAX;
 
@@ -185,7 +199,27 @@
     [shockAnimation setFromValue:[NSNumber numberWithInt:1.0]];
     [shockAnimation setToValue:[NSNumber numberWithFloat:toValue]];
     [shockAnimation setDuration:0.1];
-    [layer addAnimation:shockAnimation forKey:@"shockAnimation"];
+    
+    return shockAnimation;
+}
+
+-(CAAnimation*)animationNone;
+{
+    CABasicAnimation* fadeAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    [fadeAnimation setFromValue:[NSNumber numberWithFloat:1.0]];
+    [fadeAnimation setToValue:[NSNumber numberWithFloat:0.3]];
+    [fadeAnimation setDuration:3.5];
+    [fadeAnimation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
+    
+    return fadeAnimation;
+}
+
+-(void)animationDidStop:(CAAnimation *)theAnimation finished:(BOOL)flag
+{
+    if(flag)
+    {
+        [delegate lastLayerAnimated];
+    }
 }
 
 @end

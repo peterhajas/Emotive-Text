@@ -13,22 +13,10 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#import <Foundation/Foundation.h>
+#import <Cocoa/Cocoa.h>
 
-@protocol ETAnimationAssignmentDelegate <NSObject>
-
--(void)lastLayerAnimated;
-
-@end
-
-@interface ETAnimationAssignment : NSObject
+@interface ETCaretView : NSView
 {
-    NSObject<ETAnimationAssignmentDelegate>* delegate;
+    CABasicAnimation* blinkAnimation;
 }
-
-
--(void)animateLayer:(CALayer*)layer forEmotion:(NSString*)emotion;
-
-@property (nonatomic,retain) NSObject<ETAnimationAssignmentDelegate>* delegate;
-
 @end

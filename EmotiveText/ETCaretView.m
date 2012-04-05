@@ -13,22 +13,32 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#import <Foundation/Foundation.h>
+#import "ETCaretView.h"
+#define kGNTextCaretViewWidth 5
 
-@protocol ETAnimationAssignmentDelegate <NSObject>
+@implementation ETCaretView
 
--(void)lastLayerAnimated;
-
-@end
-
-@interface ETAnimationAssignment : NSObject
+-(id)init
 {
-    NSObject<ETAnimationAssignmentDelegate>* delegate;
+    self = [super initWithFrame:CGRectMake(0,
+                                           0,
+                                           kGNTextCaretViewWidth,
+                                           100)];
+    return self;
 }
-
-
--(void)animateLayer:(CALayer*)layer forEmotion:(NSString*)emotion;
-
-@property (nonatomic,retain) NSObject<ETAnimationAssignmentDelegate>* delegate;
+/*
+-(void)didMoveToSuperview
+{
+    [self setBackgroundColor:kGNAlternateTintColor];
+    
+    animation = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    [animation setFromValue:[NSNumber numberWithFloat:1.0]];
+    [animation setToValue:[NSNumber numberWithFloat:0.0]];
+    [animation setDuration:0.3];
+    [animation setAutoreverses:YES];
+    [animation setRepeatCount:CGFLOAT_MAX];
+    
+    [[self layer] addAnimation:animation forKey:@"blinkAnimation"];
+}*/
 
 @end

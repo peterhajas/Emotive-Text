@@ -15,10 +15,12 @@
 
 #import <Cocoa/Cocoa.h>
 #import "ETEmotionTextAttributer.h"
+#import "ETAnimationAssignment.h"
 
 #define ETTextPointSize 120
 
-@interface ETTextView : NSView <NSTextInputClient>
+@interface ETTextView : NSView <NSTextInputClient,
+                                ETAnimationAssignmentDelegate>
 {
     NSString* currentText;
     NSMutableAttributedString* attributedText;
@@ -27,11 +29,11 @@
     CGContextRef staleContext;
     
     ETEmotionTextAttributer* emotionTextAttributer;
+    ETAnimationAssignment* animationAssignment;
     
-    BOOL shouldAnimate;
-    NSString* pendingText;
+    BOOL hasEmotion;
 }
 
--(void)animateText:(NSString*)text;
+-(void)animate;
 
 @end

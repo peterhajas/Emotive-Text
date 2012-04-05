@@ -24,25 +24,17 @@
     self = [super init];
     if(self)
     {
-        // Initialize Python
-        
-        Py_Initialize();
-        
-        // Append the resource path to sys.path
-        
-        NSString* resourcePath = [[NSBundle mainBundle] resourcePath];
-                
-        NSString* appendToSysPathCommand = [NSString stringWithFormat:@"import sys; sys.path.append(\"%@\")", resourcePath];
-        
-        PyRun_SimpleString([appendToSysPathCommand cStringUsingEncoding:NSUTF8StringEncoding]);
-        
-        // Import the emotion code
-        
-        emotion = PyImport_ImportModule("emotion");
-        
-        
+        // Grab the emotion dictionary from file
+        emotionMapping = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"emotion" 
+                                                                                                      ofType:@"plist"]];
     }
     return self;
+}
+
+-(BOOL)textHasEmotion:(NSString*)text
+{
+    NSDictionary* mapping = [self emotionMappingForText:text];
+    return [[mapping allKeys] count] > 0;
 }
 
 -(NSAttributedString*)attributedStringForText:(NSString*)text withEmotion:(BOOL)emotion
@@ -55,17 +47,17 @@
     
     if(emotion)
     {
-        NSDictionary* emotionMapping = [self emotionMappingForText:text];
+        NSDictionary* mapping = [self emotionMappingForText:text];
 
         // For each emotion, set the text for that emotion to an appropriate typeface
         
-        for(NSString* key in [emotionMapping allKeys])
+        for(NSString* key in [mapping allKeys])
         {
             // For each word with this emotion, set the typeface
             
             NSFont* emotionFont = [ETFontAssignment fontForEmotion:key];
             
-            for(NSString* word in (NSArray*)[emotionMapping valueForKey:key])
+            for(NSString* word in (NSArray*)[mapping valueForKey:key])
             {
                 NSRange rangeForWord = [text rangeOfString:word];
                 [attributedString setAttributes:[NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:
@@ -86,63 +78,35 @@
 
 -(NSDictionary*)emotionMappingForText:(NSString*)text
 {
-    PyObject* emotionDict = PyObject_CallMethod(emotion, "emotions_for_sentence", "s", [text cStringUsingEncoding:NSUTF8StringEncoding]);
+    NSMutableDictionary* mapping = [[NSMutableDictionary alloc] init];
     
-    if(emotionDict == NULL)
+    // Split text into composite words.
+    NSArray* words = [text componentsSeparatedByString:@" "];
+    for(NSString* word in words)
     {
-        NSLog(@"Problem grabbing emotions!");
-        PyErr_PrintEx(0);
-        return nil;
-    }
-    
-    // Grab all the keys for the emotionDict
-    
-    PyObject* keys = PyDict_Keys(emotionDict);
-        
-    // Loop through all the keys, and build our dictionary
-    
-    NSMutableDictionary* emotionMapping = [[NSMutableDictionary alloc] init];
-    
-    Py_ssize_t keysLength = PyList_Size(keys);
-    
-    for(NSUInteger i = 0; i < keysLength; i++)
-    {
-        PyObject* key = PyList_GetItem(keys, i);        
-        if(PyString_Check(key))
+        // Split these components by punctuation
+        NSArray* components = [word componentsSeparatedByCharactersInSet:[NSCharacterSet punctuationCharacterSet]];
+        for(NSString* component in components)
         {
-            // Grab the key
-            char* keyCString = PyString_AsString(key);
-            NSString* keyFoundationString = [NSString stringWithCString:keyCString 
-                                                               encoding:NSUTF8StringEncoding];
-            
-            // Loop through all the values for this key, and add them to a mutable array
-            
-            PyObject* values = PyDict_GetItem(emotionDict, key);
-            
-            NSMutableArray* valuesFoundationArray =  [[NSMutableArray alloc] init];
-            
-            Py_ssize_t valuesLength = PyList_Size(values);
-            
-            for(NSUInteger j = 0; j < valuesLength; j++)
+            NSString* lowercaseWord = [component lowercaseString];
+            for(NSString* key in [emotionMapping allKeys])
             {
-                PyObject* value = PyList_GetItem(values, j);
-                
-                char* valueCString = PyString_AsString(value);
-                
-                NSString* valueFoundationString = [NSString stringWithCString:valueCString 
-                                                                     encoding:NSUTF8StringEncoding];
-                
-                [valuesFoundationArray addObject:valueFoundationString];
+                if([[emotionMapping valueForKey:key] containsObject:lowercaseWord])
+                {
+                    // This word has that emotion! Populate mapping with it
+                    if(![[mapping allKeys] containsObject:key])
+                    {
+                        // If mapping doesn't have this key, create it
+                        [mapping setValue:[[NSMutableArray alloc] init] forKey:key];
+                    }
+                    NSMutableArray* wordsWithEmotion = [mapping valueForKey:key];
+                    [wordsWithEmotion addObject:lowercaseWord];
+                }
             }
-            
-            // Populate our dictionary with this key and its value array
-            
-            [emotionMapping setValue:valuesFoundationArray
-                              forKey:keyFoundationString];
         }
     }
-    
-    return [NSDictionary dictionaryWithDictionary:emotionMapping];
+
+    return mapping;
 }
 
 @end
