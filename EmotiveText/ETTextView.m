@@ -110,7 +110,17 @@
 
 -(void)doCommandBySelector:(SEL)aSelector
 {
-    [self performSelector:aSelector];
+    if([NSStringFromSelector(aSelector) isEqualToString:@"deleteBackward:"])
+    {
+        [self deleteBackward:nil];
+    }
+    else
+    {
+        if([self respondsToSelector:aSelector])
+        {
+            [self performSelector:aSelector];
+        }
+    }
 }
 
 #pragma mark View Lifecycle Stuff
