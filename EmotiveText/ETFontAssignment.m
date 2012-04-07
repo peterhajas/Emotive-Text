@@ -33,11 +33,11 @@
     }
     else if([ETEmotionSynonymizer emotionIsDisgust:emotion])
     {
-        return @"Helvetica";
+        return @"Baskerville";
     }
     else if([ETEmotionSynonymizer emotionIsFear:emotion])
     {
-        return @"Helvetica";
+        return @"Futura";
     }
     else if([ETEmotionSynonymizer emotionIsJoy:emotion])
     {
@@ -49,7 +49,7 @@
     }
     else if([ETEmotionSynonymizer emotionIsSurprise:emotion])
     {
-        return @"Helvetica";
+        return @"Times New Roman";
     }
     else
     {
