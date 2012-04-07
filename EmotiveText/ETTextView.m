@@ -207,7 +207,6 @@
 
 -(BOOL)becomeFirstResponder
 {
-    NSLog(@"become first responder");
     return YES;
 }
 
