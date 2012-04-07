@@ -100,7 +100,7 @@
     }
     else
     {
-        NSLog(@"Unknown animation for emotion %@", emotion);
+        // Well, we don't have this emotion.
     }
     
     if(emotionAnimation != nil)
