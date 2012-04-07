@@ -41,7 +41,7 @@
     }
     else if([ETEmotionSynonymizer emotionIsJoy:emotion])
     {
-        return @"Cracked";
+        return @"Impact";
     }
     else if([ETEmotionSynonymizer emotionIsSadness:emotion])
     {
