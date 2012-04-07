@@ -15,6 +15,7 @@
 
 #import "ETFontAssignment.h"
 #import "ETTextView.h"
+#import "ETEmotionSynonymizer.h"
 
 @implementation ETFontAssignment
 
@@ -26,31 +27,31 @@
 
 +(NSString*)fontNameForEmotion:(NSString*)emotion
 {
-    if([emotion isEqualToString:@"anger"])
+    if([ETEmotionSynonymizer emotionIsAnger:emotion])
     {
         return @"OpenDinSchriftenEngshrift";
     }
-    else if([emotion isEqualToString:@"disgust"])
+    else if([ETEmotionSynonymizer emotionIsDisgust:emotion])
     {
         return @"Helvetica";
     }
-    else if([emotion isEqualToString:@"fear"])
+    else if([ETEmotionSynonymizer emotionIsFear:emotion])
     {
         return @"Helvetica";
     }
-    else if([emotion isEqualToString:@"joy"])
+    else if([ETEmotionSynonymizer emotionIsJoy:emotion])
     {
         return @"Helvetica";
     }
-    else if([emotion isEqualToString:@"sadness"])
+    else if([ETEmotionSynonymizer emotionIsSadness:emotion])
     {
         return @"Comic Sans MS";
     }
-    else if([emotion isEqualToString:@"surprise"])
+    else if([ETEmotionSynonymizer emotionIsSurprise:emotion])
     {
         return @"Helvetica";
     }
-    else 
+    else
     {
         return @"Helvetica";
     }

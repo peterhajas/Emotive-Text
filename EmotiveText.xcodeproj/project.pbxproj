@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F100785152DFB12000E0064 /* emotion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F100784152DFB12000E0064 /* emotion.plist */; };
+		4F3D4B1C1530D6C8004B9079 /* ETEmotionSynonymizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3D4B1B1530D6C7004B9079 /* ETEmotionSynonymizer.m */; };
 		4F768EA61519DB0D001B1D52 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F768EA51519DB0D001B1D52 /* Cocoa.framework */; };
 		4F768EB01519DB0D001B1D52 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F768EAE1519DB0D001B1D52 /* InfoPlist.strings */; };
 		4F768EB21519DB0D001B1D52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F768EB11519DB0D001B1D52 /* main.m */; };
@@ -321,6 +322,8 @@
 
 /* Begin PBXFileReference section */
 		4F100784152DFB12000E0064 /* emotion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emotion.plist; sourceTree = "<group>"; };
+		4F3D4B1A1530D6C7004B9079 /* ETEmotionSynonymizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETEmotionSynonymizer.h; sourceTree = "<group>"; };
+		4F3D4B1B1530D6C7004B9079 /* ETEmotionSynonymizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETEmotionSynonymizer.m; sourceTree = "<group>"; };
 		4F768EA11519DB0D001B1D52 /* EmotiveText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotiveText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F768EA51519DB0D001B1D52 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4F768EA81519DB0D001B1D52 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -369,6 +372,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F3D4B1E1530D6CA004B9079 /* Emotion Synonymizer */ = {
+			isa = PBXGroup;
+			children = (
+				4F3D4B1A1530D6C7004B9079 /* ETEmotionSynonymizer.h */,
+				4F3D4B1B1530D6C7004B9079 /* ETEmotionSynonymizer.m */,
+			);
+			name = "Emotion Synonymizer";
+			sourceTree = "<group>";
+		};
 		4F768E961519DB0D001B1D52 = {
 			isa = PBXGroup;
 			children = (
@@ -419,6 +431,7 @@
 				4F768EAC1519DB0D001B1D52 /* Supporting Files */,
 				4FF9F63A151C34DE004A131D /* Layer Chopper */,
 				4FC1BD3B1519F7BD008C80FF /* Text Attributer */,
+				4F3D4B1E1530D6CA004B9079 /* Emotion Synonymizer */,
 				4FF9F636151BF539004A131D /* Animation Assignment */,
 				4F891E31151FC6E6007C60BA /* Gradient Background */,
 			);
@@ -606,6 +619,7 @@
 				4F891E2F151FC6DF007C60BA /* ETGradientBackgroundView.m in Sources */,
 				4FA28B9515293F8800693E24 /* ETFontAssignment.m in Sources */,
 				4FBF4ECC152E12C400D3F700 /* ETCaretView.m in Sources */,
+				4F3D4B1C1530D6C8004B9079 /* ETEmotionSynonymizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

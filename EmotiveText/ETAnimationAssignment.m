@@ -14,6 +14,7 @@
  */
 
 #import "ETAnimationAssignment.h"
+#import "ETEmotionSynonymizer.h"
 #include <stdlib.h>
 
 @implementation ETAnimationAssignment
@@ -68,27 +69,27 @@
     
     CAAnimation* emotionAnimation = nil;
     
-    if([emotion isEqualToString:@"anger"])
+    if([ETEmotionSynonymizer emotionIsAnger:emotion])
     {
         emotionAnimation = [self animationAnger];
     }
-    else if([emotion isEqualToString:@"disgust"])
+    else if([ETEmotionSynonymizer emotionIsDisgust:emotion])
     {
         emotionAnimation = [self animationDisgust];
     }
-    else if([emotion isEqualToString:@"fear"])
+    else if([ETEmotionSynonymizer emotionIsFear:emotion])
     {
         emotionAnimation = [self animationFear];
     }
-    else if([emotion isEqualToString:@"joy"])
+    else if([ETEmotionSynonymizer emotionIsJoy:emotion])
     {
         emotionAnimation = [self animationJoy];
     }
-    else if([emotion isEqualToString:@"sadness"])
+    else if([ETEmotionSynonymizer emotionIsSadness:emotion])
     {
         emotionAnimation = [self animationSadness];
     }
-    else if([emotion isEqualToString:@"surprise"])
+    else if([ETEmotionSynonymizer emotionIsSurprise:emotion])
     {
         emotionAnimation = [self animationSurprise];
     }
