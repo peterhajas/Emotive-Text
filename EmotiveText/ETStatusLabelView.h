@@ -13,28 +13,11 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#import "ETAppDelegate.h"
-#import "ETEmotionTextAttributer.h"
-#import "ETGradientBackgroundView.h"
+#import <Cocoa/Cocoa.h>
 
-@implementation ETAppDelegate
+#define ETStatusLabelViewWidth 200
+#define ETStatusLabelViewHeight 50
 
-@synthesize window = _window;
-@synthesize view = _view;
-
--(void)applicationDidFinishLaunching:(NSNotification*)aNotification
-{
-    ETGradientBackgroundView* gradientView = [[ETGradientBackgroundView alloc] initWithFrame:[_view frame]];
-    [_view addSubview:gradientView];
-    
-    textView = [[ETTextView alloc] initWithFrame:[_view frame]];
-    [_view addSubview:textView];
-    
-    caretView = [[ETCaretView alloc] init];
-    [_view addSubview:caretView];
-    
-    statusLabelView = [[ETStatusLabelView alloc] init];
-    [_view addSubview:statusLabelView];
-}
+@interface ETStatusLabelView : NSTextView
 
 @end

@@ -16,12 +16,14 @@
 #import <Cocoa/Cocoa.h>
 #import "ETTextView.h"
 #import "ETCaretView.h"
+#import "ETStatusLabelView.h"
 
 @interface ETAppDelegate : NSObject <NSApplicationDelegate,
                                      NSTextFieldDelegate>
 {
     ETTextView* textView;
     ETCaretView* caretView;
+    ETStatusLabelView* statusLabelView;
 }
 
 @property (assign) IBOutlet NSWindow* window;
