@@ -93,14 +93,10 @@
     {
         emotionAnimation = [self animationSurprise];
     }
-    else if([emotion isEqualToString:@"none"])
+    else
     {
         emotionAnimation = [self animationNone];
         shouldTellDelegate = NO;
-    }
-    else
-    {
-        // Well, we don't have this emotion.
     }
     
     if(emotionAnimation != nil)
