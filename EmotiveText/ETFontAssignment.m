@@ -29,7 +29,7 @@
 {
     if([ETEmotionSynonymizer emotionIsAnger:emotion])
     {
-        return @"Casual";
+        return @"Chalkboard";
     }
     else if([ETEmotionSynonymizer emotionIsDisgust:emotion])
     {
