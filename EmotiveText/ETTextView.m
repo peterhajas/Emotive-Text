@@ -89,7 +89,7 @@
     }
     else
     {
-        currentText = @" ";
+        currentText = @"";
     }
     [self textChanged];
 }
@@ -145,6 +145,13 @@
 {    
     if([currentText isEqualToString:@""])
     {
+        CGPoint center = CGPointMake([self frame].size.width/2,
+                                     [self frame].size.height/2 - 10);
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"ETTextChangedNotification"
+                                                            object:[NSValue valueWithPoint:center]];
+        
+        [self setLayer:[ETLayerChopper setBottomLayerToGradient:[self layer]]];
+        
         return;
     }
     
@@ -160,6 +167,12 @@
     line = CTLineCreateWithAttributedString(attributedString);
     
     CGRect lineImageFrame = CTLineGetImageBounds(line, staleContext);
+        
+    CGPoint lineOriginInUs = CGPointMake([self frame].size.width/2 - lineImageFrame.size.width/2 + lineImageFrame.size.width + 10,
+                                         [self frame].size.height/2 - lineImageFrame.size.height/2 - 10);
+        
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"ETTextChangedNotification"
+                                                        object:[NSValue valueWithPoint:lineOriginInUs]];
     
     CGFloat textXPosition = ([self frame].size.width - lineImageFrame.size.width)/2;
     CGFloat textYPosition = ([self frame].size.height - lineImageFrame.size.height)/2;
@@ -228,7 +241,7 @@
 -(void)lastLayerAnimated
 {
     // Set text to nothing, and animate
-    currentText = @" ";
+    currentText = @"";
     [self animate];
 }
 

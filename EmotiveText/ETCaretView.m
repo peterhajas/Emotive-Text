@@ -14,7 +14,8 @@
  */
 
 #import "ETCaretView.h"
-#define kGNTextCaretViewWidth 5
+#import "ETTextView.h"
+#define ETTextCaretViewWidth 5
 
 @implementation ETCaretView
 
@@ -22,14 +23,14 @@
 {
     self = [super initWithFrame:CGRectMake(0,
                                            0,
-                                           kGNTextCaretViewWidth,
-                                           100)];
-    return self;
-}
-/*
--(void)didMoveToSuperview
-{
-    [self setBackgroundColor:kGNAlternateTintColor];
+                                           ETTextCaretViewWidth,
+                                           ETTextPointSize)];
+    [self setWantsLayer:YES];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(textChangedWithNotification:)
+                                                 name:@"ETTextChangedNotification"
+                                               object:nil];
     
     animation = [CABasicAnimation animationWithKeyPath:@"opacity"];
     [animation setFromValue:[NSNumber numberWithFloat:1.0]];
@@ -39,6 +40,24 @@
     [animation setRepeatCount:CGFLOAT_MAX];
     
     [[self layer] addAnimation:animation forKey:@"blinkAnimation"];
-}*/
+
+    
+    return self;
+}
+
+-(void)textChangedWithNotification:(NSNotification*)notification
+{
+    CGPoint ourOrigin = [[notification object] pointValue];
+    [self setFrame:NSMakeRect(ourOrigin.x,
+                              ourOrigin.y,
+                              ETTextCaretViewWidth,
+                              ETTextPointSize)];
+}
+
+-(void)drawRect:(NSRect)dirtyRect
+{
+    [[NSColor redColor] setFill];
+    NSRectFill(dirtyRect);
+}
 
 @end

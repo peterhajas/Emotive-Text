@@ -15,11 +15,13 @@
 
 #import <Cocoa/Cocoa.h>
 #import "ETTextView.h"
+#import "ETCaretView.h"
 
 @interface ETAppDelegate : NSObject <NSApplicationDelegate,
                                      NSTextFieldDelegate>
 {
     ETTextView* textView;
+    ETCaretView* caretView;
 }
 
 @property (assign) IBOutlet NSWindow* window;

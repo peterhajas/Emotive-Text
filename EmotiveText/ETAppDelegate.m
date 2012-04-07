@@ -29,6 +29,10 @@
     
     textView = [[ETTextView alloc] initWithFrame:[_view frame]];
     [_view addSubview:textView];
+    
+    caretView = [[ETCaretView alloc] init];
+    [_view addSubview:caretView];
+    
 }
 
 @end

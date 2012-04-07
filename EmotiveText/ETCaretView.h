@@ -17,6 +17,6 @@
 
 @interface ETCaretView : NSView
 {
-    CABasicAnimation* blinkAnimation;
+    CABasicAnimation* animation;
 }
 @end
