@@ -215,6 +215,7 @@
 
 -(void)viewDidEndLiveResize
 {
+    [self setFrame:[self superview].frame];
     [self setNeedsDisplay:YES];
 }
 
