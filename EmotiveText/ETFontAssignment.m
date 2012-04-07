@@ -29,7 +29,7 @@
 {
     if([ETEmotionSynonymizer emotionIsAnger:emotion])
     {
-        return @"OpenDinSchriftenEngshrift";
+        return @"Casual";
     }
     else if([ETEmotionSynonymizer emotionIsDisgust:emotion])
     {
@@ -41,7 +41,7 @@
     }
     else if([ETEmotionSynonymizer emotionIsJoy:emotion])
     {
-        return @"Helvetica";
+        return @"Cracked";
     }
     else if([ETEmotionSynonymizer emotionIsSadness:emotion])
     {
