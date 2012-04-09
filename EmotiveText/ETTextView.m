@@ -22,7 +22,7 @@
 
 -(void)textChanged
 {
-    if([currentText length] > 20)
+    if([currentText length] > 25)
     {
         currentText = @"";
     }
