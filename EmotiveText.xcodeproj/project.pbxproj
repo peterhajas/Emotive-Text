@@ -16,7 +16,6 @@
 		4F768EB61519DB0D001B1D52 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4F768EB41519DB0D001B1D52 /* Credits.rtf */; };
 		4F768EB91519DB0D001B1D52 /* ETAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F768EB81519DB0D001B1D52 /* ETAppDelegate.m */; };
 		4F768EBC1519DB0D001B1D52 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F768EBA1519DB0D001B1D52 /* MainMenu.xib */; };
-		4F768EC71519DB81001B1D52 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F768EC61519DB81001B1D52 /* Python.framework */; };
 		4F768ECA1519DC71001B1D52 /* ETTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F768EC91519DC71001B1D52 /* ETTextView.m */; };
 		4F768ECD1519DE71001B1D52 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F768ECC1519DE71001B1D52 /* ApplicationServices.framework */; };
 		4F80BDC5151B7A87004DF0AC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F768EC41519DB2B001B1D52 /* QuartzCore.framework */; };
@@ -366,7 +365,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F80BDC5151B7A87004DF0AC /* QuartzCore.framework in Frameworks */,
-				4F768EC71519DB81001B1D52 /* Python.framework in Frameworks */,
 				4F768EA61519DB0D001B1D52 /* Cocoa.framework in Frameworks */,
 				4F768ECD1519DE71001B1D52 /* ApplicationServices.framework in Frameworks */,
 			);
