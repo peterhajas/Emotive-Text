@@ -22,6 +22,10 @@
 
 -(void)textChanged
 {
+    if([currentText length] > 20)
+    {
+        currentText = @"";
+    }
     hasEmotion = [emotionTextAttributer textHasEmotion:currentText];
     [self animate];
 }
