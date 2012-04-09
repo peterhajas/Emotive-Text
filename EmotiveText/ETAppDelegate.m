@@ -35,6 +35,8 @@
     
     statusLabelView = [[ETStatusLabelView alloc] init];
     [_view addSubview:statusLabelView];
+    
+    [textView becomeFirstResponder];
 }
 
 @end
