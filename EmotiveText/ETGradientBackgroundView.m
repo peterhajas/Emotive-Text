@@ -46,6 +46,12 @@
     
     [gradientLayer setFrame:frame];
     
+    for(id color in [gradientLayer colors])
+    {
+        CGColorRef colorRef = (__bridge CGColorRef)color;
+        CGColorRelease(colorRef);
+    }
+    
     return gradientLayer;
 }
 
