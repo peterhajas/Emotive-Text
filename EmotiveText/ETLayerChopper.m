@@ -61,12 +61,16 @@
             
             CGImageRef glyphImageContents = CGImageCreateWithImageInRect(layerImage,
                                                                          layerContentsRect);
-                        
+            
+            
             // Create our new layer, representing just the glyph
             CALayer* glyphLayer = [CALayer layer];
             [glyphLayer setFrame:layerContentsRect];
             
-            [glyphLayer setContents:(__bridge id)glyphImageContents];
+            [glyphLayer setContents:[[NSImage alloc] initWithCGImage:glyphImageContents
+                                                                size:layerContentsRect.size]];
+            
+            CFRelease(glyphImageContents);
             
             // Add glyphLayer to future sublayers
             [futureSublayers addObject:glyphLayer];
@@ -88,6 +92,8 @@
     
     [layer setNeedsDisplay];
     
+    CFRelease(layerImage);
+
     return splitLayer;
 }
 
