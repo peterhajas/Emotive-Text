@@ -136,6 +136,8 @@
         emotionTextAttributer = [[ETEmotionTextAttributer alloc] init];
         animationAssignment = [[ETAnimationAssignment alloc] init];
         [animationAssignment setDelegate:self];
+        
+        
     }
     
     return self;
@@ -143,6 +145,9 @@
 
 -(void)drawRect:(NSRect)dirtyRect
 {    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"ETViewResizedNotification"
+                                                        object:[NSValue valueWithSize:[self frame].size]];
+    
     if([currentText isEqualToString:@""])
     {
         CGPoint center = CGPointMake([self frame].size.width/2,
@@ -204,6 +209,8 @@
     }
     else
     {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"ETNoEmotionNotification"
+                                                                object:nil];
         [animationAssignment animateLayer:[self layer] forEmotion:@"none"];
     }
 }
