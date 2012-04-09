@@ -10,6 +10,7 @@
 		4F100785152DFB12000E0064 /* emotion.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F100784152DFB12000E0064 /* emotion.plist */; };
 		4F351AD11531040F00EF9549 /* ETStatusLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F351AD01531040F00EF9549 /* ETStatusLabelView.m */; };
 		4F3D4B1C1530D6C8004B9079 /* ETEmotionSynonymizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3D4B1B1530D6C7004B9079 /* ETEmotionSynonymizer.m */; };
+		4F6F4EF415335B2600664E4E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F6F4EF315335B2600664E4E /* icon.png */; };
 		4F768EA61519DB0D001B1D52 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F768EA51519DB0D001B1D52 /* Cocoa.framework */; };
 		4F768EB01519DB0D001B1D52 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F768EAE1519DB0D001B1D52 /* InfoPlist.strings */; };
 		4F768EB21519DB0D001B1D52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F768EB11519DB0D001B1D52 /* main.m */; };
@@ -326,6 +327,7 @@
 		4F351AD01531040F00EF9549 /* ETStatusLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETStatusLabelView.m; sourceTree = "<group>"; };
 		4F3D4B1A1530D6C7004B9079 /* ETEmotionSynonymizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETEmotionSynonymizer.h; sourceTree = "<group>"; };
 		4F3D4B1B1530D6C7004B9079 /* ETEmotionSynonymizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETEmotionSynonymizer.m; sourceTree = "<group>"; };
+		4F6F4EF315335B2600664E4E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		4F768EA11519DB0D001B1D52 /* EmotiveText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotiveText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F768EA51519DB0D001B1D52 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4F768EA81519DB0D001B1D52 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -452,6 +454,7 @@
 		4F768EAC1519DB0D001B1D52 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4F6F4EF315335B2600664E4E /* icon.png */,
 				4F100784152DFB12000E0064 /* emotion.plist */,
 				4F768EAD1519DB0D001B1D52 /* EmotiveText-Info.plist */,
 				4F768EAE1519DB0D001B1D52 /* InfoPlist.strings */,
@@ -611,6 +614,7 @@
 				4F768EB61519DB0D001B1D52 /* Credits.rtf in Resources */,
 				4F768EBC1519DB0D001B1D52 /* MainMenu.xib in Resources */,
 				4F100785152DFB12000E0064 /* emotion.plist in Resources */,
+				4F6F4EF415335B2600664E4E /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
