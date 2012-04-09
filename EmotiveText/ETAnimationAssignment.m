@@ -178,11 +178,13 @@
 
 -(CAAnimation*)animationSadness
 {
-    float duration = (float)rand()/(float)RAND_MAX + 8;
+    // Because we know the dimensions of the display, we can cheat!
+    
+    float duration = (float)rand()/(float)RAND_MAX + 5;
     
     CABasicAnimation* rainAnimation = [CABasicAnimation animationWithKeyPath:@"transform.translation.y"];
     [rainAnimation setFromValue:[NSNumber numberWithInt:0.0]];
-    [rainAnimation setToValue:[NSNumber numberWithInt:-1000]];
+    [rainAnimation setToValue:[NSNumber numberWithInt:-600]];
     [rainAnimation setDuration:duration];
     
     return rainAnimation;
